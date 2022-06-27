@@ -1,0 +1,988 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Milkman – Documentation</title>
+    <link>/docs/</link>
+    <description>Recent content in Documentation on Milkman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/docs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Milkman Auth Plugin</title>
+      <link>/docs/plugins/authentication/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/plugins/authentication/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;Contains key-types for authentication, such as oauth-authentication&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;h1 id=&#34;features&#34;&gt;Features&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;supports oauth2
+&lt;ul&gt;
+&lt;li&gt;password-grant, client-credential grant and authorization-code grant&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;screenshot&#34;&gt;Screenshot&lt;/h1&gt;
+
+
+
+
+
+
+
+&lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 745px&#34;&gt;
+	&lt;img class=&#34;card-img-top&#34; src=&#34;/docs/plugins/authentication/auth-plugin_huaf15ef93e851e6b6993fae87ec21a4b2_123906_0x500_resize_catmullrom_3.png&#34; width=&#34;735&#34; height=&#34;500&#34;&gt;
+	
+	&lt;div class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
+		&lt;p class=&#34;card-text&#34;&gt;
+Editing a secret oAuth Key (Password Grant).
+&lt;/p&gt;
+	&lt;/div&gt;
+	
+&lt;/div&gt;
+&lt;h1 id=&#34;remarks&#34;&gt;Remarks&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;does not yet support specifying a redirect-url for authorization-code as there is currently no browser included.&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Milkman Cassandra Plugin</title>
+      <link>/docs/plugins/cassandra/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/plugins/cassandra/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;Introduces Cql Requests to Milkman using cassandra datastax driver.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;h1 id=&#34;requirements&#34;&gt;Requirements&lt;/h1&gt;
+&lt;p&gt;This plugin requires &lt;code&gt;milkman-jdbc&lt;/code&gt; plugin&lt;/p&gt;
+&lt;h1 id=&#34;installation&#34;&gt;Installation&lt;/h1&gt;
+&lt;p&gt;After placing the jar into &lt;code&gt;\plugin&lt;/code&gt; folder, you also have to place the driver-jars you want to use in that folder as well.&lt;/p&gt;
+&lt;h1 id=&#34;usage&#34;&gt;Usage&lt;/h1&gt;
+&lt;p&gt;The used url is of following format:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;cql://host[/keyspace]?dc=...[&amp;amp;username=...&amp;amp;password=...]
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;supported parameters&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;name&lt;/th&gt;
+&lt;th&gt;description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;dc&lt;/td&gt;
+&lt;td&gt;datacenter, required. for local installations, this should be &amp;lsquo;datacenter1&amp;rsquo;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;username&lt;/td&gt;
+&lt;td&gt;username, optional&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;password&lt;/td&gt;
+&lt;td&gt;password, optional&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h1 id=&#34;screenshot&#34;&gt;Screenshot&lt;/h1&gt;
+
+
+
+
+
+
+
+&lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 742px&#34;&gt;
+	&lt;img class=&#34;card-img-top&#34; src=&#34;/docs/plugins/cassandra/cassandra-plugin_hu4dce0327d14f8e3bf13be443fc74a069_31733_0x500_resize_catmullrom_3.png&#34; width=&#34;732&#34; height=&#34;500&#34;&gt;
+	
+	&lt;div class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
+		&lt;p class=&#34;card-text&#34;&gt;
+Editing a secret oAuth Key (Password Grant).
+&lt;/p&gt;
+	&lt;/div&gt;
+	
+&lt;/div&gt;
+&lt;h1 id=&#34;features&#34;&gt;Features&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Execution of Requests against cassandra databases&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Milkman Commandline Interface</title>
+      <link>/docs/plugins/cli/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/plugins/cli/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;This is an experimental interactive command line interface for plugin. After copying the content of the archive to the root directory of milkman,
+you can start it by &lt;code&gt;mm&lt;/code&gt; on terminal.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;h1 id=&#34;screenshot&#34;&gt;Screenshot&lt;/h1&gt;
+
+
+
+
+
+
+
+&lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 806px&#34;&gt;
+	&lt;img class=&#34;card-img-top&#34; src=&#34;/docs/plugins/cli/cli_hu6435b3e51c518e019366e6cb12b7ccd4_306971_0x500_resize_catmullrom.gif&#34; width=&#34;796&#34; height=&#34;500&#34;&gt;
+	
+	&lt;div class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
+		&lt;p class=&#34;card-text&#34;&gt;
+Example of a cli session
+&lt;/p&gt;
+	&lt;/div&gt;
+	
+&lt;/div&gt;
+&lt;h1 id=&#34;features&#34;&gt;Features&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Editing Request-Aspects via &lt;code&gt;nano&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Executing requests&lt;/li&gt;
+&lt;li&gt;Analyzing responses via &lt;code&gt;less&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Interactive mode (entered by simply starting &lt;code&gt;mm&lt;/code&gt;) or non-interactive mode (by executing commands via &lt;code&gt;mm [command]&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Tab-Completion on interactive mode&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;commands&#34;&gt;Commands&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Note: all IDs are derived from the original names. All lowercase and special characters are replaced with &lt;code&gt;-&lt;/code&gt;. E.g. &lt;code&gt;Your Workspace&lt;/code&gt; becomes &lt;code&gt;your-workspace&lt;/code&gt;*&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Command&lt;/th&gt;
+&lt;th&gt;Alias&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;th&gt;Arguments&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;change-workspace&lt;/td&gt;
+&lt;td&gt;ws&lt;/td&gt;
+&lt;td&gt;Switches currently activated workspace&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;workspace&lt;/code&gt; the id of the workspace to switch to&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;change-collection&lt;/td&gt;
+&lt;td&gt;col&lt;/td&gt;
+&lt;td&gt;Switches currently activated collection&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;collection&lt;/code&gt;   the id of the collection to switch to&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;execute-request&lt;/td&gt;
+&lt;td&gt;req&lt;/td&gt;
+&lt;td&gt;Executes a given request&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;requestish&lt;/code&gt;&lt;sup&gt;1&lt;/sup&gt;     the id of the request to execute&lt;br&gt;&lt;code&gt;-l&lt;/code&gt;, &lt;code&gt;--less&lt;/code&gt;      outputs response into less&lt;br&gt;&lt;code&gt;-v&lt;/code&gt;, &lt;code&gt;--verbose&lt;/code&gt;   outputs all aspects&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;edit-request&lt;/td&gt;
+&lt;td&gt;e&lt;/td&gt;
+&lt;td&gt;Edits an aspect of a request&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;requestish&lt;/code&gt;&lt;sup&gt;1&lt;/sup&gt;   the id of the request to execute&lt;br&gt;&lt;code&gt;aspect&lt;/code&gt;    the aspect to edit&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;quit&lt;/td&gt;
+&lt;td&gt;q&lt;/td&gt;
+&lt;td&gt;Quits Application&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;sup&gt;1&lt;/sup&gt;A requestish is [[Workspace-Id/]Collection-Id/]Request-Id (i.e. the first two are optional)&lt;/p&gt;
+&lt;h1 id=&#34;screenshot-1&#34;&gt;Screenshot&lt;/h1&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Milkman Explore Plugin</title>
+      <link>/docs/plugins/explore/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/plugins/explore/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;Extends Milkman-rest with an additional response-tab that allows for application/json responses to be explored using JMesPath.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;h2 id=&#34;note&#34;&gt;Note&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;requires milkman-rest plugin&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;screenshot&#34;&gt;Screenshot&lt;/h1&gt;
+
+
+
+
+
+
+
+&lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 632px&#34;&gt;
+	&lt;img class=&#34;card-img-top&#34; src=&#34;/docs/plugins/explore/explore-plugin_hu5b3b6980835d8c89cd1459011d9601b2_47969_0x500_resize_catmullrom_3.PNG&#34; width=&#34;622&#34; height=&#34;500&#34;&gt;
+	
+	&lt;div class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
+		&lt;p class=&#34;card-text&#34;&gt;
+Example of the explore plugin
+&lt;/p&gt;
+	&lt;/div&gt;
+	
+&lt;/div&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Advanced Features</title>
+      <link>/docs/features/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/features/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;Description of some more advanced Features of Milkman&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;h1 id=&#34;code-folding&#34;&gt;Code Folding&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Folding is supported in response body area&lt;/li&gt;
+&lt;li&gt;Toolbar actions: expand all, collapse all, expand one level, collapse one level&lt;/li&gt;
+&lt;li&gt;Clicking on the line-symbol expands the node&lt;/li&gt;
+&lt;li&gt;Right-Clicking on the line-symbol expands the whole subtree&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+&lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 813px&#34;&gt;
+	&lt;img class=&#34;card-img-top&#34; src=&#34;/docs/features/folding_hub2bdc84f6c5e19a81303660a937b012a_260482_0x500_resize_catmullrom.gif&#34; width=&#34;803&#34; height=&#34;500&#34;&gt;
+	
+	&lt;div class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
+		&lt;p class=&#34;card-text&#34;&gt;
+Example of code folding
+&lt;/p&gt;
+	&lt;/div&gt;
+	
+&lt;/div&gt;
+&lt;h1 id=&#34;hotkeys&#34;&gt;Hotkeys&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;kbd&gt;CTRL&lt;/kbd&gt;+&lt;kbd&gt;ENTER&lt;/kbd&gt; - Execute Request&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;CTRL&lt;/kbd&gt;+&lt;kbd&gt;N&lt;/kbd&gt; - New Request&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;CTRL&lt;/kbd&gt;+&lt;kbd&gt;R&lt;/kbd&gt; - Rename Active Request&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;CTRL&lt;/kbd&gt;+&lt;kbd&gt;W&lt;/kbd&gt; - Close Active Request&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;CTRL&lt;/kbd&gt;+&lt;kbd&gt;S&lt;/kbd&gt; - Save Active Request&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;CTRL&lt;/kbd&gt;+&lt;kbd&gt;E&lt;/kbd&gt; - Edit current Environment&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;CTRL&lt;/kbd&gt;+&lt;kbd&gt;Space&lt;/kbd&gt; - Quick-Edit of Variables&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;ESC&lt;/kbd&gt; - Cancel running Request&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;copypaste-in-tables&#34;&gt;Copy&amp;amp;Paste in Tables&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;You can &lt;kbd&gt;CTRL&lt;/kbd&gt;+&lt;kbd&gt;C&lt;/kbd&gt; selected rows to copy its value&lt;/li&gt;
+&lt;li&gt;You can &lt;kbd&gt;CTRL&lt;/kbd&gt;+&lt;kbd&gt;V&lt;/kbd&gt; multiple rows into a table&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+&lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 1633px&#34;&gt;
+	&lt;img class=&#34;card-img-top&#34; src=&#34;/docs/features/copypaste_hudf95a2858009d571f671d6e887ed916f_96548_0x500_resize_catmullrom.gif&#34; width=&#34;1623&#34; height=&#34;500&#34;&gt;
+	
+	&lt;div class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
+		&lt;p class=&#34;card-text&#34;&gt;
+Example of Copy&amp;Paste for tables
+&lt;/p&gt;
+	&lt;/div&gt;
+	
+&lt;/div&gt;
+&lt;h1 id=&#34;quick-edit-for-variables&#34;&gt;Quick Edit for Variables&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;You can highlight variables.&lt;/li&gt;
+&lt;li&gt;Clicking on it opens popup for modification/creation&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;ESC&lt;/kbd&gt; hides highlighting&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+&lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 1086px&#34;&gt;
+	&lt;img class=&#34;card-img-top&#34; src=&#34;/docs/features/hightlight-vars_hue14906a0a72d4c22743013e6703cb527_521983_0x500_resize_catmullrom.gif&#34; width=&#34;1076&#34; height=&#34;500&#34;&gt;
+	
+	&lt;div class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
+		&lt;p class=&#34;card-text&#34;&gt;
+Example of Quick-edit for variables
+&lt;/p&gt;
+	&lt;/div&gt;
+	
+&lt;/div&gt;
+&lt;h1 id=&#34;keys&#34;&gt;Keys&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;secret keys that should not be exported or synced can be setup using the key-symbol&lt;/li&gt;
+&lt;li&gt;currently, secret keys are only plain type keys, but will be e.g. oauth-keys etc&lt;/li&gt;
+&lt;li&gt;can be accessed using {{key:name-of-key}} variable&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;libraries&#34;&gt;Libraries&lt;/h1&gt;
+&lt;p&gt;you can register libraries to easily look-up and import services from a central registry, such as &lt;a href=&#34;http://apis.guru&#34;&gt;APIs.guru&lt;/a&gt;.&lt;/p&gt;
+
+
+
+
+
+
+
+&lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 635px&#34;&gt;
+	&lt;img class=&#34;card-img-top&#34; src=&#34;/docs/features/milkman-library_hud04a0f028f64634a1dcc2295e058226c_657881_0x500_resize_catmullrom.gif&#34; width=&#34;625&#34; height=&#34;500&#34;&gt;
+	
+	&lt;div class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
+		&lt;p class=&#34;card-text&#34;&gt;
+Example of setting up and using Libraries
+&lt;/p&gt;
+	&lt;/div&gt;
+	
+&lt;/div&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Milkman GraphQL Plugin</title>
+      <link>/docs/plugins/graphql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/plugins/graphql/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;Allows to craft GraphQL requests.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;h2 id=&#34;note&#34;&gt;Note&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;This plugin is rather simple and does not include advanced features such as auto-completion or schema-validation (yet).&lt;/li&gt;
+&lt;li&gt;Requires milkman-rest plugin&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;screenshot&#34;&gt;Screenshot&lt;/h1&gt;
+
+
+
+
+
+
+
+&lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 631px&#34;&gt;
+	&lt;img class=&#34;card-img-top&#34; src=&#34;/docs/plugins/graphql/graphql-plugin_hu903df97447a8b44bfe4e0c7af9a33faf_36096_0x500_resize_catmullrom_3.PNG&#34; width=&#34;621&#34; height=&#34;500&#34;&gt;
+	
+	&lt;div class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
+		&lt;p class=&#34;card-text&#34;&gt;
+Example of the GraphQl plugin
+&lt;/p&gt;
+	&lt;/div&gt;
+	
+&lt;/div&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Milkman Grpc Plugin</title>
+      <link>/docs/plugins/grpc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/plugins/grpc/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;Grpc Plugin for communication with Grpc Servers.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Can work with &lt;a href=&#34;https://github.com/grpc/grpc/blob/master/doc/server-reflection.md&#34;&gt;Server Reflection&lt;/a&gt; to query services and retrieve *.proto files&lt;/li&gt;
+&lt;li&gt;Given a *.proto file, Server Reflection is not necessary to query a service&lt;/li&gt;
+&lt;li&gt;Read/write ASCII headers&lt;/li&gt;
+&lt;li&gt;Support Server/client/both streams&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;screenshot&#34;&gt;Screenshot&lt;/h2&gt;
+
+
+
+
+
+
+
+&lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 625px&#34;&gt;
+	&lt;img class=&#34;card-img-top&#34; src=&#34;/docs/plugins/grpc/grpc-plugin_hu45e09af9e736d61f4359593fa0973f56_37593_0x500_resize_catmullrom_3.png&#34; width=&#34;615&#34; height=&#34;500&#34;&gt;
+	
+	&lt;div class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
+		&lt;p class=&#34;card-text&#34;&gt;
+Example of the Grpc plugin
+&lt;/p&gt;
+	&lt;/div&gt;
+	
+&lt;/div&gt;
+&lt;h3 id=&#34;example-of-server-streaming&#34;&gt;Example of Server streaming&lt;/h3&gt;
+
+
+
+
+
+
+
+&lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 633px&#34;&gt;
+	&lt;img class=&#34;card-img-top&#34; src=&#34;/docs/plugins/grpc/grpc-streaming_hu6323fd666ce30af7176173388896f109_281188_0x500_resize_catmullrom.gif&#34; width=&#34;623&#34; height=&#34;500&#34;&gt;
+	
+	&lt;div class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
+		&lt;p class=&#34;card-text&#34;&gt;
+Example of Grpc Streaming
+&lt;/p&gt;
+	&lt;/div&gt;
+	
+&lt;/div&gt;
+&lt;h3 id=&#34;client-streaming&#34;&gt;Client Streaming&lt;/h3&gt;
+&lt;p&gt;To send multiple messages, just add multiple json objects to the payload, divided by two new lines.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Milkman Http Plugin</title>
+      <link>/docs/plugins/rest/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/plugins/rest/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;Introduces Http request capabilities to milkman. Consists of serveral features that together should make milkman be usable as postman-replacement for day-to-day work.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;h1 id=&#34;screenshot&#34;&gt;Screenshot&lt;/h1&gt;
+
+
+
+
+
+
+
+&lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 635px&#34;&gt;
+	&lt;img class=&#34;card-img-top&#34; src=&#34;/docs/plugins/rest/screenshot_hu6a9b2edaaf3f43fe37319e2f309dd8c8_176126_0x500_resize_catmullrom_3.png&#34; width=&#34;625&#34; height=&#34;500&#34;&gt;
+	
+	&lt;div class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
+		&lt;p class=&#34;card-text&#34;&gt;
+Example of the Rest plugin
+&lt;/p&gt;
+	&lt;/div&gt;
+	
+&lt;/div&gt;
+&lt;h3 id=&#34;example-of-server-sent-events-streaming&#34;&gt;Example of Server Sent Events Streaming&lt;/h3&gt;
+
+
+
+
+
+
+
+&lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 633px&#34;&gt;
+	&lt;img class=&#34;card-img-top&#34; src=&#34;/docs/plugins/rest/sse-streaming_hu48846a7b4414e658cad39017f1ee530d_219631_0x500_resize_catmullrom.gif&#34; width=&#34;623&#34; height=&#34;500&#34;&gt;
+	
+	&lt;div class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
+		&lt;p class=&#34;card-text&#34;&gt;
+Example of Server-sent event streaming in the Rest plugin
+&lt;/p&gt;
+	&lt;/div&gt;
+	
+&lt;/div&gt;
+&lt;h1 id=&#34;features&#34;&gt;Features&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Postman-like UI&lt;/li&gt;
+&lt;li&gt;Crafting of requests by editing body, headers, parameters&lt;/li&gt;
+&lt;li&gt;Highlighting/formatting for json&lt;/li&gt;
+&lt;li&gt;Proxy-Authentication support (BASIC for now)&lt;/li&gt;
+&lt;li&gt;Importers for Postman exports (Collections, Environments, Data-Dump)&lt;/li&gt;
+&lt;li&gt;Importers for OpenApi v3.0&lt;/li&gt;
+&lt;li&gt;(planned) Exporters&lt;/li&gt;
+&lt;li&gt;Support import of APIs listed at &lt;a href=&#34;https://apis.guru/&#34;&gt;APIs.guru&lt;/a&gt;, see &lt;a href=&#34;/img/gif/milkman-library.gif&#34;&gt;demo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Milkman Note Plugin</title>
+      <link>/docs/plugins/note/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/plugins/note/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;This is a very simple plugin that adds a tab to each request where users can enter some notes about the request.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;This plugin serves demonstrational purposes and should show how milkman can be extended.&lt;/p&gt;
+&lt;h1 id=&#34;screenshot&#34;&gt;Screenshot&lt;/h1&gt;
+
+
+
+
+
+
+
+&lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 632px&#34;&gt;
+	&lt;img class=&#34;card-img-top&#34; src=&#34;/docs/plugins/note/notes-plugin_hu75756891b8bffa5637f3887d7b20e41e_53104_0x500_resize_catmullrom_3.PNG&#34; width=&#34;622&#34; height=&#34;500&#34;&gt;
+	
+	&lt;div class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
+		&lt;p class=&#34;card-text&#34;&gt;
+Example of the Notes plugin
+&lt;/p&gt;
+	&lt;/div&gt;
+	
+&lt;/div&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Milkman Privatebin Plugin</title>
+      <link>/docs/plugins/privatebin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/plugins/privatebin/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;Allows to share requests etc via Privatebin.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;h1 id=&#34;screenshot&#34;&gt;Screenshot&lt;/h1&gt;
+
+
+
+
+
+
+
+&lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 635px&#34;&gt;
+	&lt;img class=&#34;card-img-top&#34; src=&#34;/docs/plugins/privatebin/privatebin-plugin_hue644940c91fb460f22e5d147c8abc843_57063_0x500_resize_catmullrom_3.png&#34; width=&#34;625&#34; height=&#34;500&#34;&gt;
+	
+	&lt;div class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
+		&lt;p class=&#34;card-text&#34;&gt;
+Example of the Privatebin plugin
+&lt;/p&gt;
+	&lt;/div&gt;
+	
+&lt;/div&gt;
+&lt;h1 id=&#34;features&#34;&gt;Features&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Customizable Privatebin installation&lt;/li&gt;
+&lt;li&gt;Client-side AES encryption&lt;/li&gt;
+&lt;li&gt;Share requests via simple URL&lt;/li&gt;
+&lt;li&gt;Burn After Reading feature&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Milkman Scripting Plugin</title>
+      <link>/docs/plugins/scripting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/plugins/scripting/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;provides scripting capabilities via &lt;code&gt;nashorn&lt;/code&gt; javascript engine (&lt;code&gt;graal.js&lt;/code&gt; supported but disabled because it is too big in size).&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;h1 id=&#34;features&#34;&gt;Features&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Provides possibility to pre-load scripts from web, such as chai, via settings.&lt;/li&gt;
+&lt;li&gt;Pre-Request script execution before actual request is made&lt;/li&gt;
+&lt;li&gt;Post-Request script execution with logging output&lt;/li&gt;
+&lt;li&gt;Extensions of template parameters with &lt;code&gt;js:&lt;/code&gt; prefix
+&lt;ul&gt;
+&lt;li&gt;For example, you can set BASIC authorization via header: &lt;br&gt;
+&lt;code&gt;Authorization: Basic {{js:base64(&amp;quot;username:password&amp;quot;)}}&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;example-for-scripts&#34;&gt;Example for scripts&lt;/h1&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;url&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;JSON&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;parse&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;milkman&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;response&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;body&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;body&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;).&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;url&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000&#34;&gt;milkman&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;setEnvironmentVariable&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;test.url&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;url&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;example of pre-script:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;headerVal&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;milkman&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;request&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;headers&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;entries&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;].&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;value&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000&#34;&gt;milkman&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;toast&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;headerVal&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;example of chai script (if you include chai in preload scripts):&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000&#34;&gt;chai&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;should&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;();&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;body&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;JSON&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;parse&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;mm&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;response&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;body&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;body&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000&#34;&gt;body&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;should&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;have&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;lengthOf&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;200&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;screenshot&#34;&gt;Screenshot&lt;/h1&gt;
+
+
+
+
+
+
+
+&lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 632px&#34;&gt;
+	&lt;img class=&#34;card-img-top&#34; src=&#34;/docs/plugins/scripting/scripting-plugin_hua01ab798115a47b76d15ef171848e522_54635_0x500_resize_catmullrom_3.png&#34; width=&#34;622&#34; height=&#34;500&#34;&gt;
+	
+	&lt;div class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
+		&lt;p class=&#34;card-text&#34;&gt;
+Example of the Scripting plugin
+&lt;/p&gt;
+	&lt;/div&gt;
+	
+&lt;/div&gt;
+&lt;p&gt;Preferences:&lt;/p&gt;
+
+
+
+
+
+
+
+&lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 648px&#34;&gt;
+	&lt;img class=&#34;card-img-top&#34; src=&#34;/docs/plugins/scripting/scripting-preferences_hu62aedcc6f4332e4475ccba633cd634b3_42529_0x500_resize_catmullrom_3.png&#34; width=&#34;638&#34; height=&#34;500&#34;&gt;
+	
+	&lt;div class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
+		&lt;p class=&#34;card-text&#34;&gt;
+Example of the Scripting plugin
+&lt;/p&gt;
+	&lt;/div&gt;
+	
+&lt;/div&gt;
+&lt;h1 id=&#34;api&#34;&gt;API&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;milkman&lt;/code&gt; (aliased to &lt;code&gt;mm&lt;/code&gt;) is the only object available. It provides following properties:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;request&lt;/code&gt;: an accessor for request-aspects. Every property of this request-object tries to fetch an according aspect. E.g. &lt;code&gt;request.body&lt;/code&gt; would be the body-aspect of the request-container. (Thats why you have to write &lt;code&gt;request.body.body&lt;/code&gt;, because the body-aspect stores its content in the &lt;code&gt;body&lt;/code&gt; variable as well. Might be streamlined in the future)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;response&lt;/code&gt;: an accessor for response-aspects. Every property of this response-object tries to fetch an according aspect. E.g. &lt;code&gt;response.body&lt;/code&gt; would be the body-aspect of the response-container. (Thats why you have to write &lt;code&gt;response.body.body&lt;/code&gt;, because the body-aspect stores its content in the &lt;code&gt;body&lt;/code&gt; variable as well. Might be streamlined in the future)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;setEnvironmentVariable(String, String)&lt;/code&gt; sets an environment variable in the currently active environment (if there is any activated).&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;toast(String)&lt;/code&gt; shows a toast at the bottom of the window&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;console&lt;/code&gt; works as usual as well&lt;/p&gt;
+&lt;p&gt;besides that, some often used functions are available:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;base64(string)&lt;/code&gt;, &lt;code&gt;sha1(string)&lt;/code&gt;, &lt;code&gt;sha256(string)&lt;/code&gt;, &lt;code&gt;sha512(string)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Milkman Socket.IO Plugin</title>
+      <link>/docs/plugins/sio/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/plugins/sio/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;Support for Socket.IO transport&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;supports Socket.IO&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;screenshot&#34;&gt;Screenshot&lt;/h2&gt;
+
+
+
+
+
+
+
+&lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 814px&#34;&gt;
+	&lt;img class=&#34;card-img-top&#34; src=&#34;/docs/plugins/sio/sio-plugin_hu5997b338d6f00fdefffc17cda60c30bc_83944_0x500_resize_catmullrom_3.png&#34; width=&#34;804&#34; height=&#34;500&#34;&gt;
+	
+	&lt;div class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
+		&lt;p class=&#34;card-text&#34;&gt;
+Example of the Socket.IO plugin
+&lt;/p&gt;
+	&lt;/div&gt;
+	
+&lt;/div&gt;
+&lt;h2 id=&#34;note&#34;&gt;Note&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;requires milkman-rest plugin&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Milkman Jdbc Plugin</title>
+      <link>/docs/plugins/jdbc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/plugins/jdbc/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;Introduces Sql Requests to Milkman using JDBC.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;h1 id=&#34;installation&#34;&gt;Installation&lt;/h1&gt;
+&lt;p&gt;After placing the jar into &lt;code&gt;\plugin&lt;/code&gt; folder, you also have to place the driver-jars you want to use in that folder as well.&lt;/p&gt;
+&lt;h1 id=&#34;screenshot&#34;&gt;Screenshot&lt;/h1&gt;
+
+
+
+
+
+
+
+&lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 632px&#34;&gt;
+	&lt;img class=&#34;card-img-top&#34; src=&#34;/docs/plugins/jdbc/sql-plugin_hua924d6d88c013246513da3d5a38e7409_26385_0x500_resize_catmullrom_3.png&#34; width=&#34;622&#34; height=&#34;500&#34;&gt;
+	
+	&lt;div class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
+		&lt;p class=&#34;card-text&#34;&gt;
+Example of the Sql plugin
+&lt;/p&gt;
+	&lt;/div&gt;
+	
+&lt;/div&gt;
+&lt;h1 id=&#34;features&#34;&gt;Features&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Execution of Requests against Jdbc compatible Databases.&lt;/li&gt;
+&lt;li&gt;(planned) exploration of table structures / existing tables.&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Milkman Git Sync Plugin</title>
+      <link>/docs/plugins/sync-git/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/plugins/sync-git/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;Support for Socket.IO transport&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;This plugin allows to setup a git repository to where a workspace can be synchronized. Synchronization works by computing the diffs and applying them in a fuzzy manner to the latest version (simple algorithm of Differential Synchronization).&lt;/p&gt;
+&lt;h1 id=&#34;screenshot&#34;&gt;Screenshot&lt;/h1&gt;
+
+
+
+
+
+
+
+&lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 635px&#34;&gt;
+	&lt;img class=&#34;card-img-top&#34; src=&#34;/docs/plugins/sync-git/git-sync-plugin_hu3d5f51be99be522a1893a899e8b1023f_65291_0x500_resize_catmullrom_3.png&#34; width=&#34;625&#34; height=&#34;500&#34;&gt;
+	
+	&lt;div class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
+		&lt;p class=&#34;card-text&#34;&gt;
+Example of the Scripting plugin
+&lt;/p&gt;
+	&lt;/div&gt;
+	
+&lt;/div&gt;
+&lt;h1 id=&#34;features&#34;&gt;Features&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;synchronizes (on-demand for now) workspaces with a remote git repository&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;remark&#34;&gt;Remark&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;This feature is experimental.&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Milkman Test Plugin</title>
+      <link>/docs/plugins/test/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/plugins/test/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;a testrunner plugin that allows to execute multiple requests in a sequence and verify their results.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;h2 id=&#34;usage&#34;&gt;Usage&lt;/h2&gt;
+&lt;p&gt;Just Drag-and-drop requests you want to execute into the test-tab and you are ready to go.&lt;/p&gt;
+&lt;h2 id=&#34;demo&#34;&gt;Demo&lt;/h2&gt;
+
+
+
+
+
+
+
+&lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 686px&#34;&gt;
+	&lt;img class=&#34;card-img-top&#34; src=&#34;/docs/plugins/test/test-plugin-demo_hu2dc29713ab7051857666c4fcc87517e2_227616_0x500_resize_catmullrom.gif&#34; width=&#34;676&#34; height=&#34;500&#34;&gt;
+	
+	&lt;div class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
+		&lt;p class=&#34;card-text&#34;&gt;
+Example of the Testrunner plugin
+&lt;/p&gt;
+	&lt;/div&gt;
+	
+&lt;/div&gt;
+&lt;h2 id=&#34;environment&#34;&gt;Environment&lt;/h2&gt;
+&lt;p&gt;On execution, a separate environment only for this test-run will be created, so
+everything written to the current environment. For differentiation in scripts, a &lt;code&gt;__TEST__ = true&lt;/code&gt; variable is also
+added to the current environment.&lt;/p&gt;
+&lt;p&gt;Example test that is only executed on test-runs:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;mm&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;getEnvironmentVariable&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;__TEST__&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)){&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#000&#34;&gt;chai&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;should&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;();&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;json&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;JSON&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;parse&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;mm&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;response&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;body&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;body&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#000&#34;&gt;json&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;should&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;have&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;property&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;name&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;).&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;that&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;is&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;equal&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Leanne Graham&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;remark&#34;&gt;Remark&lt;/h2&gt;
+&lt;p&gt;This plugin is still in early development, so it might not seem to contain a lot of features. They will be added on-the-go when the need / issue arises.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Milkman Websocket Plugin</title>
+      <link>/docs/plugins/ws/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/plugins/ws/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;Support for websocket transport&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;supports ws and wss&lt;/li&gt;
+&lt;li&gt;can interactively send messages&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;screenshot&#34;&gt;Screenshot&lt;/h2&gt;
+
+
+
+
+
+
+
+&lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 637px&#34;&gt;
+	&lt;img class=&#34;card-img-top&#34; src=&#34;/docs/plugins/ws/milkman-ws-demo_hua64479531ffe2cac9a4a3f08c11a1f87_226950_0x500_resize_catmullrom.gif&#34; width=&#34;627&#34; height=&#34;500&#34;&gt;
+	
+	&lt;div class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
+		&lt;p class=&#34;card-text&#34;&gt;
+Example of the Websocket Streaming
+&lt;/p&gt;
+	&lt;/div&gt;
+	
+&lt;/div&gt;
+&lt;h2 id=&#34;note&#34;&gt;Note&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;requires milkman-rest plugin&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
