@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Milkman – Milkman Plugins</title>
-    <link>/docs/plugins/</link>
+    <link>https://warmuuh.github.io/milkman-web/docs/plugins/</link>
     <description>Recent content in Milkman Plugins on Milkman</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="/docs/plugins/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://warmuuh.github.io/milkman-web/docs/plugins/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>Docs: Milkman Auth Plugin</title>
-      <link>/docs/plugins/authentication/</link>
+      <link>https://warmuuh.github.io/milkman-web/docs/plugins/authentication/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/plugins/authentication/</guid>
+      <guid>https://warmuuh.github.io/milkman-web/docs/plugins/authentication/</guid>
       <description>
         
         
@@ -46,7 +46,7 @@
 
 
 &lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 745px&#34;&gt;
-	&lt;img class=&#34;card-img-top&#34; src=&#34;/docs/plugins/authentication/auth-plugin_huaf15ef93e851e6b6993fae87ec21a4b2_123906_0x500_resize_catmullrom_3.png&#34; width=&#34;735&#34; height=&#34;500&#34;&gt;
+	&lt;img class=&#34;card-img-top&#34; src=&#34;https://warmuuh.github.io/milkman-web/milkman-web/docs/plugins/authentication/auth-plugin_huaf15ef93e851e6b6993fae87ec21a4b2_123906_0x500_resize_catmullrom_3.png&#34; width=&#34;735&#34; height=&#34;500&#34;&gt;
 	
 	&lt;div class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
 		&lt;p class=&#34;card-text&#34;&gt;
@@ -65,10 +65,10 @@ Editing a secret oAuth Key (Password Grant).
     
     <item>
       <title>Docs: Milkman Cassandra Plugin</title>
-      <link>/docs/plugins/cassandra/</link>
+      <link>https://warmuuh.github.io/milkman-web/docs/plugins/cassandra/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/plugins/cassandra/</guid>
+      <guid>https://warmuuh.github.io/milkman-web/docs/plugins/cassandra/</guid>
       <description>
         
         
@@ -118,7 +118,7 @@ Editing a secret oAuth Key (Password Grant).
 
 
 &lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 742px&#34;&gt;
-	&lt;img class=&#34;card-img-top&#34; src=&#34;/docs/plugins/cassandra/cassandra-plugin_hu4dce0327d14f8e3bf13be443fc74a069_31733_0x500_resize_catmullrom_3.png&#34; width=&#34;732&#34; height=&#34;500&#34;&gt;
+	&lt;img class=&#34;card-img-top&#34; src=&#34;https://warmuuh.github.io/milkman-web/milkman-web/docs/plugins/cassandra/cassandra-plugin_hu4dce0327d14f8e3bf13be443fc74a069_31733_0x500_resize_catmullrom_3.png&#34; width=&#34;732&#34; height=&#34;500&#34;&gt;
 	
 	&lt;div class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
 		&lt;p class=&#34;card-text&#34;&gt;
@@ -137,10 +137,10 @@ Editing a secret oAuth Key (Password Grant).
     
     <item>
       <title>Docs: Milkman Commandline Interface</title>
-      <link>/docs/plugins/cli/</link>
+      <link>https://warmuuh.github.io/milkman-web/docs/plugins/cli/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/plugins/cli/</guid>
+      <guid>https://warmuuh.github.io/milkman-web/docs/plugins/cli/</guid>
       <description>
         
         
@@ -161,7 +161,7 @@ you can start it by &lt;code&gt;mm&lt;/code&gt; on terminal.&lt;/p&gt;
 
 
 &lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 806px&#34;&gt;
-	&lt;img class=&#34;card-img-top&#34; src=&#34;/docs/plugins/cli/cli_hu6435b3e51c518e019366e6cb12b7ccd4_306971_0x500_resize_catmullrom.gif&#34; width=&#34;796&#34; height=&#34;500&#34;&gt;
+	&lt;img class=&#34;card-img-top&#34; src=&#34;https://warmuuh.github.io/milkman-web/milkman-web/docs/plugins/cli/cli_hu6435b3e51c518e019366e6cb12b7ccd4_306971_0x500_resize_catmullrom.gif&#34; width=&#34;796&#34; height=&#34;500&#34;&gt;
 	
 	&lt;div class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
 		&lt;p class=&#34;card-text&#34;&gt;
@@ -232,10 +232,10 @@ Example of a cli session
     
     <item>
       <title>Docs: Milkman Explore Plugin</title>
-      <link>/docs/plugins/explore/</link>
+      <link>https://warmuuh.github.io/milkman-web/docs/plugins/explore/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/plugins/explore/</guid>
+      <guid>https://warmuuh.github.io/milkman-web/docs/plugins/explore/</guid>
       <description>
         
         
@@ -259,7 +259,7 @@ Example of a cli session
 
 
 &lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 632px&#34;&gt;
-	&lt;img class=&#34;card-img-top&#34; src=&#34;/docs/plugins/explore/explore-plugin_hu5b3b6980835d8c89cd1459011d9601b2_47969_0x500_resize_catmullrom_3.PNG&#34; width=&#34;622&#34; height=&#34;500&#34;&gt;
+	&lt;img class=&#34;card-img-top&#34; src=&#34;https://warmuuh.github.io/milkman-web/milkman-web/docs/plugins/explore/explore-plugin_hu5b3b6980835d8c89cd1459011d9601b2_47969_0x500_resize_catmullrom_3.PNG&#34; width=&#34;622&#34; height=&#34;500&#34;&gt;
 	
 	&lt;div class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
 		&lt;p class=&#34;card-text&#34;&gt;
@@ -274,10 +274,10 @@ Example of the explore plugin
     
     <item>
       <title>Docs: Milkman GraphQL Plugin</title>
-      <link>/docs/plugins/graphql/</link>
+      <link>https://warmuuh.github.io/milkman-web/docs/plugins/graphql/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/plugins/graphql/</guid>
+      <guid>https://warmuuh.github.io/milkman-web/docs/plugins/graphql/</guid>
       <description>
         
         
@@ -302,7 +302,7 @@ Example of the explore plugin
 
 
 &lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 631px&#34;&gt;
-	&lt;img class=&#34;card-img-top&#34; src=&#34;/docs/plugins/graphql/graphql-plugin_hu903df97447a8b44bfe4e0c7af9a33faf_36096_0x500_resize_catmullrom_3.PNG&#34; width=&#34;621&#34; height=&#34;500&#34;&gt;
+	&lt;img class=&#34;card-img-top&#34; src=&#34;https://warmuuh.github.io/milkman-web/milkman-web/docs/plugins/graphql/graphql-plugin_hu903df97447a8b44bfe4e0c7af9a33faf_36096_0x500_resize_catmullrom_3.PNG&#34; width=&#34;621&#34; height=&#34;500&#34;&gt;
 	
 	&lt;div class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
 		&lt;p class=&#34;card-text&#34;&gt;
@@ -317,10 +317,10 @@ Example of the GraphQl plugin
     
     <item>
       <title>Docs: Milkman Grpc Plugin</title>
-      <link>/docs/plugins/grpc/</link>
+      <link>https://warmuuh.github.io/milkman-web/docs/plugins/grpc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/plugins/grpc/</guid>
+      <guid>https://warmuuh.github.io/milkman-web/docs/plugins/grpc/</guid>
       <description>
         
         
@@ -347,7 +347,7 @@ Example of the GraphQl plugin
 
 
 &lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 625px&#34;&gt;
-	&lt;img class=&#34;card-img-top&#34; src=&#34;/docs/plugins/grpc/grpc-plugin_hu45e09af9e736d61f4359593fa0973f56_37593_0x500_resize_catmullrom_3.png&#34; width=&#34;615&#34; height=&#34;500&#34;&gt;
+	&lt;img class=&#34;card-img-top&#34; src=&#34;https://warmuuh.github.io/milkman-web/milkman-web/docs/plugins/grpc/grpc-plugin_hu45e09af9e736d61f4359593fa0973f56_37593_0x500_resize_catmullrom_3.png&#34; width=&#34;615&#34; height=&#34;500&#34;&gt;
 	
 	&lt;div class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
 		&lt;p class=&#34;card-text&#34;&gt;
@@ -365,7 +365,7 @@ Example of the Grpc plugin
 
 
 &lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 633px&#34;&gt;
-	&lt;img class=&#34;card-img-top&#34; src=&#34;/docs/plugins/grpc/grpc-streaming_hu6323fd666ce30af7176173388896f109_281188_0x500_resize_catmullrom.gif&#34; width=&#34;623&#34; height=&#34;500&#34;&gt;
+	&lt;img class=&#34;card-img-top&#34; src=&#34;https://warmuuh.github.io/milkman-web/milkman-web/docs/plugins/grpc/grpc-streaming_hu6323fd666ce30af7176173388896f109_281188_0x500_resize_catmullrom.gif&#34; width=&#34;623&#34; height=&#34;500&#34;&gt;
 	
 	&lt;div class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
 		&lt;p class=&#34;card-text&#34;&gt;
@@ -382,10 +382,10 @@ Example of Grpc Streaming
     
     <item>
       <title>Docs: Milkman Http Plugin</title>
-      <link>/docs/plugins/rest/</link>
+      <link>https://warmuuh.github.io/milkman-web/docs/plugins/rest/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/plugins/rest/</guid>
+      <guid>https://warmuuh.github.io/milkman-web/docs/plugins/rest/</guid>
       <description>
         
         
@@ -405,7 +405,7 @@ Example of Grpc Streaming
 
 
 &lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 635px&#34;&gt;
-	&lt;img class=&#34;card-img-top&#34; src=&#34;/docs/plugins/rest/screenshot_hu6a9b2edaaf3f43fe37319e2f309dd8c8_176126_0x500_resize_catmullrom_3.png&#34; width=&#34;625&#34; height=&#34;500&#34;&gt;
+	&lt;img class=&#34;card-img-top&#34; src=&#34;https://warmuuh.github.io/milkman-web/milkman-web/docs/plugins/rest/screenshot_hu6a9b2edaaf3f43fe37319e2f309dd8c8_176126_0x500_resize_catmullrom_3.png&#34; width=&#34;625&#34; height=&#34;500&#34;&gt;
 	
 	&lt;div class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
 		&lt;p class=&#34;card-text&#34;&gt;
@@ -423,7 +423,7 @@ Example of the Rest plugin
 
 
 &lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 633px&#34;&gt;
-	&lt;img class=&#34;card-img-top&#34; src=&#34;/docs/plugins/rest/sse-streaming_hu48846a7b4414e658cad39017f1ee530d_219631_0x500_resize_catmullrom.gif&#34; width=&#34;623&#34; height=&#34;500&#34;&gt;
+	&lt;img class=&#34;card-img-top&#34; src=&#34;https://warmuuh.github.io/milkman-web/milkman-web/docs/plugins/rest/sse-streaming_hu48846a7b4414e658cad39017f1ee530d_219631_0x500_resize_catmullrom.gif&#34; width=&#34;623&#34; height=&#34;500&#34;&gt;
 	
 	&lt;div class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
 		&lt;p class=&#34;card-text&#34;&gt;
@@ -441,7 +441,7 @@ Example of Server-sent event streaming in the Rest plugin
 &lt;li&gt;Importers for Postman exports (Collections, Environments, Data-Dump)&lt;/li&gt;
 &lt;li&gt;Importers for OpenApi v3.0&lt;/li&gt;
 &lt;li&gt;(planned) Exporters&lt;/li&gt;
-&lt;li&gt;Support import of APIs listed at &lt;a href=&#34;https://apis.guru/&#34;&gt;APIs.guru&lt;/a&gt;, see &lt;a href=&#34;/img/gif/milkman-library.gif&#34;&gt;demo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Support import of APIs listed at &lt;a href=&#34;https://apis.guru/&#34;&gt;APIs.guru&lt;/a&gt;, see &lt;a href=&#34;https://warmuuh.github.io/milkman-web/img/gif/milkman-library.gif&#34;&gt;demo&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
       </description>
@@ -449,10 +449,10 @@ Example of Server-sent event streaming in the Rest plugin
     
     <item>
       <title>Docs: Milkman Note Plugin</title>
-      <link>/docs/plugins/note/</link>
+      <link>https://warmuuh.github.io/milkman-web/docs/plugins/note/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/plugins/note/</guid>
+      <guid>https://warmuuh.github.io/milkman-web/docs/plugins/note/</guid>
       <description>
         
         
@@ -473,7 +473,7 @@ Example of Server-sent event streaming in the Rest plugin
 
 
 &lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 632px&#34;&gt;
-	&lt;img class=&#34;card-img-top&#34; src=&#34;/docs/plugins/note/notes-plugin_hu75756891b8bffa5637f3887d7b20e41e_53104_0x500_resize_catmullrom_3.PNG&#34; width=&#34;622&#34; height=&#34;500&#34;&gt;
+	&lt;img class=&#34;card-img-top&#34; src=&#34;https://warmuuh.github.io/milkman-web/milkman-web/docs/plugins/note/notes-plugin_hu75756891b8bffa5637f3887d7b20e41e_53104_0x500_resize_catmullrom_3.PNG&#34; width=&#34;622&#34; height=&#34;500&#34;&gt;
 	
 	&lt;div class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
 		&lt;p class=&#34;card-text&#34;&gt;
@@ -488,10 +488,10 @@ Example of the Notes plugin
     
     <item>
       <title>Docs: Milkman Privatebin Plugin</title>
-      <link>/docs/plugins/privatebin/</link>
+      <link>https://warmuuh.github.io/milkman-web/docs/plugins/privatebin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/plugins/privatebin/</guid>
+      <guid>https://warmuuh.github.io/milkman-web/docs/plugins/privatebin/</guid>
       <description>
         
         
@@ -511,7 +511,7 @@ Example of the Notes plugin
 
 
 &lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 635px&#34;&gt;
-	&lt;img class=&#34;card-img-top&#34; src=&#34;/docs/plugins/privatebin/privatebin-plugin_hue644940c91fb460f22e5d147c8abc843_57063_0x500_resize_catmullrom_3.png&#34; width=&#34;625&#34; height=&#34;500&#34;&gt;
+	&lt;img class=&#34;card-img-top&#34; src=&#34;https://warmuuh.github.io/milkman-web/milkman-web/docs/plugins/privatebin/privatebin-plugin_hue644940c91fb460f22e5d147c8abc843_57063_0x500_resize_catmullrom_3.png&#34; width=&#34;625&#34; height=&#34;500&#34;&gt;
 	
 	&lt;div class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
 		&lt;p class=&#34;card-text&#34;&gt;
@@ -533,10 +533,10 @@ Example of the Privatebin plugin
     
     <item>
       <title>Docs: Milkman Scripting Plugin</title>
-      <link>/docs/plugins/scripting/</link>
+      <link>https://warmuuh.github.io/milkman-web/docs/plugins/scripting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/plugins/scripting/</guid>
+      <guid>https://warmuuh.github.io/milkman-web/docs/plugins/scripting/</guid>
       <description>
         
         
@@ -578,7 +578,7 @@ Example of the Privatebin plugin
 
 
 &lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 632px&#34;&gt;
-	&lt;img class=&#34;card-img-top&#34; src=&#34;/docs/plugins/scripting/scripting-plugin_hua01ab798115a47b76d15ef171848e522_54635_0x500_resize_catmullrom_3.png&#34; width=&#34;622&#34; height=&#34;500&#34;&gt;
+	&lt;img class=&#34;card-img-top&#34; src=&#34;https://warmuuh.github.io/milkman-web/milkman-web/docs/plugins/scripting/scripting-plugin_hua01ab798115a47b76d15ef171848e522_54635_0x500_resize_catmullrom_3.png&#34; width=&#34;622&#34; height=&#34;500&#34;&gt;
 	
 	&lt;div class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
 		&lt;p class=&#34;card-text&#34;&gt;
@@ -596,7 +596,7 @@ Example of the Scripting plugin
 
 
 &lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 648px&#34;&gt;
-	&lt;img class=&#34;card-img-top&#34; src=&#34;/docs/plugins/scripting/scripting-preferences_hu62aedcc6f4332e4475ccba633cd634b3_42529_0x500_resize_catmullrom_3.png&#34; width=&#34;638&#34; height=&#34;500&#34;&gt;
+	&lt;img class=&#34;card-img-top&#34; src=&#34;https://warmuuh.github.io/milkman-web/milkman-web/docs/plugins/scripting/scripting-preferences_hu62aedcc6f4332e4475ccba633cd634b3_42529_0x500_resize_catmullrom_3.png&#34; width=&#34;638&#34; height=&#34;500&#34;&gt;
 	
 	&lt;div class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
 		&lt;p class=&#34;card-text&#34;&gt;
@@ -624,10 +624,10 @@ Example of the Scripting plugin
     
     <item>
       <title>Docs: Milkman Socket.IO Plugin</title>
-      <link>/docs/plugins/sio/</link>
+      <link>https://warmuuh.github.io/milkman-web/docs/plugins/sio/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/plugins/sio/</guid>
+      <guid>https://warmuuh.github.io/milkman-web/docs/plugins/sio/</guid>
       <description>
         
         
@@ -651,7 +651,7 @@ Example of the Scripting plugin
 
 
 &lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 814px&#34;&gt;
-	&lt;img class=&#34;card-img-top&#34; src=&#34;/docs/plugins/sio/sio-plugin_hu5997b338d6f00fdefffc17cda60c30bc_83944_0x500_resize_catmullrom_3.png&#34; width=&#34;804&#34; height=&#34;500&#34;&gt;
+	&lt;img class=&#34;card-img-top&#34; src=&#34;https://warmuuh.github.io/milkman-web/milkman-web/docs/plugins/sio/sio-plugin_hu5997b338d6f00fdefffc17cda60c30bc_83944_0x500_resize_catmullrom_3.png&#34; width=&#34;804&#34; height=&#34;500&#34;&gt;
 	
 	&lt;div class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
 		&lt;p class=&#34;card-text&#34;&gt;
@@ -670,10 +670,10 @@ Example of the Socket.IO plugin
     
     <item>
       <title>Docs: Milkman Jdbc Plugin</title>
-      <link>/docs/plugins/jdbc/</link>
+      <link>https://warmuuh.github.io/milkman-web/docs/plugins/jdbc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/plugins/jdbc/</guid>
+      <guid>https://warmuuh.github.io/milkman-web/docs/plugins/jdbc/</guid>
       <description>
         
         
@@ -695,7 +695,7 @@ Example of the Socket.IO plugin
 
 
 &lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 632px&#34;&gt;
-	&lt;img class=&#34;card-img-top&#34; src=&#34;/docs/plugins/jdbc/sql-plugin_hua924d6d88c013246513da3d5a38e7409_26385_0x500_resize_catmullrom_3.png&#34; width=&#34;622&#34; height=&#34;500&#34;&gt;
+	&lt;img class=&#34;card-img-top&#34; src=&#34;https://warmuuh.github.io/milkman-web/milkman-web/docs/plugins/jdbc/sql-plugin_hua924d6d88c013246513da3d5a38e7409_26385_0x500_resize_catmullrom_3.png&#34; width=&#34;622&#34; height=&#34;500&#34;&gt;
 	
 	&lt;div class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
 		&lt;p class=&#34;card-text&#34;&gt;
@@ -715,10 +715,10 @@ Example of the Sql plugin
     
     <item>
       <title>Docs: Milkman Git Sync Plugin</title>
-      <link>/docs/plugins/sync-git/</link>
+      <link>https://warmuuh.github.io/milkman-web/docs/plugins/sync-git/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/plugins/sync-git/</guid>
+      <guid>https://warmuuh.github.io/milkman-web/docs/plugins/sync-git/</guid>
       <description>
         
         
@@ -739,7 +739,7 @@ Example of the Sql plugin
 
 
 &lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 635px&#34;&gt;
-	&lt;img class=&#34;card-img-top&#34; src=&#34;/docs/plugins/sync-git/git-sync-plugin_hu3d5f51be99be522a1893a899e8b1023f_65291_0x500_resize_catmullrom_3.png&#34; width=&#34;625&#34; height=&#34;500&#34;&gt;
+	&lt;img class=&#34;card-img-top&#34; src=&#34;https://warmuuh.github.io/milkman-web/milkman-web/docs/plugins/sync-git/git-sync-plugin_hu3d5f51be99be522a1893a899e8b1023f_65291_0x500_resize_catmullrom_3.png&#34; width=&#34;625&#34; height=&#34;500&#34;&gt;
 	
 	&lt;div class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
 		&lt;p class=&#34;card-text&#34;&gt;
@@ -762,10 +762,10 @@ Example of the Scripting plugin
     
     <item>
       <title>Docs: Milkman Test Plugin</title>
-      <link>/docs/plugins/test/</link>
+      <link>https://warmuuh.github.io/milkman-web/docs/plugins/test/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/plugins/test/</guid>
+      <guid>https://warmuuh.github.io/milkman-web/docs/plugins/test/</guid>
       <description>
         
         
@@ -787,7 +787,7 @@ Example of the Scripting plugin
 
 
 &lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 686px&#34;&gt;
-	&lt;img class=&#34;card-img-top&#34; src=&#34;/docs/plugins/test/test-plugin-demo_hu2dc29713ab7051857666c4fcc87517e2_227616_0x500_resize_catmullrom.gif&#34; width=&#34;676&#34; height=&#34;500&#34;&gt;
+	&lt;img class=&#34;card-img-top&#34; src=&#34;https://warmuuh.github.io/milkman-web/milkman-web/docs/plugins/test/test-plugin-demo_hu2dc29713ab7051857666c4fcc87517e2_227616_0x500_resize_catmullrom.gif&#34; width=&#34;676&#34; height=&#34;500&#34;&gt;
 	
 	&lt;div class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
 		&lt;p class=&#34;card-text&#34;&gt;
@@ -814,10 +814,10 @@ added to the current environment.&lt;/p&gt;
     
     <item>
       <title>Docs: Milkman Websocket Plugin</title>
-      <link>/docs/plugins/ws/</link>
+      <link>https://warmuuh.github.io/milkman-web/docs/plugins/ws/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/plugins/ws/</guid>
+      <guid>https://warmuuh.github.io/milkman-web/docs/plugins/ws/</guid>
       <description>
         
         
@@ -842,7 +842,7 @@ added to the current environment.&lt;/p&gt;
 
 
 &lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 637px&#34;&gt;
-	&lt;img class=&#34;card-img-top&#34; src=&#34;/docs/plugins/ws/milkman-ws-demo_hua64479531ffe2cac9a4a3f08c11a1f87_226950_0x500_resize_catmullrom.gif&#34; width=&#34;627&#34; height=&#34;500&#34;&gt;
+	&lt;img class=&#34;card-img-top&#34; src=&#34;https://warmuuh.github.io/milkman-web/milkman-web/docs/plugins/ws/milkman-ws-demo_hua64479531ffe2cac9a4a3f08c11a1f87_226950_0x500_resize_catmullrom.gif&#34; width=&#34;627&#34; height=&#34;500&#34;&gt;
 	
 	&lt;div class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
 		&lt;p class=&#34;card-text&#34;&gt;

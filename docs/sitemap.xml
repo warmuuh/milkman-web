@@ -2,95 +2,95 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/docs/</loc>
+    <loc>https://warmuuh.github.io/milkman-web/docs/</loc>
     <lastmod>2022-07-04T16:35:10+02:00</lastmod>
   </url><url>
-    <loc>/blog/news/</loc>
+    <loc>https://warmuuh.github.io/milkman-web/blog/news/</loc>
     <lastmod>2022-07-04T16:35:10+02:00</lastmod>
   </url><url>
-    <loc>/blog/releases/</loc>
+    <loc>https://warmuuh.github.io/milkman-web/blog/releases/</loc>
     <lastmod>2022-06-16T11:35:31+02:00</lastmod>
   </url><url>
-    <loc>/blog/knowledge/</loc>
+    <loc>https://warmuuh.github.io/milkman-web/blog/knowledge/</loc>
     <lastmod>2022-07-04T16:35:10+02:00</lastmod>
   </url><url>
-    <loc>/blog/2021/04/27/oauth-support-arrived/</loc>
+    <loc>https://warmuuh.github.io/milkman-web/blog/2021/04/27/oauth-support-arrived/</loc>
     <lastmod>2022-07-04T16:35:10+02:00</lastmod>
   </url><url>
-    <loc>/blog/2019/10/15/finishing-open-source-projects/</loc>
+    <loc>https://warmuuh.github.io/milkman-web/blog/2019/10/15/finishing-open-source-projects/</loc>
     <lastmod>2022-07-04T16:35:10+02:00</lastmod>
   </url><url>
-    <loc>/blog/2019/07/26/fast-startup-in-milkman-using-appcds/</loc>
+    <loc>https://warmuuh.github.io/milkman-web/blog/2019/07/26/fast-startup-in-milkman-using-appcds/</loc>
     <lastmod>2022-07-04T16:35:10+02:00</lastmod>
   </url><url>
-    <loc>/docs/plugins/authentication/</loc>
+    <loc>https://warmuuh.github.io/milkman-web/docs/plugins/authentication/</loc>
     <lastmod>2022-06-24T16:13:57+02:00</lastmod>
   </url><url>
-    <loc>/blog/</loc>
+    <loc>https://warmuuh.github.io/milkman-web/blog/</loc>
     <lastmod>2022-07-04T16:35:10+02:00</lastmod>
   </url><url>
-    <loc>/docs/plugins/cassandra/</loc>
+    <loc>https://warmuuh.github.io/milkman-web/docs/plugins/cassandra/</loc>
     <lastmod>2022-06-24T16:13:57+02:00</lastmod>
   </url><url>
-    <loc>/categories/</loc>
+    <loc>https://warmuuh.github.io/milkman-web/categories/</loc>
   </url><url>
-    <loc>/docs/plugins/cli/</loc>
+    <loc>https://warmuuh.github.io/milkman-web/docs/plugins/cli/</loc>
     <lastmod>2022-06-24T16:13:57+02:00</lastmod>
   </url><url>
-    <loc>/community/</loc>
+    <loc>https://warmuuh.github.io/milkman-web/community/</loc>
     <lastmod>2022-06-16T11:35:31+02:00</lastmod>
   </url><url>
-    <loc>/docs/plugins/explore/</loc>
+    <loc>https://warmuuh.github.io/milkman-web/docs/plugins/explore/</loc>
     <lastmod>2022-06-24T16:13:57+02:00</lastmod>
   </url><url>
-    <loc>/docs/features/</loc>
+    <loc>https://warmuuh.github.io/milkman-web/docs/features/</loc>
     <lastmod>2022-07-04T16:35:10+02:00</lastmod>
   </url><url>
-    <loc>/docs/plugins/graphql/</loc>
+    <loc>https://warmuuh.github.io/milkman-web/docs/plugins/graphql/</loc>
     <lastmod>2022-06-24T16:13:57+02:00</lastmod>
   </url><url>
-    <loc>/docs/plugins/grpc/</loc>
+    <loc>https://warmuuh.github.io/milkman-web/docs/plugins/grpc/</loc>
     <lastmod>2022-06-24T16:13:57+02:00</lastmod>
   </url><url>
-    <loc>/docs/plugins/rest/</loc>
+    <loc>https://warmuuh.github.io/milkman-web/docs/plugins/rest/</loc>
     <lastmod>2022-06-24T16:13:57+02:00</lastmod>
   </url><url>
-    <loc>/</loc>
+    <loc>https://warmuuh.github.io/milkman-web/</loc>
     <lastmod>2022-07-04T16:35:10+02:00</lastmod>
   </url><url>
-    <loc>/docs/plugins/note/</loc>
+    <loc>https://warmuuh.github.io/milkman-web/docs/plugins/note/</loc>
     <lastmod>2022-06-24T16:13:57+02:00</lastmod>
   </url><url>
-    <loc>/docs/plugins/</loc>
+    <loc>https://warmuuh.github.io/milkman-web/docs/plugins/</loc>
     <lastmod>2022-06-24T16:13:57+02:00</lastmod>
   </url><url>
-    <loc>/docs/plugins/privatebin/</loc>
+    <loc>https://warmuuh.github.io/milkman-web/docs/plugins/privatebin/</loc>
     <lastmod>2022-06-24T16:13:57+02:00</lastmod>
   </url><url>
-    <loc>/docs/plugins/scripting/</loc>
+    <loc>https://warmuuh.github.io/milkman-web/docs/plugins/scripting/</loc>
     <lastmod>2022-06-24T16:13:57+02:00</lastmod>
   </url><url>
-    <loc>/search/</loc>
+    <loc>https://warmuuh.github.io/milkman-web/search/</loc>
     <lastmod>2022-06-16T11:35:31+02:00</lastmod>
   </url><url>
-    <loc>/docs/features/slack/</loc>
+    <loc>https://warmuuh.github.io/milkman-web/docs/features/slack/</loc>
     <lastmod>2022-06-24T16:13:57+02:00</lastmod>
   </url><url>
-    <loc>/docs/plugins/sio/</loc>
+    <loc>https://warmuuh.github.io/milkman-web/docs/plugins/sio/</loc>
     <lastmod>2022-06-24T16:13:57+02:00</lastmod>
   </url><url>
-    <loc>/docs/plugins/jdbc/</loc>
+    <loc>https://warmuuh.github.io/milkman-web/docs/plugins/jdbc/</loc>
     <lastmod>2022-06-24T16:13:57+02:00</lastmod>
   </url><url>
-    <loc>/tags/</loc>
+    <loc>https://warmuuh.github.io/milkman-web/tags/</loc>
   </url><url>
-    <loc>/docs/plugins/sync-git/</loc>
+    <loc>https://warmuuh.github.io/milkman-web/docs/plugins/sync-git/</loc>
     <lastmod>2022-06-24T16:13:57+02:00</lastmod>
   </url><url>
-    <loc>/docs/plugins/test/</loc>
+    <loc>https://warmuuh.github.io/milkman-web/docs/plugins/test/</loc>
     <lastmod>2022-06-24T16:13:57+02:00</lastmod>
   </url><url>
-    <loc>/docs/plugins/ws/</loc>
+    <loc>https://warmuuh.github.io/milkman-web/docs/plugins/ws/</loc>
     <lastmod>2022-06-24T16:13:57+02:00</lastmod>
   </url>
 </urlset>
