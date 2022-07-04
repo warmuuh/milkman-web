@@ -11,17 +11,17 @@
     <loc>/blog/releases/</loc>
     <lastmod>2022-06-16T11:35:31+02:00</lastmod>
   </url><url>
-    <loc>/blog/2018/10/06/easy-documentation-with-docsy/</loc>
-    <lastmod>2022-06-16T11:35:31+02:00</lastmod>
+    <loc>/blog/knowledge/</loc>
+    <lastmod>2019-10-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/blog/2018/10/06/the-second-blog-post/</loc>
-    <lastmod>2022-06-16T11:35:31+02:00</lastmod>
+    <loc>/blog/2021/04/27/oauth-support-arrived/</loc>
+    <lastmod>2021-04-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/blog/2018/01/04/another-great-release/</loc>
-    <lastmod>2022-06-16T11:35:31+02:00</lastmod>
+    <loc>/blog/2019/10/15/finishing-open-source-projects/</loc>
+    <lastmod>2019-10-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/about/</loc>
-    <lastmod>2022-06-16T11:35:31+02:00</lastmod>
+    <loc>/blog/2019/07/26/fast-startup-in-milkman-using-appcds/</loc>
+    <lastmod>2019-07-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/docs/plugins/authentication/</loc>
     <lastmod>2022-06-24T16:13:57+02:00</lastmod>
@@ -72,6 +72,9 @@
   </url><url>
     <loc>/search/</loc>
     <lastmod>2022-06-16T11:35:31+02:00</lastmod>
+  </url><url>
+    <loc>/docs/features/slack/</loc>
+    <lastmod>2022-06-24T16:13:57+02:00</lastmod>
   </url><url>
     <loc>/docs/plugins/sio/</loc>
     <lastmod>2022-06-24T16:13:57+02:00</lastmod>

@@ -24,11 +24,11 @@
 <meta name="description" content="
 
 
-This is a placeholder page that shows you how to use this template site.
+Milkman - An Extensible Request/Response Workbench
 
 
 
-This section is where the user documentation for your project lives - …">
+Milkman is heavily inspired by Postman. But I got sick of all those electron-based …">
 <meta property="og:title" content="Documentation" />
 <meta property="og:description" content="A Request/Response Workbench" />
 <meta property="og:type" content="website" />
@@ -61,18 +61,6 @@ This section is where the user documentation for your project lives - …">
 	<div class="td-navbar-nav-scroll ml-md-auto" id="main_navbar">
 		<ul class="navbar-nav mt-2 mt-lg-0">
 			
-			
-			<li class="nav-item mr-4 mb-2 mb-lg-0">
-				
-				
-				
-				
-				
-				
-				
-				
-				<a class="nav-link" href="/about/" ><span>About</span></a>
-			</li>
 			
 			<li class="nav-item mr-4 mb-2 mb-lg-0">
 				
@@ -136,8 +124,13 @@ This section is where the user documentation for your project lives - …">
       <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docs-li">
   <a href="/docs/" class="align-left pl-0 active td-sidebar-link td-sidebar-link__section tree-root" id="m-docs"><span class="td-sidebar-nav-active-item">Documentation</span></a>
   <ul class="ul-1">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsfeatures-li">
-  <a href="/docs/features/" title="Advanced Features" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsfeatures"><span class="">Features</span></a>
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsfeatures-li">
+  <a href="/docs/features/" title="Advanced Features" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docsfeatures"><span class="">Features</span></a>
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsfeaturesslack-li">
+  <a href="/docs/features/slack/" title="Slack Integration" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsfeaturesslack"><span class="">Slack</span></a>
+</li>
+  </ul>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsplugins-li">
   <a href="/docs/plugins/" title="Milkman Plugins" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docsplugins"><span class="">Plugins</span></a>
   <ul class="ul-2 foldable">
@@ -195,6 +188,29 @@ This section is where the user documentation for your project lives - …">
 
             
 
+
+<div class="td-toc"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#http-request-pluginpluginsrest-included-in-main-distribution"><a href="plugins/rest">Http Request Plugin</a>: (included in main distribution)</a></li>
+        <li><a href="#graphql-pluginpluginsgraphql"><a href="plugins/graphql">Graphql Plugin</a></a></li>
+        <li><a href="#grpc-pluginpluginsgrpc"><a href="plugins/grpc">Grpc Plugin</a></a></li>
+        <li><a href="#jdbc-pluginpluginsjdbc"><a href="plugins/jdbc">JDBC Plugin</a></a></li>
+        <li><a href="#cassandra-pluginpluginscassandra"><a href="plugins/cassandra">Cassandra Plugin</a>:</a></li>
+        <li><a href="#git-team-synchronization-pluginpluginssync-git"><a href="plugins/sync-git">Git Team Synchronization Plugin</a></a></li>
+        <li><a href="#explore-pluginpluginsexplore"><a href="plugins/explore">Explore Plugin</a>:</a></li>
+        <li><a href="#scripting-pluginpluginsscripting"><a href="plugins/scripting">Scripting Plugin</a>:</a></li>
+        <li><a href="#privatebin-sharing-pluginpluginsprivatebin"><a href="plugins/privatebin">PrivateBin Sharing Plugin</a></a></li>
+        <li><a href="#note-pluginpluginsnote"><a href="plugins/note">Note Plugin</a>:</a></li>
+        <li><a href="#test-pluginpluginstest"><a href="plugins/test">Test Plugin</a></a></li>
+        <li><a href="#auth-pluginpluginsauth"><a href="plugins/auth">Auth Plugin</a></a></li>
+        <li><a href="#websocket-pluginpluginsws"><a href="plugins/ws">Websocket Plugin</a></a></li>
+        <li><a href="#socketio-pluginpluginssio"><a href="plugins/sio">Socket.IO Plugin</a></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
 
 
 
@@ -259,17 +275,127 @@ This section is where the user documentation for your project lives - …">
 
 		
 	</header>
-	
+	<p><a href="https://github.com/warmuuh/milkman/releases/tag/nightly"><img src="https://github.com/warmuuh/milkman/workflows/Nightly/badge.svg?branch=master" alt="Nightly"></a>
+<a href="https://liberapay.com/warmuuh/donate"><img src="https://liberapay.com/assets/widgets/donate.svg" alt="Donate"></a>
+<a href="https://gitter.im/milkman-project/community"><img src="https://img.shields.io/gitter/room/nwjs/nw.js.svg" alt="Gitter"></a></p>
+<h1 id="milkman---an-extensible-requestresponse-workbench">Milkman - An Extensible Request/Response Workbench</h1>
+
 
 <div class="pageinfo pageinfo-primary">
-<p>This is a placeholder page that shows you how to use this template site.</p>
+<p>Milkman is heavily inspired by Postman. But I got sick of all those electron-based applications that need ages and loads of memory to start up.
+Therefore i created a JavaFx-based workbench for crafting requests / responses. It is not limited to e.g. http (or more specifically rest) requests. Due to nearly
+everything being a plugin, other things are possible, like database-requests or GRPC, GraphQl, etc&hellip;</p>
 
 </div>
 
-<p>This section is where the user documentation for your project lives - all the information your users need to understand and successfully use your project.</p>
-<p>For large documentation sets we recommend adding content under the headings in this section, though if some or all of them don’t apply to your project feel free to remove them or add your own. You can see an example of a smaller Docsy documentation site in the <a href="https://docsy.dev/docs/">Docsy User Guide</a>, which lives in the <a href="https://github.com/google/docsy/tree/master/userguide">Docsy theme repo</a> if you&rsquo;d like to copy its docs section.</p>
-<p>Other content such as marketing material, case studies, and community updates should live in the <a href="/about/">About</a> and <a href="/community/">Community</a> pages.</p>
-<p>Find out how to use the Docsy theme in the <a href="https://docsy.dev/docs/">Docsy User Guide</a>. You can learn more about how to organize your documentation (and how we organized this site) in <a href="https://docsy.dev/docs/best-practices/organizing-content/">Organizing Your Content</a>.</p>
+<h1 id="download">Download</h1>
+<ul>
+<li>Download latest version in <a href="https://github.com/warmuuh/milkman/releases">Release Section</a>. Or download <a href="https://github.com/warmuuh/milkman/releases/tag/nightly">Nightly version</a> for latest changes.</li>
+<li><strong>Download plugin archive as well</strong>, if you want to use any of those plugins.</li>
+<li>unzip everything into the same directory and start application via either the supplied start-scripts or <code>milkman.exe</code></li>
+</ul>
+<h1 id="install-via-chocolatey-win">Install via Chocolatey (Win)</h1>
+<ul>
+<li>To install just Milkman run <code>Choco install milkman</code></li>
+<li>To install a plugin run <code>Choco install milkman-&lt;plugin name&gt;</code> ex. <code>Choco install milkman-explore</code></li>
+<li>Install Milkman and all plugins available run <code>Choco install milkman-plugins</code></li>
+<li>Milkman will be installed under C:\tools\milkman.</li>
+</ul>
+<h1 id="install-via-homebrew-macos">Install via Homebrew (MacOs)</h1>
+<ul>
+<li>To install, run <code>brew install --cask milkman</code>. All plugins are included.</li>
+<li>To update, run <code>brew upgrade --cask</code></li>
+</ul>
+<h1 id="changes">Changes</h1>
+<p>latest changes can be seen in the <a href="https://github.com/warmuuh/milkman/blob/master/changelog.md">Changelog</a></p>
+<h1 id="faq">FAQ</h1>
+<p>some resolved issues and FAQs are available in the <a href="https://github.com/warmuuh/milkman/wiki">wiki</a>. If you have any questions, create a new Issue or ask in <a href="https://github.com/warmuuh/milkman/discussions">Discussions</a>.</p>
+<h1 id="features">Features</h1>
+<ul>
+<li><strong>Everything is a plugin:</strong> Request-types (e.g. Http Request), request-aspects (e.g. Headers, Body, etc), editors for request aspects (e.g. table-based editors for headers), importers, whatever it is, you can extend it. The core application only handles Workspaces with Environments, Collections, Requests and their aspects.</li>
+<li><strong>Http Request Plugin:</strong> Several plugins are provided already that extend the core application to be a replacement for postman. Crafting and Executing Http/Rest requests with json highlighting. Support Proxy-server configuration and SSE.</li>
+<li><strong>Grpc Plugin:</strong> support of Grpc Services, Server Reflection and Streaming</li>
+<li><strong>Test Runner:</strong> run several requests as separate test-scenario</li>
+<li><strong>JavaFX Application:</strong> as in: <em>fast</em> (compared to electron at least :D) and skinn-able (you can extend milkman with your own themes using simple CSS).</li>
+<li><strong>Commandline Interface:</strong> there is a <a href="plugins/cli">command line interface</a> for Milkman which allows to edit/execute requests on your command line.</li>
+<li><strong>Slack Command:</strong> you can use <code>/milkman &lt;privatebin-url&gt;</code> in slack to share requests in a better way. <a href="features/slack">More Info</a>.</li>
+<li><a href="docs/features.md">Some more details</a> of the core application features, such as hotkeys etc.</li>
+</ul>
+<h1 id="existing-plugins">Existing Plugins:</h1>
+<p><em>Note: see respective plugin folder for more details</em></p>
+<h3 id="http-request-pluginpluginsrest-included-in-main-distribution"><a href="plugins/rest">Http Request Plugin</a>: (included in main distribution)</h3>
+<p>The Http request plugin packaged with the release contains all means to do http request as well as import collections, environments or dumps from postman.
+To migrate from postman, just <a href="https://learning.getpostman.com/docs/postman/collections/data_formats/#data-dumps">export a dump-file from postman</a> and import it by pasting its content into the <code>Postman (v2.1) Dump</code>-Importer.
+The Http Request Plugin also comes with Proxy-support. Some proxies require credentials and support for supplying <code>BASIC</code> proxy credentials is built into the plugin. See Options-page to activate that as it is off by default.
+Additionally, the plugin supports chunked responses, enabling testing of Server-sent events (<a href="https://en.wikipedia.org/wiki/Server-sent_events">SSE</a>).</p>
+<h3 id="graphql-pluginpluginsgraphql"><a href="plugins/graphql">Graphql Plugin</a></h3>
+<p>Simple Graphql Plugin to craft  <a href="https://graphql.org/">GraphQL</a> requests. No Auto-complete or schema valiadtion included.</p>
+<h3 id="grpc-pluginpluginsgrpc"><a href="plugins/grpc">Grpc Plugin</a></h3>
+<p>Grpc plugin with <a href="https://github.com/grpc/grpc/blob/master/doc/server-reflection.md">server-reflection</a> support and streaming-support. Can also query via proto-defintion.</p>
+<h3 id="jdbc-pluginpluginsjdbc"><a href="plugins/jdbc">JDBC Plugin</a></h3>
+<p>This plugin introduces SQL capability to milkman. You can query SQL databases via milkman as well, using JDBC drivers.</p>
+<h3 id="cassandra-pluginpluginscassandra"><a href="plugins/cassandra">Cassandra Plugin</a>:</h3>
+<p>Allows to execute CQL queries for given cassandra databases.</p>
+<h3 id="git-team-synchronization-pluginpluginssync-git"><a href="plugins/sync-git">Git Team Synchronization Plugin</a></h3>
+<p>This plugin allows to synchronize workspaces via Git (using Differential Synchronization). Teams can use this plugin to have a shared workspace that synchronizes between members.</p>
+<h3 id="explore-pluginpluginsexplore"><a href="plugins/explore">Explore Plugin</a>:</h3>
+<p>This plugin extends Rest-responses by adding an <code>Explore</code>-Tab where you can use <a href="http://jmespath.org/">JMesPath</a> queries against a JSON response.</p>
+<h3 id="scripting-pluginpluginsscripting"><a href="plugins/scripting">Scripting Plugin</a>:</h3>
+<p>Extends requests by executing a script after request execution. This allows to e.g. set environment variables based on results of json.</p>
+<h3 id="privatebin-sharing-pluginpluginsprivatebin"><a href="plugins/privatebin">PrivateBin Sharing Plugin</a></h3>
+<p>Adds capability to share requests via <a href="http://PrivateBin.net">PrivateBin</a>, including <code>Burn After Reading</code> feature</p>
+<h3 id="note-pluginpluginsnote"><a href="plugins/note">Note Plugin</a>:</h3>
+<p>This is a sample plugin that allows to add arbitrary description to every request. Serves as a starting point for learning to extend milkman.</p>
+<h3 id="test-pluginpluginstest"><a href="plugins/test">Test Plugin</a></h3>
+<p>A testrunner plugin that allows to run multiple requests in sequence and verify the results</p>
+<h3 id="auth-pluginpluginsauth"><a href="plugins/auth">Auth Plugin</a></h3>
+<p>An OAuth Plugin for managing oauth credentials and transparent refreshing of tokens</p>
+<h3 id="websocket-pluginpluginsws"><a href="plugins/ws">Websocket Plugin</a></h3>
+<p>A websocket plugin for interacting with websocket endpoints</p>
+<h3 id="socketio-pluginpluginssio"><a href="plugins/sio">Socket.IO Plugin</a></h3>
+<p>A Socket.IO plugin for interacting with Socket.IO endpoints</p>
+<h1 id="showcase">Showcase</h1>
+
+
+
+
+
+
+
+<div class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 610px">
+	<img class="card-img-top" src="/docs/screenshot_hu6a9b2edaaf3f43fe37319e2f309dd8c8_176126_600x0_resize_catmullrom_3.png" width="600" height="480">
+	
+	<div class="card-body px-0 pt-2 pb-0">
+		<p class="card-text">
+Screenshot of Milkman light theme
+</p>
+	</div>
+	
+</div>
+
+
+
+
+
+
+
+<div class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 610px">
+	<img class="card-img-top" src="/docs/screenshot-dark_hu77fedbbe634db2a06fd8d539f5a1917d_185745_600x0_resize_catmullrom_3.png" width="600" height="336">
+	
+	<div class="card-body px-0 pt-2 pb-0">
+		<p class="card-text">
+Screenshot of Milkman Dark theme with horizontal layout
+</p>
+	</div>
+	
+</div>
+<h1 id="plugins">Plugins</h1>
+<p>No client fits all, so you are <strong>encouraged</strong> to write your own plugins to e.g. add headers that are necessary for your internal service structures or add importers for internal service registries.</p>
+<p>A <a href="https://github.com/warmuuh/milkman/tree/master/milkman-note">sample plugin</a> was provided that extends all requests with a <code>Note</code> tab so you can add some description to any kind of requests.</p>
+<p>More details about developing plugins can be found in the <a href="/docs/plugin-development.md">plugin development guide</a>.</p>
+<p><em>Installation:</em> all plugins are to be copied to the <code>/plugins</code> folder</p>
+<h1 id="changes-1">Changes</h1>
+<p>latest changes can be seen in the <a href="https://github.com/warmuuh/milkman/blob/master/changelog.md">Changelog</a></p>
 
         <div class="section-index">
     
@@ -322,9 +448,9 @@ This section is where the user documentation for your project lives - …">
         
 <ul class="list-inline mb-0">
   
-  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="User mailing list" aria-label="User mailing list">
-    <a class="text-white" target="_blank" rel="noopener" href="https://example.org/mail" aria-label="User mailing list">
-      <i class="fa fa-envelope"></i>
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="User Discussion Board" aria-label="User Discussion Board">
+    <a class="text-white" target="_blank" rel="noopener" href="https://github.com/warmuuh/milkman/discussions" aria-label="User Discussion Board">
+      <i class="fa fa-comment"></i>
     </a>
   </li>
   
@@ -334,9 +460,9 @@ This section is where the user documentation for your project lives - …">
     </a>
   </li>
   
-  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Stack Overflow" aria-label="Stack Overflow">
-    <a class="text-white" target="_blank" rel="noopener" href="https://example.org/stack" aria-label="Stack Overflow">
-      <i class="fab fa-stack-overflow"></i>
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Report an Issue" aria-label="Report an Issue">
+    <a class="text-white" target="_blank" rel="noopener" href="https://github.com/warmuuh/milkman/issues" aria-label="Report an Issue">
+      <i class="fab fa-envelope"></i>
     </a>
   </li>
   
@@ -352,19 +478,19 @@ This section is where the user documentation for your project lives - …">
 <ul class="list-inline mb-0">
   
   <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="GitHub" aria-label="GitHub">
-    <a class="text-white" target="_blank" rel="noopener" href="https://github.com/google/docsy" aria-label="GitHub">
+    <a class="text-white" target="_blank" rel="noopener" href="https://github.com/warmuuh/milkman" aria-label="GitHub">
       <i class="fab fa-github"></i>
     </a>
   </li>
   
-  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Slack" aria-label="Slack">
-    <a class="text-white" target="_blank" rel="noopener" href="https://example.org/slack" aria-label="Slack">
-      <i class="fab fa-slack"></i>
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Gitter" aria-label="Gitter">
+    <a class="text-white" target="_blank" rel="noopener" href="https://gitter.im/milkman-project/community" aria-label="Gitter">
+      <i class="fab fa-gitter"></i>
     </a>
   </li>
   
-  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Developer mailing list" aria-label="Developer mailing list">
-    <a class="text-white" target="_blank" rel="noopener" href="https://example.org/mail" aria-label="Developer mailing list">
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Issue list" aria-label="Issue list">
+    <a class="text-white" target="_blank" rel="noopener" href="https://github.com/warmuuh/milkman/issues" aria-label="Issue list">
       <i class="fa fa-envelope"></i>
     </a>
   </li>
@@ -378,7 +504,7 @@ This section is where the user documentation for your project lives - …">
         <small class="text-white">&copy; 2022 Milkman All Rights Reserved</small>
         <small class="ml-1"><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a></small>
 	
-		<p class="mt-2"><a href="/about/">About Goldydocs</a></p>
+		
 	
       </div>
     </div>
