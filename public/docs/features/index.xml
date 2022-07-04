@@ -1,0 +1,105 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Milkman – Advanced Features</title>
+    <link>/docs/features/</link>
+    <description>Recent content in Advanced Features on Milkman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/docs/features/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Slack Integration</title>
+      <link>/docs/features/slack/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/features/slack/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;Milkman supports slack-integration via a &lt;a href=&#34;https://github.com/warmuuh/milkman-slack&#34;&gt;slackbot&lt;/a&gt;.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;You can either host it yourself or use the heroku-hosted instance:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://milkman-slack.herokuapp.com/slack/oauth/start&#34;&gt;&lt;img src=&#34;https://platform.slack-edge.com/img/add_to_slack.png&#34; alt=&#34;Add to Slack&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;usage&#34;&gt;Usage&lt;/h1&gt;
+&lt;p&gt;Once added to your workspace, you can share a private-bin export url via:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;/milkman &amp;lt;privatebin-url&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;features&#34;&gt;Features&lt;/h1&gt;
+&lt;p&gt;It will nicely render the shared request and offers several ways for viewers to use the request,
+such as viewing the request as &lt;code&gt;curl&lt;/code&gt;-command or &lt;code&gt;http&lt;/code&gt;-request.&lt;/p&gt;
+
+
+
+
+
+
+
+&lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 796px&#34;&gt;
+	&lt;img class=&#34;card-img-top&#34; src=&#34;/docs/features/slack/slack-preview_hu5ede36050eb0d03a7d628cafa7f99f22_21477_0x500_resize_catmullrom_3.png&#34; width=&#34;786&#34; height=&#34;500&#34;&gt;
+	
+	&lt;div class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
+		&lt;p class=&#34;card-text&#34;&gt;
+Preview of a request in slack
+&lt;/p&gt;
+	&lt;/div&gt;
+	
+&lt;/div&gt;
+&lt;p&gt;and users can choose how to view the request:&lt;/p&gt;
+
+
+
+
+
+
+
+&lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 745px&#34;&gt;
+	&lt;img class=&#34;card-img-top&#34; src=&#34;/docs/features/slack/slack-grpc-render_hu6fcbffdfa0cacf371b2e40ec2ca65e0b_17226_0x500_resize_catmullrom_3.png&#34; width=&#34;735&#34; height=&#34;500&#34;&gt;
+	
+	&lt;div class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
+		&lt;p class=&#34;card-text&#34;&gt;
+Quick-export of a request directly in slack.
+&lt;/p&gt;
+	&lt;/div&gt;
+	
+&lt;/div&gt;
+&lt;p&gt;it also supports all other request types, such as gRPC:&lt;/p&gt;
+
+
+
+
+
+
+
+&lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 745px&#34;&gt;
+	&lt;img class=&#34;card-img-top&#34; src=&#34;/docs/features/slack/slack-grpc-render_hu6fcbffdfa0cacf371b2e40ec2ca65e0b_17226_0x500_resize_catmullrom_3.png&#34; width=&#34;735&#34; height=&#34;500&#34;&gt;
+	
+	&lt;div class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
+		&lt;p class=&#34;card-text&#34;&gt;
+Example of a Grpc request in slack
+&lt;/p&gt;
+	&lt;/div&gt;
+	
+&lt;/div&gt;
+&lt;h1 id=&#34;planned&#34;&gt;Planned&lt;/h1&gt;
+&lt;p&gt;More features are planned, such as:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;execution of requests on backend&lt;/li&gt;
+&lt;li&gt;support for burn-after-reading in privatebin&lt;/li&gt;
+&lt;li&gt;more templates&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

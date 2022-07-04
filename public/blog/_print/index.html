@@ -20,18 +20,18 @@
 <link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
-<title>Docsy Blog | Milkman</title>
+<title>Milkman Blog | Milkman</title>
 <meta name="description" content="This is the blog section. It has two categories: News and Releases.
 Files in these directories will be listed in reverse chronological order.
 ">
-<meta property="og:title" content="Docsy Blog" />
+<meta property="og:title" content="Milkman Blog" />
 <meta property="og:description" content="A Request/Response Workbench" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="/blog/" /><meta property="og:site_name" content="Milkman" />
 
-<meta itemprop="name" content="Docsy Blog">
+<meta itemprop="name" content="Milkman Blog">
 <meta itemprop="description" content="A Request/Response Workbench"><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Docsy Blog"/>
+<meta name="twitter:title" content="Milkman Blog"/>
 <meta name="twitter:description" content="A Request/Response Workbench"/>
 
 
@@ -56,18 +56,6 @@ Files in these directories will be listed in reverse chronological order.
 	<div class="td-navbar-nav-scroll ml-md-auto" id="main_navbar">
 		<ul class="navbar-nav mt-2 mt-lg-0">
 			
-			
-			<li class="nav-item mr-4 mb-2 mb-lg-0">
-				
-				
-				
-				
-				
-				
-				
-				
-				<a class="nav-link" href="/about/" ><span>About</span></a>
-			</li>
 			
 			<li class="nav-item mr-4 mb-2 mb-lg-0">
 				
@@ -139,7 +127,7 @@ This is the multi-page printable view of this section.
 
 
 
-<h1 class="title">Docsy Blog</h1>
+<h1 class="title">Milkman Blog</h1>
 
 
 
@@ -157,7 +145,7 @@ This is the multi-page printable view of this section.
     
 	
 
-    <li><a href="#pg-995c359e0eda056a2e3b98e604c59580">News About Docsy</a></li>
+    <li><a href="#pg-995c359e0eda056a2e3b98e604c59580">News About Milkman</a></li>
 
 
 
@@ -174,17 +162,7 @@ This is the multi-page printable view of this section.
     
 	
 
-    <li><a href="#pg-3145898cde36895ee60e3c6c405bf1cf">Easy documentation with Docsy</a></li>
-
-
-
-    
-  
-    
-    
-	
-
-    <li><a href="#pg-cc4b09f2c8946b6ff6ee8257ec0d763f">The second blog post</a></li>
+    <li><a href="#pg-e32024a32dd84d89cc36c6975f44017f">oAuth support arrived</a></li>
 
 
 
@@ -211,11 +189,42 @@ This is the multi-page printable view of this section.
   
 
   
+
+    </ul>
+    
+  
     
     
 	
 
-    <li><a href="#pg-9f3c205d95b305cd86037f364aed9ce4">Another Great Release</a></li>
+    <li><a href="#pg-2bcbc43431659e08d5d925d4d67bc077">Knowledge Articles</a></li>
+
+
+
+    
+    <ul>
+        
+  
+  
+  
+  
+
+  
+    
+    
+	
+
+    <li><a href="#pg-74a20f9e3de9ee7fad057bc563fbaf91">Finishing Open-Source Projects</a></li>
+
+
+
+    
+  
+    
+    
+	
+
+    <li><a href="#pg-b73a3183496775613fc0b77a2caaec95">Fast Startup in Milkman using AppCds</a></li>
 
 
 
@@ -255,7 +264,7 @@ This is the multi-page printable view of this section.
   
 
 <div class="td-content" style="">
-    <h1 id="pg-995c359e0eda056a2e3b98e604c59580">News About Docsy</h1>
+    <h1 id="pg-995c359e0eda056a2e3b98e604c59580">News About Milkman</h1>
 	
 	<div class="td-byline mb-4">
 		
@@ -288,380 +297,25 @@ This is the multi-page printable view of this section.
   
 
 <div class="td-content" style="">
-    <h1 id="pg-3145898cde36895ee60e3c6c405bf1cf">Easy documentation with Docsy</h1>
-	<div class="lead">The Docsy Hugo theme lets project maintainers and contributors focus on content, not on reinventing a website infrastructure from scratch</div>
-	<div class="td-byline mb-4">
-		By <b>Riona MacNamara (<a href="https://twitter.com/bepsays">@rionam</a>)</b> |
-        
-		<time datetime="2018-10-06" class="text-muted">Saturday, October 06, 2018</time>
-        
-	</div>
-	<p><strong>This is a typical blog post that includes images.</strong></p>
-<p>The front matter specifies the date of the blog post, its title, a short description that will be displayed on the blog landing page, and its author.</p>
-<h2 id="including-images">Including images</h2>
-<p>Here&rsquo;s an image (<code>featured-sunset-get.png</code>) that includes a byline and a caption.</p>
-
-
-
-
-
-
-
-<div class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 610px">
-	<img class="card-img-top" src="/blog/2018/10/06/easy-documentation-with-docsy/featured-sunset-get_hu69849a7cdb847c2393a7b3a7f6061c86_387442_600x300_fill_catmullrom_smart1_3.png" width="600" height="300">
-	
-	<div class="card-body px-0 pt-2 pb-0">
-		<p class="card-text">
-Fetch and scale an image in the upcoming Hugo 0.43.
-<small class="text-muted"><br/>Photo: Riona MacNamara / CC-BY-CA</small></p>
-	</div>
-	
-</div>
-<p>The front matter of this post specifies properties to be assigned to all image resources:</p>
-<pre tabindex="0"><code>resources:
-- src: &#34;**.{png,jpg}&#34;
-  title: &#34;Image #:counter&#34;
-  params:
-    byline: &#34;Photo: Riona MacNamara / CC-BY-CA&#34;
-</code></pre><p>To include the image in a page, specify its details like this:</p>
-<pre tabindex="0"><code>
-
-
-
-
-
-
-<div class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 610px">
-	<img class="card-img-top" src="/blog/2018/10/06/easy-documentation-with-docsy/featured-sunset-get_hu69849a7cdb847c2393a7b3a7f6061c86_387442_600x300_fill_catmullrom_smart1_3.png" width="600" height="300">
-	
-	<div class="card-body px-0 pt-2 pb-0">
-		<p class="card-text">
-Fetch and scale an image in the upcoming Hugo 0.43.
-<small class="text-muted"><br/>Photo: Riona MacNamara / CC-BY-CA</small></p>
-	</div>
-	
-</div>
-</code></pre><p>The image will be rendered at the size and byline specified in the front matter.</p>
-
-</div>
-
-
-
-
-
-    
-	
-  
-    
-    
-	
-    
-
-
-  
-
-<div class="td-content" style="page-break-before: always">
-    <h1 id="pg-cc4b09f2c8946b6ff6ee8257ec0d763f">The second blog post</h1>
-	<div class="lead">A short lead description about this content page. Text here can also be <strong>bold</strong> or <em>italic</em> and can even be split over multiple paragraphs.</div>
+    <h1 id="pg-e32024a32dd84d89cc36c6975f44017f">oAuth support arrived</h1>
+	<div class="lead">Milkman has now native support for all kinds of authentication, most importantly though oAuth</div>
 	<div class="td-byline mb-4">
 		
         
-		<time datetime="2018-10-06" class="text-muted">Saturday, October 06, 2018</time>
+		<time datetime="2021-04-27" class="text-muted">Tuesday, April 27, 2021</time>
         
 	</div>
-	<p>Text can be <strong>bold</strong>, <em>italic</em>, or <del>strikethrough</del>. <a href="https://github.com">Links</a> should be blue with no underlines (unless hovered over).</p>
-<p>There should be whitespace between paragraphs. There should be whitespace between paragraphs. There should be whitespace between paragraphs. There should be whitespace between paragraphs.</p>
-<p>There should be whitespace between paragraphs. There should be whitespace between paragraphs. There should be whitespace between paragraphs. There should be whitespace between paragraphs.</p>
-<blockquote>
-<p>There should be no margin above this first sentence.</p>
-<p>Blockquotes should be a lighter gray with a border along the left side in the secondary color.</p>
-<p>There should be no margin below this final sentence.</p>
-</blockquote>
-<h2 id="first-header">First Header</h2>
-<p>This is a normal paragraph following a header. Bacon ipsum dolor sit amet t-bone doner shank drumstick, pork belly porchetta chuck sausage brisket ham hock rump pig. Chuck kielbasa leberkas, pork bresaola ham hock filet mignon cow shoulder short ribs biltong.  Bacon ipsum dolor sit amet t-bone doner shank drumstick, pork belly porchetta chuck sausage brisket ham hock rump pig. Chuck kielbasa leberkas, pork bresaola ham hock filet mignon cow shoulder short ribs biltong.  Bacon ipsum dolor sit amet t-bone doner shank drumstick, pork belly porchetta chuck sausage brisket ham hock rump pig. Chuck kielbasa leberkas, pork bresaola ham hock filet mignon cow shoulder short ribs biltong.</p>
-<p>Bacon ipsum dolor sit amet t-bone doner shank drumstick, pork belly porchetta chuck sausage brisket ham hock rump pig. Chuck kielbasa leberkas, pork bresaola ham hock filet mignon cow shoulder short ribs biltong.</p>
-<p>On big screens, paragraphs and headings should not take up the full container width, but we want tables, code blocks and similar to take the full width.</p>
-<p>Lorem markdownum tuta hospes stabat; idem saxum facit quaterque repetito
-occumbere, oves novem gestit haerebat frena; qui. Respicit recurvam erat:
-pignora hinc reppulit nos <strong>aut</strong>, aptos, ipsa.</p>
-<p>Meae optatos <em>passa est</em> Epiros utiliter <em>Talibus niveis</em>, hoc lata, edidit.
-Dixi ad aestum.</p>
-<h2 id="header-2">Header 2</h2>
-<blockquote>
-<p>This is a blockquote following a header. Bacon ipsum dolor sit amet t-bone doner shank drumstick, pork belly porchetta chuck sausage brisket ham hock rump pig. Chuck kielbasa leberkas, pork bresaola ham hock filet mignon cow shoulder short ribs biltong.</p>
-</blockquote>
-<h3 id="header-3">Header 3</h3>
-<pre tabindex="0"><code>This is a code block following a header.
-</code></pre><h4 id="header-4">Header 4</h4>
-<ul>
-<li>This is an unordered list following a header.</li>
-<li>This is an unordered list following a header.</li>
-<li>This is an unordered list following a header.</li>
-</ul>
-<h5 id="header-5">Header 5</h5>
-<ol>
-<li>This is an ordered list following a header.</li>
-<li>This is an ordered list following a header.</li>
-<li>This is an ordered list following a header.</li>
-</ol>
-<h6 id="header-6">Header 6</h6>
-<table>
-<thead>
-<tr>
-<th>What</th>
-<th>Follows</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>A table</td>
-<td>A header</td>
-</tr>
-<tr>
-<td>A table</td>
-<td>A header</td>
-</tr>
-<tr>
-<td>A table</td>
-<td>A header</td>
-</tr>
-</tbody>
-</table>
-<hr>
-<p>There&rsquo;s a horizontal rule above and below this.</p>
-<hr>
-<p>Here is an unordered list:</p>
-<ul>
-<li>Salt-n-Pepa</li>
-<li>Bel Biv DeVoe</li>
-<li>Kid &lsquo;N Play</li>
-</ul>
-<p>And an ordered list:</p>
-<ol>
-<li>Michael Jackson</li>
-<li>Michael Bolton</li>
-<li>Michael Bublé</li>
-</ol>
-<p>And an unordered task list:</p>
-<ul>
-<li><input checked="" disabled="" type="checkbox"> Create a sample markdown document</li>
-<li><input checked="" disabled="" type="checkbox"> Add task lists to it</li>
-<li><input disabled="" type="checkbox"> Take a vacation</li>
-</ul>
-<p>And a &ldquo;mixed&rdquo; task list:</p>
-<ul>
-<li><input disabled="" type="checkbox"> Steal underpants</li>
-<li>?</li>
-<li><input disabled="" type="checkbox"> Profit!</li>
-</ul>
-<p>And a nested list:</p>
-<ul>
-<li>Jackson 5
-<ul>
-<li>Michael</li>
-<li>Tito</li>
-<li>Jackie</li>
-<li>Marlon</li>
-<li>Jermaine</li>
-</ul>
-</li>
-<li>TMNT
-<ul>
-<li>Leonardo</li>
-<li>Michelangelo</li>
-<li>Donatello</li>
-<li>Raphael</li>
-</ul>
-</li>
-</ul>
-<p>Definition lists can be used with Markdown syntax. Definition terms are bold.</p>
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-<hr>
-<p>Tables should have bold headings and alternating shaded rows.</p>
-<table>
-<thead>
-<tr>
-<th>Artist</th>
-<th>Album</th>
-<th>Year</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Michael Jackson</td>
-<td>Thriller</td>
-<td>1982</td>
-</tr>
-<tr>
-<td>Prince</td>
-<td>Purple Rain</td>
-<td>1984</td>
-</tr>
-<tr>
-<td>Beastie Boys</td>
-<td>License to Ill</td>
-<td>1986</td>
-</tr>
-</tbody>
-</table>
-<p>If a table is too wide, it should scroll horizontally.</p>
-<table>
-<thead>
-<tr>
-<th>Artist</th>
-<th>Album</th>
-<th>Year</th>
-<th>Label</th>
-<th>Awards</th>
-<th>Songs</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Michael Jackson</td>
-<td>Thriller</td>
-<td>1982</td>
-<td>Epic Records</td>
-<td>Grammy Award for Album of the Year, American Music Award for Favorite Pop/Rock Album, American Music Award for Favorite Soul/R&amp;B Album, Brit Award for Best Selling Album, Grammy Award for Best Engineered Album, Non-Classical</td>
-<td>Wanna Be Startin&rsquo; Somethin&rsquo;, Baby Be Mine, The Girl Is Mine, Thriller, Beat It, Billie Jean, Human Nature, P.Y.T. (Pretty Young Thing), The Lady in My Life</td>
-</tr>
-<tr>
-<td>Prince</td>
-<td>Purple Rain</td>
-<td>1984</td>
-<td>Warner Brothers Records</td>
-<td>Grammy Award for Best Score Soundtrack for Visual Media, American Music Award for Favorite Pop/Rock Album, American Music Award for Favorite Soul/R&amp;B Album, Brit Award for Best Soundtrack/Cast Recording, Grammy Award for Best Rock Performance by a Duo or Group with Vocal</td>
-<td>Let&rsquo;s Go Crazy, Take Me With U, The Beautiful Ones, Computer Blue, Darling Nikki, When Doves Cry, I Would Die 4 U, Baby I&rsquo;m a Star, Purple Rain</td>
-</tr>
-<tr>
-<td>Beastie Boys</td>
-<td>License to Ill</td>
-<td>1986</td>
-<td>Mercury Records</td>
-<td>noawardsbutthistablecelliswide</td>
-<td>Rhymin &amp; Stealin, The New Style, She&rsquo;s Crafty, Posse in Effect, Slow Ride, Girls, (You Gotta) Fight for Your Right, No Sleep Till Brooklyn, Paul Revere, Hold It Now, Hit It, Brass Monkey, Slow and Low, Time to Get Ill</td>
-</tr>
-</tbody>
-</table>
-<hr>
-<p>Code snippets like <code>var foo = &quot;bar&quot;;</code> can be shown inline.</p>
-<p>Also, <code>this should vertically align</code> <del><code>with this</code></del> <del>and this</del>.</p>
-<p>Code can also be shown in a block element.</p>
-<pre tabindex="0"><code>foo := &#34;bar&#34;;
-bar := &#34;foo&#34;;
-</code></pre><p>Code can also use syntax highlighting.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">func</span> <span style="color:#000">main</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#000">input</span> <span style="color:#ce5c00;font-weight:bold">:=</span> <span style="color:#4e9a06">`var foo = &#34;bar&#34;;`</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>  <span style="color:#000">lexer</span> <span style="color:#ce5c00;font-weight:bold">:=</span> <span style="color:#000">lexers</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">Get</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;javascript&#34;</span><span style="color:#000;font-weight:bold">)</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#000">iterator</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">_</span> <span style="color:#ce5c00;font-weight:bold">:=</span> <span style="color:#000">lexer</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">Tokenise</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">nil</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">input</span><span style="color:#000;font-weight:bold">)</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#000">style</span> <span style="color:#ce5c00;font-weight:bold">:=</span> <span style="color:#000">styles</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">Get</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;github&#34;</span><span style="color:#000;font-weight:bold">)</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#000">formatter</span> <span style="color:#ce5c00;font-weight:bold">:=</span> <span style="color:#000">html</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">New</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">html</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">WithLineNumbers</span><span style="color:#000;font-weight:bold">())</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>  <span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">buff</span> <span style="color:#000">bytes</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">Buffer</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#000">formatter</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">Format</span><span style="color:#000;font-weight:bold">(</span><span style="color:#ce5c00;font-weight:bold">&amp;</span><span style="color:#000">buff</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">style</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">iterator</span><span style="color:#000;font-weight:bold">)</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>  <span style="color:#000">fmt</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">Println</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">buff</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">String</span><span style="color:#000;font-weight:bold">())</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
-</span></span></code></pre></div><pre tabindex="0"><code>Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-</code></pre><p>Inline code inside table cells should still be distinguishable.</p>
-<table>
-<thead>
-<tr>
-<th>Language</th>
-<th>Code</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Javascript</td>
-<td><code>var foo = &quot;bar&quot;;</code></td>
-</tr>
-<tr>
-<td>Ruby</td>
-<td><code>foo = &quot;bar&quot;{</code></td>
-</tr>
-</tbody>
-</table>
-<hr>
-<p>Small images should be shown at their actual size.</p>
-<p><img src="https://placekitten.com/g/300/200/" alt=""></p>
-<p>Large images should always scale down and fit in the content container.</p>
-<p><img src="https://placekitten.com/g/1200/800/" alt=""></p>
-<h2 id="components">Components</h2>
-<h3 id="alerts">Alerts</h3>
-<p>
+	<h1 id="oauth-support-shipped">oAuth support shipped</h1>
+<p>Milkman now supports oAuth2 keys and more general provides a (naturally extensible) way to organise secret credentials.</p>
+<h1 id="keys">Keys</h1>
+<p>Putting credentials into environment variables works but had its downsides. When syncing your workspace you might not want to store secrets in e.g. github. Therefore the concept of keys for introduced.</p>
+<p>Those keys live next to an environment and are not synched or exported, so they won&rsquo;t leave your milkman.</p>
+<p>Keys are basically objects that have a string value, but it is up to the plug-in to come up with that value. A simple example is a base64 value of a given string.</p>
+<h1 id="oauth-support">oAuth support</h1>
+<p>Another example is oAuth2 support. The actual value of the key will be retrieved and cached from an authorization server. Refresh of a token will happen implicitly, so once you&rsquo;ve setup your oAuth data, you can use that key without thinking about it again.</p>
+<h1 id="other-types-of-keys">other types of keys</h1>
+<p>I have no plans yet to add support for other kind of keys but some ideas. I could think of supporting general jwt minting or integration with an external credential storage such as vault, let&rsquo;s see&hellip;</p>
 
-<div class="alert alert-primary" role="alert">
-
-
-    This is an alert.
-
-</div>
-
-
-
-<div class="alert alert-primary" role="alert">
-<h4 class="alert-heading">Note:</h4>
-
-    This is an alert with a title.
-
-</div>
-
-
-
-<div class="alert alert-primary" role="alert">
-
-
-    This is a successful alert.
-
-</div>
-
-
-
-<div class="alert alert-primary" role="alert">
-
-
-    This is a warning!
-
-</div>
-
-
-
-<div class="alert alert-primary" role="alert">
-<h4 class="alert-heading">Warning!</h4>
-
-    This is a warning with a title!
-
-</div>
-</p>
-<h2 id="sizing">Sizing</h2>
-<p>Add some sections here to see how the ToC looks like. Bacon ipsum dolor sit amet t-bone doner shank drumstick, pork belly porchetta chuck sausage brisket ham hock rump pig. Chuck kielbasa leberkas, pork bresaola ham hock filet mignon cow shoulder short ribs biltong.</p>
-<h3 id="parameters-available">Parameters available</h3>
-<p>Bacon ipsum dolor sit amet t-bone doner shank drumstick, pork belly porchetta chuck sausage brisket ham hock rump pig. Chuck kielbasa leberkas, pork bresaola ham hock filet mignon cow shoulder short ribs biltong.</p>
-<h3 id="using-pixels">Using pixels</h3>
-<p>Bacon ipsum dolor sit amet t-bone doner shank drumstick, pork belly porchetta chuck sausage brisket ham hock rump pig. Chuck kielbasa leberkas, pork bresaola ham hock filet mignon cow shoulder short ribs biltong.</p>
-<h3 id="using-rem">Using rem</h3>
-<p>Bacon ipsum dolor sit amet t-bone doner shank drumstick, pork belly porchetta chuck sausage brisket ham hock rump pig. Chuck kielbasa leberkas, pork bresaola ham hock filet mignon cow shoulder short ribs biltong.</p>
-<h2 id="memory">Memory</h2>
-<p>Bacon ipsum dolor sit amet t-bone doner shank drumstick, pork belly porchetta chuck sausage brisket ham hock rump pig. Chuck kielbasa leberkas, pork bresaola ham hock filet mignon cow shoulder short ribs biltong.</p>
-<h3 id="ram-to-use">RAM to use</h3>
-<p>Bacon ipsum dolor sit amet t-bone doner shank drumstick, pork belly porchetta chuck sausage brisket ham hock rump pig. Chuck kielbasa leberkas, pork bresaola ham hock filet mignon cow shoulder short ribs biltong.</p>
-<h3 id="more-is-better">More is better</h3>
-<p>Bacon ipsum dolor sit amet t-bone doner shank drumstick, pork belly porchetta chuck sausage brisket ham hock rump pig. Chuck kielbasa leberkas, pork bresaola ham hock filet mignon cow shoulder short ribs biltong.</p>
-<h3 id="used-ram">Used RAM</h3>
-<p>Bacon ipsum dolor sit amet t-bone doner shank drumstick, pork belly porchetta chuck sausage brisket ham hock rump pig. Chuck kielbasa leberkas, pork bresaola ham hock filet mignon cow shoulder short ribs biltong.</p>
-<pre tabindex="0"><code>This is the final element on the page and there should be no margin below this.
-</code></pre>
 </div>
 
 
@@ -708,6 +362,43 @@ bar := &#34;foo&#34;;
   
 
   
+
+    
+	
+  
+    
+    
+	
+    
+
+
+  
+
+<div class="td-content" style="page-break-before: always">
+    <h1 id="pg-2bcbc43431659e08d5d925d4d67bc077">Knowledge Articles</h1>
+	<div class="lead">Some more in-depth articles about technologies used within Milkman</div>
+	<div class="td-byline mb-4">
+		
+        
+	</div>
+	
+</div>
+
+
+
+
+
+    
+      
+  
+  
+  
+  
+
+  
+  
+
+  
     
     
 	
@@ -717,307 +408,106 @@ bar := &#34;foo&#34;;
   
 
 <div class="td-content" style="">
-    <h1 id="pg-9f3c205d95b305cd86037f364aed9ce4">Another Great Release</h1>
-	<div class="lead">A short lead description about this content page. Text here can also be <strong>bold</strong> or <em>italic</em> and can even be split over multiple paragraphs.</div>
+    <h1 id="pg-74a20f9e3de9ee7fad057bc563fbaf91">Finishing Open-Source Projects</h1>
+	<div class="lead">Take one last stride to cross the finish line and wrap up your OS project!</div>
 	<div class="td-byline mb-4">
 		
         
-		<time datetime="2018-01-04" class="text-muted">Thursday, January 04, 2018</time>
+		<time datetime="2019-10-15" class="text-muted">Tuesday, October 15, 2019</time>
         
 	</div>
-	<p>Text can be <strong>bold</strong>, <em>italic</em>, or <del>strikethrough</del>. <a href="https://github.com">Links</a> should be blue with no underlines (unless hovered over).</p>
-<p>There should be whitespace between paragraphs. There should be whitespace between paragraphs. There should be whitespace between paragraphs. There should be whitespace between paragraphs.</p>
-<p>There should be whitespace between paragraphs. There should be whitespace between paragraphs. There should be whitespace between paragraphs. There should be whitespace between paragraphs.</p>
-<blockquote>
-<p>There should be no margin above this first sentence.</p>
-<p>Blockquotes should be a lighter gray with a border along the left side in the secondary color.</p>
-<p>There should be no margin below this final sentence.</p>
-</blockquote>
-<h2 id="first-header">First Header</h2>
-<p>This is a normal paragraph following a header. Bacon ipsum dolor sit amet t-bone doner shank drumstick, pork belly porchetta chuck sausage brisket ham hock rump pig. Chuck kielbasa leberkas, pork bresaola ham hock filet mignon cow shoulder short ribs biltong.  Bacon ipsum dolor sit amet t-bone doner shank drumstick, pork belly porchetta chuck sausage brisket ham hock rump pig. Chuck kielbasa leberkas, pork bresaola ham hock filet mignon cow shoulder short ribs biltong.  Bacon ipsum dolor sit amet t-bone doner shank drumstick, pork belly porchetta chuck sausage brisket ham hock rump pig. Chuck kielbasa leberkas, pork bresaola ham hock filet mignon cow shoulder short ribs biltong.</p>
-<p>Bacon ipsum dolor sit amet t-bone doner shank drumstick, pork belly porchetta chuck sausage brisket ham hock rump pig. Chuck kielbasa leberkas, pork bresaola ham hock filet mignon cow shoulder short ribs biltong.</p>
-<p>On big screens, paragraphs and headings should not take up the full container width, but we want tables, code blocks and similar to take the full width.</p>
-<p>Lorem markdownum tuta hospes stabat; idem saxum facit quaterque repetito
-occumbere, oves novem gestit haerebat frena; qui. Respicit recurvam erat:
-pignora hinc reppulit nos <strong>aut</strong>, aptos, ipsa.</p>
-<p>Meae optatos <em>passa est</em> Epiros utiliter <em>Talibus niveis</em>, hoc lata, edidit.
-Dixi ad aestum.</p>
-<h2 id="header-2">Header 2</h2>
-<blockquote>
-<p>This is a blockquote following a header. Bacon ipsum dolor sit amet t-bone doner shank drumstick, pork belly porchetta chuck sausage brisket ham hock rump pig. Chuck kielbasa leberkas, pork bresaola ham hock filet mignon cow shoulder short ribs biltong.</p>
-</blockquote>
-<h3 id="header-3">Header 3</h3>
-<pre tabindex="0"><code>This is a code block following a header.
-</code></pre><h4 id="header-4">Header 4</h4>
-<ul>
-<li>This is an unordered list following a header.</li>
-<li>This is an unordered list following a header.</li>
-<li>This is an unordered list following a header.</li>
-</ul>
-<h5 id="header-5">Header 5</h5>
+	<p>Have you ever started an open-source project, dived right into the code, discovered new API features that you loved, fiddled around with the build process, and then take a little break and never come back to it?</p>
+<p>If that sounds familiar, this article is for you.</p>
+<p>In April, I set out to write Milkman, an extensible postman replacement that allows me to finally have the features always missing in Postman. In general, Postman and Milkman are applications that help test web APIs by sending/organizing requests. Milkman is a JavaFX application without many dependencies, having a smaller footprint, for example, than electron apps, and is optimized for fast start-up times. The codebase now is about 12.5K code lines big, and most of it was written in a time span of ~ 20 days in April, normally working around 4–5 hours per day. Since then, I&rsquo;ve spent about one day a week, 2–4 hours, fixing reported issues and/or adding new features.</p>
+<p>Now, writing a large application like this without falling into the usual traps of losing motivation requires some best practices that I would like to discuss today. I am not writing about coding style, architectures that scale, or how to allow your initial prototype to grow — these are topics for another day.</p>
+<p>The biggest problem with open-source projects is always motivation — how to keep up the motivation and how to not lose interest and then stop? All of the practices mentioned below will help you maintain motivation and produce a mature (and hopefully open-source) project.</p>
+<h1 id="productivity">Productivity</h1>
+<p>Being productive helps you spend time on what you actually want to work on, as well as spend time on what you find fun instead of producing churn. It also helps you to create a lot of features within a small amount of time.</p>
+<h1 id="a-commit-a-dayweek">A Commit a Day/Week</h1>
+<p>This is along the lines of &ldquo;Don’t Break The Chain&rdquo; and might be a well-known motivational technique. As I had some spare time in April, I could spend each day working on Milkman. Later on, I could only spend one day a week developing, but I could still achieve a lot in that time.</p>
+<p>It was important to me to not skip a day, and even if it was only 30–60 minutes, simply adding some sentences to the readme was better than nothing. Sometimes, I was not in the mood to work much, but as soon as I started, I wanted to finish that one feature, and by the end, I would spend 2–3 hours instead.</p>
+<h1 id="planning-that-one-day">Planning That One Day</h1>
+<p>As I only have that one day a week, I want to spend it as efficiently as possible. Therefore, I am planning the things I want to do on that day earlier, maybe taking some notes on the train ride. That way, when I fire up my IDE on that day, I am already ready to go and don’t have to think about what to do.</p>
+<p>Also, I always plan my days by features. I wanted to finish this or that feature on that day. This also means that I had to estimate how long a feature would take and sometimes split it into smaller ones.</p>
+<p>The third thing I planned for those days was the prioritization of the list of features that I wanted to implement. Each day, there was a must-have feature set and a nice-to-have feature set. After finishing the must-haves, I would normally work ~3 hours anyway. I could then decide to go on with the nice-to-have features or just stop there without any bad feelings. Most often, I picked one or two nice-to-haves as well.</p>
+<h1 id="easy-release-process">Easy Release Process</h1>
+<p>I wanted to be able to spit out new releases/features in the blink of an eye. I could spend some time streamlining the build process so that it is was not in my way. If I always spent time doing tedious steps to release Milkman, this would be a barrier to even get started adding a new feature. Right now, I only have to type ‘mvn deploy’ and the whole application gets packaged (containing a bundled JRE, an executable for Windows, etc.), and uploaded to the GitHub release page automatically. I can go away and get a coffee meanwhile.</p>
+<p>Also, I set up a CI that provides access to nightly builds so people can even get development versions of the product.</p>
+<p>Although it is just one command, it still takes time, and one day, I may be able to further optimize it and put all handling of this into GitHub Actions so that I can trigger it once and continue working on something else.</p>
+<h1 id="minimal-tests">Minimal Tests</h1>
+<p>This one might be a bit controversial, and I would never advise it (I always write a lot of tests normally), but I have to be honest — this was one of the drivers for being productive. I did not test any obvious functionality. It is a desktop application, and if something does not work, I will see it while using it. I did set up some tests, but they mainly test some of the more complicated stuff (postman collection import or garbage collector quirks in JavaFx).</p>
+<p>This one might bite me later though. If I want to change things, I might accidentally break something without realizing it. I am still not sure if the trade-off is worth it; let’s see what the future brings. Up until now, I did not run into many issues because of this.</p>
+<h1 id="focus">Focus</h1>
+<p>Keeping my focus on the goal I wanted to achieve helped me stay effective and develop only what helps solving the problem. Because of the nature of applications, there is a lot of work to be done to finally see some minimum viable product (MVP). Iterating on this is then easier and you can see your progress. To optimize that, the MVP should be as small as possible, so you can see results very early on and get motivated by the outcome and iterations (return of invest, so to say).</p>
+<h1 id="clear-thread">Clear Thread</h1>
+<p>When building the MVP for Milkman, I was solely concentrating on the clear thread. No design, no optimization, nothing that diverted me from contributing to the happy case use case of my application. The result was even less than an MVP but still a working application with persistence, a “usable” UI and something that executed requests.</p>
+<h1 id="no-sidetracking">No Sidetracking</h1>
+<p>One thing that was really important was to always reflect on the work that I was currently working on. Is it contributing to the feature that I am currently working on? Yes? Good. No? Either stop it or at least timebox it (to 30 minutes/1 hour. This needs discipline) and drop it rigorously if it did not work out. I also needed to accept loose ends and non-perfect code. I needed to implement some hacks here and there to get things done. At some point later, when those hacks proved to be an obstacle, they got removed. I could obviously spend all day refactoring the whole codebase, but this does not contribute to my current goal.</p>
+<h1 id="no-experiments">No Experiments</h1>
+<p>Normally, I start a hobby project with the goal of solving a problem but also learning something new (otherwise, it is called ‘work’ :D). Now, for this project, I avoided any experiment. I wanted to learn Kotlin or Go, maybe look into graph databases or marry Spring and JavaFx for a nicer development experience. No. The whole codebase of Milkman is boring plain old Java, nothing special. But that is what I am most productive in. I did not want to spend time finding solutions to problems introduced by my lack of knowledge about a different language or tool.</p>
+<h1 id="scope">Scope</h1>
+<p>Writing a replacement for Postman gives me a pretty good plan of what features I wanted to have but also what features I don’t want to implement. This helped me with defining the next features that I wanted to work on and leave out unnecessary stuff.</p>
+<p>Additionally, I defined a set of general requirements before starting development, such as extensibility or fast startup time. All the features/code written was evaluated if it fits those requirements. I did this, again, to always produce stuff that contributes to some of the goals of Milkman.</p>
+<h1 id="no-bugs">No Bugs</h1>
+<p>This does not mean to write code without bugs (especially, if there are not many tests), but I don’t accept discovered bugs to linger in my code (maybe with “FIXME” close by or a GitHub issue). If I would, they would pile up and rot my development experience. Nobody likes fixing bugs, but that’s why they are always in the must-have feature set planned for a day (see “Planning That One Day”).</p>
+<h1 id="sharing-on-social-media">Sharing on Social Media</h1>
+<p>Finally, I would like to shortly talk about social media. Getting feedback is great, so you might want to use Twitter or even Twitch for live-coding to get feedback and also a pat on the back for your hard work, which is always a great feeling (GitHub stars, anyone? :D).</p>
+<p>I chose not to because I think that this might lead to the wrong kind of motivation. I develop Milkman to solve my own needs. I use it day-by-day and fix whatever issue I discover. Having people talk about it is a nice side-effect and I love for people to use Milkman, but that is not the reason for me to go on. It has to be a product that YOU use, but I guess, that is clear anyway.</p>
+
+</div>
+
+
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+
+  
+
+<div class="td-content" style="page-break-before: always">
+    <h1 id="pg-b73a3183496775613fc0b77a2caaec95">Fast Startup in Milkman using AppCds</h1>
+	<div class="lead">Description on several techniques used in milkman to shave of the time till usable</div>
+	<div class="td-byline mb-4">
+		
+        
+		<time datetime="2019-07-26" class="text-muted">Friday, July 26, 2019</time>
+        
+	</div>
+	<h2 id="tddr">td;dr;</h2>
+<p>Milkman dynamically (re-)generated AppCds cache to improve startup time of a JavaFx application.This blog post goes into how to apply AppCds on a desktop application with real-world requirements like shipping, updates and plugins.</p>
+<h1 id="milkman">Milkman</h1>
+<p>Currently, I am developing Milkman, an alternative to Postman that is extensible and faster (as it is not using electron, but <em>sigh</em> the more lightweight JavaFx stack.</p>
+<p>One goal of this application is to be a &ldquo;jump-in and do something, then leave&rdquo; type of application. I don&rsquo;t want to wait 10 seconds until it is ready to be used before doing a small request and closing it again.</p>
+<p>Although Milkman starts already quite fast (compared to e.g. electron apps), it can be optimized further. One option is to use GraalVm to compile to native. Although this would be possible (due to usage of a compile-time dependency injection framework, hardwire), the project is not yet in a stage where it can be setup easily, not to mention windows support. Also JavaFx is on its way to supporting GraalVm.</p>
+<h1 id="application-class-data-sharing-appcds">Application Class Data Sharing (AppCds)</h1>
+<p>Another option, that might be lesser known, is to use Class Data Sharing (CDS) or more specifically AppCds (which extends CDS on application classes).  AppCds basically caches all information about loaded classes in a file that can be mapped to memory instead of rescanning the whole classpath on every start.
+This was a feature in OracleJdk but is available in OpenJdk as well starting with jdk 10. As Milkman comes with a custom JRE, I can rely on having the right JDK for profiting from AppCds.</p>
+<p>There is a pretty good article about AppCds at codeFx. They do mention that it is hard to apply AppCds on JavaFx applications as javafx is not packaged anymore with the JDKs. For that reason, I moved to use Liberica as a JDK, which is basically openJdk + JavaFx (and some other features, I guess). The mentioned blog already contains pretty good details on how to initialize AppCds, so I wont repeat those details here. The final result will be, in the case of Milkman, a ~80Mb file. The startup on my machine gets roughly 0.8 seconds faster (I did no real benchmark), which is quite an improvement.</p>
+<h1 id="dynamic-appcds">Dynamic AppCds</h1>
+<p>This blog should be about how to apply AppCds in a final product where you can&rsquo;t ask users to run a specific sequence of commands or run a script. Also the nature of Milkman (no installs but overwriting application for updating it, drag&amp;drop plugins) leads to changes in both the classpath and the actuall classes (due to updates), which invalidates any generated AppCds cache.
+Also I cannot precompile the AppCds cache and ship it, as this will nearly double the size of the shipped artifact.</p>
+<p>Having this situation leads us to a list of requirements:</p>
 <ol>
-<li>This is an ordered list following a header.</li>
-<li>This is an ordered list following a header.</li>
-<li>This is an ordered list following a header.</li>
+<li>The AppCds cache should be dynamically compiled on the user-machine.</li>
+<li>If something is wrong with the AppCds cache, just go on as usual, dont fail application startup</li>
+<li>If anything invalidates the cache, it should be automatically recreated.</li>
 </ol>
-<h6 id="header-6">Header 6</h6>
-<table>
-<thead>
-<tr>
-<th>What</th>
-<th>Follows</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>A table</td>
-<td>A header</td>
-</tr>
-<tr>
-<td>A table</td>
-<td>A header</td>
-</tr>
-<tr>
-<td>A table</td>
-<td>A header</td>
-</tr>
-</tbody>
-</table>
-<hr>
-<p>There&rsquo;s a horizontal rule above and below this.</p>
-<hr>
-<p>Here is an unordered list:</p>
-<ul>
-<li>Salt-n-Pepa</li>
-<li>Bel Biv DeVoe</li>
-<li>Kid &lsquo;N Play</li>
-</ul>
-<p>And an ordered list:</p>
-<ol>
-<li>Michael Jackson</li>
-<li>Michael Bolton</li>
-<li>Michael Bublé</li>
-</ol>
-<p>And an unordered task list:</p>
-<ul>
-<li><input checked="" disabled="" type="checkbox"> Create a sample markdown document</li>
-<li><input checked="" disabled="" type="checkbox"> Add task lists to it</li>
-<li><input disabled="" type="checkbox"> Take a vacation</li>
-</ul>
-<p>And a &ldquo;mixed&rdquo; task list:</p>
-<ul>
-<li><input disabled="" type="checkbox"> Steal underpants</li>
-<li>?</li>
-<li><input disabled="" type="checkbox"> Profit!</li>
-</ul>
-<p>And a nested list:</p>
-<ul>
-<li>Jackson 5
-<ul>
-<li>Michael</li>
-<li>Tito</li>
-<li>Jackie</li>
-<li>Marlon</li>
-<li>Jermaine</li>
-</ul>
-</li>
-<li>TMNT
-<ul>
-<li>Leonardo</li>
-<li>Michelangelo</li>
-<li>Donatello</li>
-<li>Raphael</li>
-</ul>
-</li>
-</ul>
-<p>Definition lists can be used with Markdown syntax. Definition terms are bold.</p>
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-<hr>
-<p>Tables should have bold headings and alternating shaded rows.</p>
-<table>
-<thead>
-<tr>
-<th>Artist</th>
-<th>Album</th>
-<th>Year</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Michael Jackson</td>
-<td>Thriller</td>
-<td>1982</td>
-</tr>
-<tr>
-<td>Prince</td>
-<td>Purple Rain</td>
-<td>1984</td>
-</tr>
-<tr>
-<td>Beastie Boys</td>
-<td>License to Ill</td>
-<td>1986</td>
-</tr>
-</tbody>
-</table>
-<p>If a table is too wide, it should scroll horizontally.</p>
-<table>
-<thead>
-<tr>
-<th>Artist</th>
-<th>Album</th>
-<th>Year</th>
-<th>Label</th>
-<th>Awards</th>
-<th>Songs</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Michael Jackson</td>
-<td>Thriller</td>
-<td>1982</td>
-<td>Epic Records</td>
-<td>Grammy Award for Album of the Year, American Music Award for Favorite Pop/Rock Album, American Music Award for Favorite Soul/R&amp;B Album, Brit Award for Best Selling Album, Grammy Award for Best Engineered Album, Non-Classical</td>
-<td>Wanna Be Startin&rsquo; Somethin&rsquo;, Baby Be Mine, The Girl Is Mine, Thriller, Beat It, Billie Jean, Human Nature, P.Y.T. (Pretty Young Thing), The Lady in My Life</td>
-</tr>
-<tr>
-<td>Prince</td>
-<td>Purple Rain</td>
-<td>1984</td>
-<td>Warner Brothers Records</td>
-<td>Grammy Award for Best Score Soundtrack for Visual Media, American Music Award for Favorite Pop/Rock Album, American Music Award for Favorite Soul/R&amp;B Album, Brit Award for Best Soundtrack/Cast Recording, Grammy Award for Best Rock Performance by a Duo or Group with Vocal</td>
-<td>Let&rsquo;s Go Crazy, Take Me With U, The Beautiful Ones, Computer Blue, Darling Nikki, When Doves Cry, I Would Die 4 U, Baby I&rsquo;m a Star, Purple Rain</td>
-</tr>
-<tr>
-<td>Beastie Boys</td>
-<td>License to Ill</td>
-<td>1986</td>
-<td>Mercury Records</td>
-<td>noawardsbutthistablecelliswide</td>
-<td>Rhymin &amp; Stealin, The New Style, She&rsquo;s Crafty, Posse in Effect, Slow Ride, Girls, (You Gotta) Fight for Your Right, No Sleep Till Brooklyn, Paul Revere, Hold It Now, Hit It, Brass Monkey, Slow and Low, Time to Get Ill</td>
-</tr>
-</tbody>
-</table>
-<hr>
-<p>Code snippets like <code>var foo = &quot;bar&quot;;</code> can be shown inline.</p>
-<p>Also, <code>this should vertically align</code> <del><code>with this</code></del> <del>and this</del>.</p>
-<p>Code can also be shown in a block element.</p>
-<pre tabindex="0"><code>foo := &#34;bar&#34;;
-bar := &#34;foo&#34;;
-</code></pre><p>Code can also use syntax highlighting.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">func</span> <span style="color:#000">main</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#000">input</span> <span style="color:#ce5c00;font-weight:bold">:=</span> <span style="color:#4e9a06">`var foo = &#34;bar&#34;;`</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>  <span style="color:#000">lexer</span> <span style="color:#ce5c00;font-weight:bold">:=</span> <span style="color:#000">lexers</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">Get</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;javascript&#34;</span><span style="color:#000;font-weight:bold">)</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#000">iterator</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">_</span> <span style="color:#ce5c00;font-weight:bold">:=</span> <span style="color:#000">lexer</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">Tokenise</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">nil</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">input</span><span style="color:#000;font-weight:bold">)</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#000">style</span> <span style="color:#ce5c00;font-weight:bold">:=</span> <span style="color:#000">styles</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">Get</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;github&#34;</span><span style="color:#000;font-weight:bold">)</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#000">formatter</span> <span style="color:#ce5c00;font-weight:bold">:=</span> <span style="color:#000">html</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">New</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">html</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">WithLineNumbers</span><span style="color:#000;font-weight:bold">())</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>  <span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">buff</span> <span style="color:#000">bytes</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">Buffer</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#000">formatter</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">Format</span><span style="color:#000;font-weight:bold">(</span><span style="color:#ce5c00;font-weight:bold">&amp;</span><span style="color:#000">buff</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">style</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">iterator</span><span style="color:#000;font-weight:bold">)</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>  <span style="color:#000">fmt</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">Println</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">buff</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">String</span><span style="color:#000;font-weight:bold">())</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
-</span></span></code></pre></div><pre tabindex="0"><code>Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-</code></pre><p>Inline code inside table cells should still be distinguishable.</p>
-<table>
-<thead>
-<tr>
-<th>Language</th>
-<th>Code</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Javascript</td>
-<td><code>var foo = &quot;bar&quot;;</code></td>
-</tr>
-<tr>
-<td>Ruby</td>
-<td><code>foo = &quot;bar&quot;{</code></td>
-</tr>
-</tbody>
-</table>
-<hr>
-<p>Small images should be shown at their actual size.</p>
-<p><img src="https://placekitten.com/g/300/200/" alt=""></p>
-<p>Large images should always scale down and fit in the content container.</p>
-<p><img src="https://placekitten.com/g/1200/800/" alt=""></p>
-<h2 id="components">Components</h2>
-<h3 id="alerts">Alerts</h3>
-<p>
+<h2 id="1-dynamic-creation-of-appcds-cache">1. Dynamic Creation of AppCds Cache</h2>
+<p>For creating AppCds Cache, you need to have a list of classes that should be part of the AppCds cache. As this wont change too much, it can already be precompiled and put into the shipped artifact. It might not contain classes used in &ldquo;unknown&rdquo; plugins, so this might be something to compile dynamically as well.
+The appCds cache can be generated by executing the according java-command, which is done in Milkman on a separate thread during the startup, if necessary.</p>
+<h2 id="2-transparent-appcds-cache">2. Transparent AppCds cache</h2>
+<p>If something is off with the AppCds cache, -Xshare:auto flag will lead to the cache being ignored and the application being started in a normal way.</p>
+<h2 id="3-regenerating-an-invalid-appcds-cache">3. Regenerating an invalid AppCds cache</h2>
+<p>Now, this is the hard part. How to identify if the current application got loaded via AppCds or if the appCds is actually invalid and was not used during startup. I could only find one reliable way to see, if a Cache got used: try using it again in a sub-process, but with -Xshare:on, which leads to the application being terminated on startup, if the AppCds cache could not be used. Besides other things (like comparing, if the classpath that was used for creating the cache changed), this is exactly what is used in Milkman (see code).</p>
+<p>If it shows that the cache is actually invalid, the file has to be replaced. This sounds easier than it is, as the file might be locked (in case where classpath changed, the file is not locked, but in case of class-changes, it is). Renaming still works (on Windows), so it will be renamed and deleted on next run.</p>
 
-<div class="alert alert-primary" role="alert">
-
-
-    This is an alert.
-
-</div>
-
-
-
-<div class="alert alert-primary" role="alert">
-<h4 class="alert-heading">Note:</h4>
-
-    This is an alert with a title.
-
-</div>
-
-
-
-<div class="alert alert-primary" role="alert">
-
-
-    This is a successful alert.
-
-</div>
-
-
-
-<div class="alert alert-primary" role="alert">
-
-
-    This is a warning!
-
-</div>
-
-
-
-<div class="alert alert-primary" role="alert">
-<h4 class="alert-heading">Warning!</h4>
-
-    This is a warning with a title!
-
-</div>
-</p>
-<h2 id="sizing">Sizing</h2>
-<p>Add some sections here to see how the ToC looks like. Bacon ipsum dolor sit amet t-bone doner shank drumstick, pork belly porchetta chuck sausage brisket ham hock rump pig. Chuck kielbasa leberkas, pork bresaola ham hock filet mignon cow shoulder short ribs biltong.</p>
-<h3 id="parameters-available">Parameters available</h3>
-<p>Bacon ipsum dolor sit amet t-bone doner shank drumstick, pork belly porchetta chuck sausage brisket ham hock rump pig. Chuck kielbasa leberkas, pork bresaola ham hock filet mignon cow shoulder short ribs biltong.</p>
-<h3 id="using-pixels">Using pixels</h3>
-<p>Bacon ipsum dolor sit amet t-bone doner shank drumstick, pork belly porchetta chuck sausage brisket ham hock rump pig. Chuck kielbasa leberkas, pork bresaola ham hock filet mignon cow shoulder short ribs biltong.</p>
-<h3 id="using-rem">Using rem</h3>
-<p>Bacon ipsum dolor sit amet t-bone doner shank drumstick, pork belly porchetta chuck sausage brisket ham hock rump pig. Chuck kielbasa leberkas, pork bresaola ham hock filet mignon cow shoulder short ribs biltong.</p>
-<h2 id="memory">Memory</h2>
-<p>Bacon ipsum dolor sit amet t-bone doner shank drumstick, pork belly porchetta chuck sausage brisket ham hock rump pig. Chuck kielbasa leberkas, pork bresaola ham hock filet mignon cow shoulder short ribs biltong.</p>
-<h3 id="ram-to-use">RAM to use</h3>
-<p>Bacon ipsum dolor sit amet t-bone doner shank drumstick, pork belly porchetta chuck sausage brisket ham hock rump pig. Chuck kielbasa leberkas, pork bresaola ham hock filet mignon cow shoulder short ribs biltong.</p>
-<h3 id="more-is-better">More is better</h3>
-<p>Bacon ipsum dolor sit amet t-bone doner shank drumstick, pork belly porchetta chuck sausage brisket ham hock rump pig. Chuck kielbasa leberkas, pork bresaola ham hock filet mignon cow shoulder short ribs biltong.</p>
-<h3 id="used-ram">Used RAM</h3>
-<p>Bacon ipsum dolor sit amet t-bone doner shank drumstick, pork belly porchetta chuck sausage brisket ham hock rump pig. Chuck kielbasa leberkas, pork bresaola ham hock filet mignon cow shoulder short ribs biltong.</p>
-<pre tabindex="0"><code>This is the final element on the page and there should be no margin below this.
-</code></pre>
 </div>
 
 
@@ -1047,9 +537,9 @@ bar := &#34;foo&#34;;
         
 <ul class="list-inline mb-0">
   
-  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="User mailing list" aria-label="User mailing list">
-    <a class="text-white" target="_blank" rel="noopener" href="https://example.org/mail" aria-label="User mailing list">
-      <i class="fa fa-envelope"></i>
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="User Discussion Board" aria-label="User Discussion Board">
+    <a class="text-white" target="_blank" rel="noopener" href="https://github.com/warmuuh/milkman/discussions" aria-label="User Discussion Board">
+      <i class="fa fa-comment"></i>
     </a>
   </li>
   
@@ -1059,9 +549,9 @@ bar := &#34;foo&#34;;
     </a>
   </li>
   
-  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Stack Overflow" aria-label="Stack Overflow">
-    <a class="text-white" target="_blank" rel="noopener" href="https://example.org/stack" aria-label="Stack Overflow">
-      <i class="fab fa-stack-overflow"></i>
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Report an Issue" aria-label="Report an Issue">
+    <a class="text-white" target="_blank" rel="noopener" href="https://github.com/warmuuh/milkman/issues" aria-label="Report an Issue">
+      <i class="fab fa-envelope"></i>
     </a>
   </li>
   
@@ -1077,19 +567,19 @@ bar := &#34;foo&#34;;
 <ul class="list-inline mb-0">
   
   <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="GitHub" aria-label="GitHub">
-    <a class="text-white" target="_blank" rel="noopener" href="https://github.com/google/docsy" aria-label="GitHub">
+    <a class="text-white" target="_blank" rel="noopener" href="https://github.com/warmuuh/milkman" aria-label="GitHub">
       <i class="fab fa-github"></i>
     </a>
   </li>
   
-  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Slack" aria-label="Slack">
-    <a class="text-white" target="_blank" rel="noopener" href="https://example.org/slack" aria-label="Slack">
-      <i class="fab fa-slack"></i>
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Gitter" aria-label="Gitter">
+    <a class="text-white" target="_blank" rel="noopener" href="https://gitter.im/milkman-project/community" aria-label="Gitter">
+      <i class="fab fa-gitter"></i>
     </a>
   </li>
   
-  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Developer mailing list" aria-label="Developer mailing list">
-    <a class="text-white" target="_blank" rel="noopener" href="https://example.org/mail" aria-label="Developer mailing list">
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Issue list" aria-label="Issue list">
+    <a class="text-white" target="_blank" rel="noopener" href="https://github.com/warmuuh/milkman/issues" aria-label="Issue list">
       <i class="fa fa-envelope"></i>
     </a>
   </li>
@@ -1103,7 +593,7 @@ bar := &#34;foo&#34;;
         <small class="text-white">&copy; 2022 Milkman All Rights Reserved</small>
         <small class="ml-1"><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a></small>
 	
-		<p class="mt-2"><a href="/about/">About Goldydocs</a></p>
+		
 	
       </div>
     </div>

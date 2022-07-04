@@ -273,131 +273,6 @@ Example of the explore plugin
     </item>
     
     <item>
-      <title>Docs: Advanced Features</title>
-      <link>/docs/features/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/features/</guid>
-      <description>
-        
-        
-        
-
-&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
-&lt;p&gt;Description of some more advanced Features of Milkman&lt;/p&gt;
-
-&lt;/div&gt;
-
-&lt;h1 id=&#34;code-folding&#34;&gt;Code Folding&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;Folding is supported in response body area&lt;/li&gt;
-&lt;li&gt;Toolbar actions: expand all, collapse all, expand one level, collapse one level&lt;/li&gt;
-&lt;li&gt;Clicking on the line-symbol expands the node&lt;/li&gt;
-&lt;li&gt;Right-Clicking on the line-symbol expands the whole subtree&lt;/li&gt;
-&lt;/ul&gt;
-
-
-
-
-
-
-
-&lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 813px&#34;&gt;
-	&lt;img class=&#34;card-img-top&#34; src=&#34;/docs/features/folding_hub2bdc84f6c5e19a81303660a937b012a_260482_0x500_resize_catmullrom.gif&#34; width=&#34;803&#34; height=&#34;500&#34;&gt;
-	
-	&lt;div class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
-		&lt;p class=&#34;card-text&#34;&gt;
-Example of code folding
-&lt;/p&gt;
-	&lt;/div&gt;
-	
-&lt;/div&gt;
-&lt;h1 id=&#34;hotkeys&#34;&gt;Hotkeys&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;kbd&gt;CTRL&lt;/kbd&gt;+&lt;kbd&gt;ENTER&lt;/kbd&gt; - Execute Request&lt;/li&gt;
-&lt;li&gt;&lt;kbd&gt;CTRL&lt;/kbd&gt;+&lt;kbd&gt;N&lt;/kbd&gt; - New Request&lt;/li&gt;
-&lt;li&gt;&lt;kbd&gt;CTRL&lt;/kbd&gt;+&lt;kbd&gt;R&lt;/kbd&gt; - Rename Active Request&lt;/li&gt;
-&lt;li&gt;&lt;kbd&gt;CTRL&lt;/kbd&gt;+&lt;kbd&gt;W&lt;/kbd&gt; - Close Active Request&lt;/li&gt;
-&lt;li&gt;&lt;kbd&gt;CTRL&lt;/kbd&gt;+&lt;kbd&gt;S&lt;/kbd&gt; - Save Active Request&lt;/li&gt;
-&lt;li&gt;&lt;kbd&gt;CTRL&lt;/kbd&gt;+&lt;kbd&gt;E&lt;/kbd&gt; - Edit current Environment&lt;/li&gt;
-&lt;li&gt;&lt;kbd&gt;CTRL&lt;/kbd&gt;+&lt;kbd&gt;Space&lt;/kbd&gt; - Quick-Edit of Variables&lt;/li&gt;
-&lt;li&gt;&lt;kbd&gt;ESC&lt;/kbd&gt; - Cancel running Request&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;copypaste-in-tables&#34;&gt;Copy&amp;amp;Paste in Tables&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;You can &lt;kbd&gt;CTRL&lt;/kbd&gt;+&lt;kbd&gt;C&lt;/kbd&gt; selected rows to copy its value&lt;/li&gt;
-&lt;li&gt;You can &lt;kbd&gt;CTRL&lt;/kbd&gt;+&lt;kbd&gt;V&lt;/kbd&gt; multiple rows into a table&lt;/li&gt;
-&lt;/ul&gt;
-
-
-
-
-
-
-
-&lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 1633px&#34;&gt;
-	&lt;img class=&#34;card-img-top&#34; src=&#34;/docs/features/copypaste_hudf95a2858009d571f671d6e887ed916f_96548_0x500_resize_catmullrom.gif&#34; width=&#34;1623&#34; height=&#34;500&#34;&gt;
-	
-	&lt;div class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
-		&lt;p class=&#34;card-text&#34;&gt;
-Example of Copy&amp;Paste for tables
-&lt;/p&gt;
-	&lt;/div&gt;
-	
-&lt;/div&gt;
-&lt;h1 id=&#34;quick-edit-for-variables&#34;&gt;Quick Edit for Variables&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;You can highlight variables.&lt;/li&gt;
-&lt;li&gt;Clicking on it opens popup for modification/creation&lt;/li&gt;
-&lt;li&gt;&lt;kbd&gt;ESC&lt;/kbd&gt; hides highlighting&lt;/li&gt;
-&lt;/ul&gt;
-
-
-
-
-
-
-
-&lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 1086px&#34;&gt;
-	&lt;img class=&#34;card-img-top&#34; src=&#34;/docs/features/hightlight-vars_hue14906a0a72d4c22743013e6703cb527_521983_0x500_resize_catmullrom.gif&#34; width=&#34;1076&#34; height=&#34;500&#34;&gt;
-	
-	&lt;div class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
-		&lt;p class=&#34;card-text&#34;&gt;
-Example of Quick-edit for variables
-&lt;/p&gt;
-	&lt;/div&gt;
-	
-&lt;/div&gt;
-&lt;h1 id=&#34;keys&#34;&gt;Keys&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;secret keys that should not be exported or synced can be setup using the key-symbol&lt;/li&gt;
-&lt;li&gt;currently, secret keys are only plain type keys, but will be e.g. oauth-keys etc&lt;/li&gt;
-&lt;li&gt;can be accessed using {{key:name-of-key}} variable&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;libraries&#34;&gt;Libraries&lt;/h1&gt;
-&lt;p&gt;you can register libraries to easily look-up and import services from a central registry, such as &lt;a href=&#34;http://apis.guru&#34;&gt;APIs.guru&lt;/a&gt;.&lt;/p&gt;
-
-
-
-
-
-
-
-&lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 635px&#34;&gt;
-	&lt;img class=&#34;card-img-top&#34; src=&#34;/docs/features/milkman-library_hud04a0f028f64634a1dcc2295e058226c_657881_0x500_resize_catmullrom.gif&#34; width=&#34;625&#34; height=&#34;500&#34;&gt;
-	
-	&lt;div class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
-		&lt;p class=&#34;card-text&#34;&gt;
-Example of setting up and using Libraries
-&lt;/p&gt;
-	&lt;/div&gt;
-	
-&lt;/div&gt;
-
-      </description>
-    </item>
-    
-    <item>
       <title>Docs: Milkman GraphQL Plugin</title>
       <link>/docs/plugins/graphql/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -742,6 +617,94 @@ Example of the Scripting plugin
 &lt;p&gt;besides that, some often used functions are available:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;base64(string)&lt;/code&gt;, &lt;code&gt;sha1(string)&lt;/code&gt;, &lt;code&gt;sha256(string)&lt;/code&gt;, &lt;code&gt;sha512(string)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Slack Integration</title>
+      <link>/docs/features/slack/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/features/slack/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;Milkman supports slack-integration via a &lt;a href=&#34;https://github.com/warmuuh/milkman-slack&#34;&gt;slackbot&lt;/a&gt;.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;You can either host it yourself or use the heroku-hosted instance:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://milkman-slack.herokuapp.com/slack/oauth/start&#34;&gt;&lt;img src=&#34;https://platform.slack-edge.com/img/add_to_slack.png&#34; alt=&#34;Add to Slack&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;usage&#34;&gt;Usage&lt;/h1&gt;
+&lt;p&gt;Once added to your workspace, you can share a private-bin export url via:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;/milkman &amp;lt;privatebin-url&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;features&#34;&gt;Features&lt;/h1&gt;
+&lt;p&gt;It will nicely render the shared request and offers several ways for viewers to use the request,
+such as viewing the request as &lt;code&gt;curl&lt;/code&gt;-command or &lt;code&gt;http&lt;/code&gt;-request.&lt;/p&gt;
+
+
+
+
+
+
+
+&lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 796px&#34;&gt;
+	&lt;img class=&#34;card-img-top&#34; src=&#34;/docs/features/slack/slack-preview_hu5ede36050eb0d03a7d628cafa7f99f22_21477_0x500_resize_catmullrom_3.png&#34; width=&#34;786&#34; height=&#34;500&#34;&gt;
+	
+	&lt;div class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
+		&lt;p class=&#34;card-text&#34;&gt;
+Preview of a request in slack
+&lt;/p&gt;
+	&lt;/div&gt;
+	
+&lt;/div&gt;
+&lt;p&gt;and users can choose how to view the request:&lt;/p&gt;
+
+
+
+
+
+
+
+&lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 745px&#34;&gt;
+	&lt;img class=&#34;card-img-top&#34; src=&#34;/docs/features/slack/slack-grpc-render_hu6fcbffdfa0cacf371b2e40ec2ca65e0b_17226_0x500_resize_catmullrom_3.png&#34; width=&#34;735&#34; height=&#34;500&#34;&gt;
+	
+	&lt;div class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
+		&lt;p class=&#34;card-text&#34;&gt;
+Quick-export of a request directly in slack.
+&lt;/p&gt;
+	&lt;/div&gt;
+	
+&lt;/div&gt;
+&lt;p&gt;it also supports all other request types, such as gRPC:&lt;/p&gt;
+
+
+
+
+
+
+
+&lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 745px&#34;&gt;
+	&lt;img class=&#34;card-img-top&#34; src=&#34;/docs/features/slack/slack-grpc-render_hu6fcbffdfa0cacf371b2e40ec2ca65e0b_17226_0x500_resize_catmullrom_3.png&#34; width=&#34;735&#34; height=&#34;500&#34;&gt;
+	
+	&lt;div class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
+		&lt;p class=&#34;card-text&#34;&gt;
+Example of a Grpc request in slack
+&lt;/p&gt;
+	&lt;/div&gt;
+	
+&lt;/div&gt;
+&lt;h1 id=&#34;planned&#34;&gt;Planned&lt;/h1&gt;
+&lt;p&gt;More features are planned, such as:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;execution of requests on backend&lt;/li&gt;
+&lt;li&gt;support for burn-after-reading in privatebin&lt;/li&gt;
+&lt;li&gt;more templates&lt;/li&gt;
 &lt;/ul&gt;
 
       </description>
