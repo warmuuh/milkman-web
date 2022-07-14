@@ -58,7 +58,7 @@ some resolved issues and FAQs are available in the [wiki](https://github.com/war
  * **JavaFX Application:** as in: *fast* (compared to electron at least :D) and skinn-able (you can extend milkman with your own themes using simple CSS).
  * **Commandline Interface:** there is a [command line interface](plugins/cli) for Milkman which allows to edit/execute requests on your command line.
  * **Slack Command:** you can use `/milkman <privatebin-url>` in slack to share requests in a better way. [More Info](features/slack).
- * [Some more details](docs/features.md) of the core application features, such as hotkeys etc.
+ * [Some more details](features/) of the core application features, such as hotkeys etc.
  
 # Existing Plugins:
 

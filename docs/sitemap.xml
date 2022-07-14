@@ -40,6 +40,8 @@
     <loc>https://milkman.dev/community/</loc>
     <lastmod>2022-06-16T11:35:31+02:00</lastmod>
   </url><url>
+    <loc>https://milkman.dev/docs/development/</loc>
+  </url><url>
     <loc>https://milkman.dev/docs/plugins/explore/</loc>
     <lastmod>2022-06-24T16:13:57+02:00</lastmod>
   </url><url>
@@ -54,6 +56,8 @@
   </url><url>
     <loc>https://milkman.dev/docs/plugins/rest/</loc>
     <lastmod>2022-07-14T14:37:20+02:00</lastmod>
+  </url><url>
+    <loc>https://milkman.dev/docs/development/model/</loc>
   </url><url>
     <loc>https://milkman.dev/</loc>
     <lastmod>2022-07-14T15:05:37+02:00</lastmod>
@@ -72,6 +76,8 @@
   </url><url>
     <loc>https://milkman.dev/search/</loc>
     <lastmod>2022-06-16T11:35:31+02:00</lastmod>
+  </url><url>
+    <loc>https://milkman.dev/docs/development/setup/</loc>
   </url><url>
     <loc>https://milkman.dev/docs/features/slack/</loc>
     <lastmod>2022-07-14T14:49:16+02:00</lastmod>

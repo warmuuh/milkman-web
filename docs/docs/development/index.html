@@ -4,6 +4,8 @@
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="generator" content="Hugo 0.100.2" />
+<link rel="alternate" type="text/html" href="https://milkman.dev/docs/development/_print/">
+<link rel="alternate" type="application/rss&#43;xml" href="https://milkman.dev/docs/development/index.xml">
 <meta name="robots" content="index, follow">
 
 
@@ -18,22 +20,24 @@
 <link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
-<title>Milkman Note Plugin | Milkman</title>
-<meta name="description" content="Introduces Sql Requests to Milkman using JDBC.">
-<meta property="og:title" content="Milkman Note Plugin" />
-<meta property="og:description" content="Introduces Sql Requests to Milkman using JDBC." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://milkman.dev/docs/plugins/note/" /><meta property="article:section" content="docs" />
+<title>Milkman Plugin Development | Milkman</title>
+<meta name="description" content="
 
-<meta property="article:modified_time" content="2022-06-24T16:13:57+02:00" /><meta property="og:site_name" content="Milkman" />
 
-<meta itemprop="name" content="Milkman Note Plugin">
-<meta itemprop="description" content="Introduces Sql Requests to Milkman using JDBC.">
-<meta itemprop="dateModified" content="2022-06-24T16:13:57+02:00" />
-<meta itemprop="wordCount" content="41">
-<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Milkman Note Plugin"/>
-<meta name="twitter:description" content="Introduces Sql Requests to Milkman using JDBC."/>
+This section shows some information on how to develop your own plugins for milkman
+
+
+
+">
+<meta property="og:title" content="Milkman Plugin Development" />
+<meta property="og:description" content="A Request/Response Workbench" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://milkman.dev/docs/development/" /><meta property="og:site_name" content="Milkman" />
+
+<meta itemprop="name" content="Milkman Plugin Development">
+<meta itemprop="description" content="A Request/Response Workbench"><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Milkman Plugin Development"/>
+<meta name="twitter:description" content="A Request/Response Workbench"/>
 
 
 
@@ -47,7 +51,7 @@
   crossorigin="anonymous"></script>
 
   </head>
-  <body class="td-page">
+  <body class="td-section">
     <header>
       
 <nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
@@ -124,7 +128,7 @@
   <a href="/docs/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-docs"><span class="">Documentation</span></a>
   <ul class="ul-1">
     <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsdevelopment-li">
-  <a href="/docs/development/" title="Milkman Plugin Development" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docsdevelopment"><span class="">Developing Plugins</span></a>
+  <a href="/docs/development/" title="Milkman Plugin Development" class="align-left pl-0 active td-sidebar-link td-sidebar-link__section" id="m-docsdevelopment"><span class="td-sidebar-nav-active-item">Developing Plugins</span></a>
   <ul class="ul-2 foldable">
     <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsdevelopmentmodel-li">
   <a href="/docs/development/model/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsdevelopmentmodel"><span class="">Internal Model</span></a>
@@ -139,7 +143,7 @@
   <a href="/docs/features/slack/" title="Slack Integration" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsfeaturesslack"><span class="">Slack</span></a>
 </li>
   </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docsplugins-li">
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsplugins-li">
   <a href="/docs/plugins/" title="Milkman Plugins" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docsplugins"><span class="">Plugins</span></a>
   <ul class="ul-2 foldable">
     <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docspluginsauthentication-li">
@@ -157,7 +161,7 @@
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docspluginsrest-li">
   <a href="/docs/plugins/rest/" title="Milkman Http Plugin" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docspluginsrest"><span class="">Http/Rest</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docspluginsnote-li">
-  <a href="/docs/plugins/note/" title="Milkman Note Plugin" class="align-left pl-0 active td-sidebar-link td-sidebar-link__page" id="m-docspluginsnote"><span class="td-sidebar-nav-active-item">Notes</span></a>
+  <a href="/docs/plugins/note/" title="Milkman Note Plugin" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docspluginsnote"><span class="">Notes</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docspluginsprivatebin-li">
   <a href="/docs/plugins/privatebin/" title="Milkman Privatebin Plugin" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docspluginsprivatebin"><span class="">Privatebin</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docspluginsscripting-li">
@@ -185,12 +189,12 @@
           <aside class="d-none d-xl-block col-xl-2 td-sidebar-toc d-print-none">
             
 <div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
-<a href="https://github.com/warmuuh/milkman-web/tree/master/content/en/docs/Plugins/note/index.md" class="td-page-meta--view" target="_blank" rel="noopener"><i class="fa fa-file-alt fa-fw"></i> View page source</a>
-  <a href="https://github.com/warmuuh/milkman-web/edit/master/content/en/docs/Plugins/note/index.md" class="td-page-meta--edit" target="_blank" rel="noopener"><i class="fa fa-edit fa-fw"></i> Edit this page</a>
-  <a href="https://github.com/warmuuh/milkman-web/new/master/content/en/docs/Plugins/note/index.md?filename=change-me.md&amp;value=---%0Atitle%3A&#43;%22Long&#43;Page&#43;Title%22%0AlinkTitle%3A&#43;%22Short&#43;Nav&#43;Title%22%0Aweight%3A&#43;100%0Adescription%3A&#43;%3E-%0A&#43;&#43;&#43;&#43;&#43;Page&#43;description&#43;for&#43;heading&#43;and&#43;indexes.%0A---%0A%0A%23%23&#43;Heading%0A%0AEdit&#43;this&#43;template&#43;to&#43;create&#43;your&#43;new&#43;page.%0A%0A%2A&#43;Give&#43;it&#43;a&#43;good&#43;name%2C&#43;ending&#43;in&#43;%60.md%60&#43;-&#43;e.g.&#43;%60getting-started.md%60%0A%2A&#43;Edit&#43;the&#43;%22front&#43;matter%22&#43;section&#43;at&#43;the&#43;top&#43;of&#43;the&#43;page&#43;%28weight&#43;controls&#43;how&#43;its&#43;ordered&#43;amongst&#43;other&#43;pages&#43;in&#43;the&#43;same&#43;directory%3B&#43;lowest&#43;number&#43;first%29.%0A%2A&#43;Add&#43;a&#43;good&#43;commit&#43;message&#43;at&#43;the&#43;bottom&#43;of&#43;the&#43;page&#43;%28%3C80&#43;characters%3B&#43;use&#43;the&#43;extended&#43;description&#43;field&#43;for&#43;more&#43;detail%29.%0A%2A&#43;Create&#43;a&#43;new&#43;branch&#43;so&#43;you&#43;can&#43;preview&#43;your&#43;new&#43;file&#43;and&#43;request&#43;a&#43;review&#43;via&#43;Pull&#43;Request.%0A" class="td-page-meta--child" target="_blank" rel="noopener"><i class="fa fa-edit fa-fw"></i> Create child page</a>
-  <a href="https://github.com/warmuuh/milkman-web/issues/new?title=Milkman%20Note%20Plugin" class="td-page-meta--issue" target="_blank" rel="noopener"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
+<a href="https://github.com/warmuuh/milkman-web/tree/master/content/en/docs/Development/_index.md" class="td-page-meta--view" target="_blank" rel="noopener"><i class="fa fa-file-alt fa-fw"></i> View page source</a>
+  <a href="https://github.com/warmuuh/milkman-web/edit/master/content/en/docs/Development/_index.md" class="td-page-meta--edit" target="_blank" rel="noopener"><i class="fa fa-edit fa-fw"></i> Edit this page</a>
+  <a href="https://github.com/warmuuh/milkman-web/new/master/content/en/docs/Development/_index.md?filename=change-me.md&amp;value=---%0Atitle%3A&#43;%22Long&#43;Page&#43;Title%22%0AlinkTitle%3A&#43;%22Short&#43;Nav&#43;Title%22%0Aweight%3A&#43;100%0Adescription%3A&#43;%3E-%0A&#43;&#43;&#43;&#43;&#43;Page&#43;description&#43;for&#43;heading&#43;and&#43;indexes.%0A---%0A%0A%23%23&#43;Heading%0A%0AEdit&#43;this&#43;template&#43;to&#43;create&#43;your&#43;new&#43;page.%0A%0A%2A&#43;Give&#43;it&#43;a&#43;good&#43;name%2C&#43;ending&#43;in&#43;%60.md%60&#43;-&#43;e.g.&#43;%60getting-started.md%60%0A%2A&#43;Edit&#43;the&#43;%22front&#43;matter%22&#43;section&#43;at&#43;the&#43;top&#43;of&#43;the&#43;page&#43;%28weight&#43;controls&#43;how&#43;its&#43;ordered&#43;amongst&#43;other&#43;pages&#43;in&#43;the&#43;same&#43;directory%3B&#43;lowest&#43;number&#43;first%29.%0A%2A&#43;Add&#43;a&#43;good&#43;commit&#43;message&#43;at&#43;the&#43;bottom&#43;of&#43;the&#43;page&#43;%28%3C80&#43;characters%3B&#43;use&#43;the&#43;extended&#43;description&#43;field&#43;for&#43;more&#43;detail%29.%0A%2A&#43;Create&#43;a&#43;new&#43;branch&#43;so&#43;you&#43;can&#43;preview&#43;your&#43;new&#43;file&#43;and&#43;request&#43;a&#43;review&#43;via&#43;Pull&#43;Request.%0A" class="td-page-meta--child" target="_blank" rel="noopener"><i class="fa fa-edit fa-fw"></i> Create child page</a>
+  <a href="https://github.com/warmuuh/milkman-web/issues/new?title=Milkman%20Plugin%20Development" class="td-page-meta--issue" target="_blank" rel="noopener"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
   <a href="https://github.com/warmuuh/milkman/issues/new" class="td-page-meta--project-issue" target="_blank" rel="noopener"><i class="fas fa-tasks fa-fw"></i> Create project issue</a>
-  <a id="print" href="https://milkman.dev/docs/plugins/_print/"><i class="fa fa-print fa-fw"></i> Print entire section</a>
+  <a id="print" href="https://milkman.dev/docs/development/_print/"><i class="fa fa-print fa-fw"></i> Print entire section</a>
 
 </div>
 
@@ -237,18 +241,15 @@
   <li class="breadcrumb-item">
     <a href="https://milkman.dev/docs/">Documentation</a>
   </li>
-  <li class="breadcrumb-item">
-    <a href="https://milkman.dev/docs/plugins/">Plugins</a>
-  </li>
   <li class="breadcrumb-item active" aria-current="page">
-    <a href="https://milkman.dev/docs/plugins/note/">Notes</a>
+    <a href="https://milkman.dev/docs/development/">Developing Plugins</a>
   </li>
   </ol>
 </nav>
             
 <div class="td-content">
-	<h1>Milkman Note Plugin</h1>
-	<div class="lead">Introduces Sql Requests to Milkman using JDBC.</div>
+	<h1>Milkman Plugin Development</h1>
+  
 	<header class="article-meta">
 		
 
@@ -265,42 +266,49 @@
   
 
 		
-	</header>    
+	</header>
 	
 
 <div class="pageinfo pageinfo-primary">
-<p>This is a very simple plugin that adds a tab to each request where users can enter some notes about the request.</p>
+<p>This section shows some information on how to develop your own plugins for milkman</p>
 
 </div>
 
-<p>This plugin serves demonstrational purposes and should show how milkman can be extended.</p>
-<h1 id="screenshot">Screenshot</h1>
 
-
-
-
-
-
-
-<div class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 632px">
-	<img class="card-img-top" src="/docs/plugins/note/notes-plugin_hu75756891b8bffa5637f3887d7b20e41e_53104_0x500_resize_catmullrom_3.PNG" width="622" height="500">
-	
-	<div class="card-body px-0 pt-2 pb-0">
-		<p class="card-text">
-Example of the Notes plugin
-</p>
-	</div>
-	
+        <div class="section-index">
+    
+    
+    
+    
+    
+    
+    
+    
+    <hr class="panel-line">
+        
+            
+            <div class="entry">
+                <h5>
+                    <a href="/docs/development/model/">Internal Model</a>
+                </h5>
+                <p>Description of domain model of milkman</p>
+            </div>
+        
+            
+            <div class="entry">
+                <h5>
+                    <a href="/docs/development/setup/">Development Setup</a>
+                </h5>
+                <p>Description of how to setup your environment</p>
+            </div>
+        
+    
 </div>
 
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">
-  Last modified June 24, 2022: <a href="https://github.com/warmuuh/milkman-web/commit/88983aa5bc7e5b8a68b4f28495a96b78d007530d">added first content (88983aa)</a>
+	
 </div>
-
-</div>
-
 
           </main>
         </div>
