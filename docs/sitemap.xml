@@ -35,7 +35,7 @@
     <loc>https://milkman.dev/categories/</loc>
   </url><url>
     <loc>https://milkman.dev/docs/plugins/cli/</loc>
-    <lastmod>2022-06-24T16:13:57+02:00</lastmod>
+    <lastmod>2022-07-14T14:37:20+02:00</lastmod>
   </url><url>
     <loc>https://milkman.dev/community/</loc>
     <lastmod>2022-06-16T11:35:31+02:00</lastmod>
@@ -44,16 +44,16 @@
     <lastmod>2022-06-24T16:13:57+02:00</lastmod>
   </url><url>
     <loc>https://milkman.dev/docs/features/</loc>
-    <lastmod>2022-07-04T16:35:10+02:00</lastmod>
+    <lastmod>2022-07-14T14:37:20+02:00</lastmod>
   </url><url>
     <loc>https://milkman.dev/docs/plugins/graphql/</loc>
     <lastmod>2022-06-24T16:13:57+02:00</lastmod>
   </url><url>
     <loc>https://milkman.dev/docs/plugins/grpc/</loc>
-    <lastmod>2022-06-24T16:13:57+02:00</lastmod>
+    <lastmod>2022-07-14T14:37:20+02:00</lastmod>
   </url><url>
     <loc>https://milkman.dev/docs/plugins/rest/</loc>
-    <lastmod>2022-06-24T16:13:57+02:00</lastmod>
+    <lastmod>2022-07-14T14:37:20+02:00</lastmod>
   </url><url>
     <loc>https://milkman.dev/</loc>
     <lastmod>2022-07-04T16:35:10+02:00</lastmod>
@@ -74,7 +74,7 @@
     <lastmod>2022-06-16T11:35:31+02:00</lastmod>
   </url><url>
     <loc>https://milkman.dev/docs/features/slack/</loc>
-    <lastmod>2022-06-24T16:13:57+02:00</lastmod>
+    <lastmod>2022-07-14T14:49:16+02:00</lastmod>
   </url><url>
     <loc>https://milkman.dev/docs/plugins/sio/</loc>
     <lastmod>2022-06-24T16:13:57+02:00</lastmod>
@@ -88,9 +88,9 @@
     <lastmod>2022-06-24T16:13:57+02:00</lastmod>
   </url><url>
     <loc>https://milkman.dev/docs/plugins/test/</loc>
-    <lastmod>2022-06-24T16:13:57+02:00</lastmod>
+    <lastmod>2022-07-14T14:37:20+02:00</lastmod>
   </url><url>
     <loc>https://milkman.dev/docs/plugins/ws/</loc>
-    <lastmod>2022-06-24T16:13:57+02:00</lastmod>
+    <lastmod>2022-07-14T14:37:20+02:00</lastmod>
   </url>
 </urlset>

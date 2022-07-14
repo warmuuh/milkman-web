@@ -22,22 +22,27 @@ Milkman is heavily inspired by Postman. But I got sick of all those electron-bas
 {{% /blocks/lead %}}
 
 {{< blocks/section  color="white" >}}
-<div class="col-lg-4 mb-5 mb-lg-0 text-center">
-	<h1 class="text-center">Showcase</h1>
+
+<div class="grid grid-cols-2 gap-4">
+	<div class="row">
+	<div class="col-span-2"><h1>Showcase</h1></div>
 </div>
 
-<div class="row">
-	<div class="col-lg-4 mb-5 mb-lg-0 text-center">
-		{{< imgproc screenshot.png Resize "x300" >}}
-		Screenshot of Milkman light theme
-		{{< /imgproc >}}
+	<div class="row">
+		<div class="col">
+			{{< imgproc screenshot.png Resize "600x" >}}
+			Screenshot of Milkman light theme
+			{{< /imgproc >}}
+		</div>
+		<div class="col">
+			{{< imgproc screenshot Resize "600x" >}}
+			Screenshot of Milkman dark theme
+			{{< /imgproc >}}
+		</div>
 	</div>
-	<div class="col-lg-4 mb-5 mb-lg-0 text-center">
-		{{< imgproc screenshot Resize "600x" >}}
-		Screenshot of Milkman light theme
-		{{< /imgproc >}}
-	</div>
-</div>
+  </div>
+
+
 {{< /blocks/section >}}
 
 {{< blocks/section color="dark" >}}
