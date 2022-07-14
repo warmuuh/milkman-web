@@ -4,7 +4,7 @@ title: "Advanced Features"
 linkTitle: "Features"
 description: "Description of some more advanced Features of Milkman"
 resources:
-- src: "**.{png,jpg}"
+- src: "**.{png,jpg,gif}"
   title: "Image #:counter"
 ---
 
@@ -20,10 +20,7 @@ Description of some more advanced Features of Milkman
 * Clicking on the line-symbol expands the node
 * Right-Clicking on the line-symbol expands the whole subtree
 
-{{< imgproc folding Resize "x500" >}}
-Example of code folding
-{{< /imgproc >}}
-
+![Example of code folding](/images/folding.gif)
 
 # Hotkeys
 
@@ -42,9 +39,8 @@ Example of code folding
 * You can <kbd>CTRL</kbd>+<kbd>C</kbd> selected rows to copy its value
 * You can <kbd>CTRL</kbd>+<kbd>V</kbd> multiple rows into a table
 
-{{< imgproc copypaste Resize "x500" >}}
-Example of Copy&Paste for tables
-{{< /imgproc >}}
+
+![Example of Copy&Paste for tables](/images/copypaste.gif)
 
 # Quick Edit for Variables
 
@@ -52,10 +48,7 @@ Example of Copy&Paste for tables
 * Clicking on it opens popup for modification/creation
 * <kbd>ESC</kbd> hides highlighting
 
-{{< imgproc hightlight Resize "x500" >}}
-Example of Quick-edit for variables
-{{< /imgproc >}}
-
+![Example of Quick-edit for variables](/images/highlight-vars.gif)
 
 # Keys
 
@@ -68,6 +61,4 @@ Example of Quick-edit for variables
 
 you can register libraries to easily look-up and import services from a central registry, such as [APIs.guru](http://apis.guru).
 
-{{< imgproc library Resize "x500" >}}
-Example of setting up and using Libraries
-{{< /imgproc >}}
+![Example of setting up and using Libraries](/images/milkman-library.gif)

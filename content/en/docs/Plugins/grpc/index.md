@@ -28,9 +28,7 @@ Example of the Grpc plugin
 
 ### Example of Server streaming
 
-{{< imgproc streaming Resize "x500" >}}
-Example of Grpc Streaming
-{{< /imgproc >}}
+![Example of Grpc Streaming](/images/grpc-streaming.gif)
 
 
 ### Client Streaming

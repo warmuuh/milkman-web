@@ -19,9 +19,7 @@ Support for websocket transport
   
 ## Screenshot
 
-{{< imgproc demo Resize "x500" >}}
-Example of the Websocket Streaming
-{{< /imgproc >}}
+![Example of the Websocket Streaming](/images/milkman-ws-demo.gif)
 
 
 ## Note

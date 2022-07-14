@@ -18,10 +18,7 @@ Just Drag-and-drop requests you want to execute into the test-tab and you are re
 
 ## Demo
 
-{{< imgproc plugin Resize "x500" >}}
-Example of the Testrunner plugin
-{{< /imgproc >}}
-
+![Example of the Testrunner plugin](/images/test-plugin-demo.gif)
 
 ## Environment
 

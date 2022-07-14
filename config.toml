@@ -1,4 +1,4 @@
-baseURL = "https://warmuuh.github.io/milkman-web/"
+baseURL = "https://milkman.dev/"
 title = "Milkman"
 
 publishDir = "docs/"

@@ -20,9 +20,7 @@ Example of the Rest plugin
 
 ### Example of Server Sent Events Streaming
 
-{{< imgproc sse Resize "x500" >}}
-Example of Server-sent event streaming in the Rest plugin
-{{< /imgproc >}}
+![Example of Server-sent event streaming in the Rest plugin](/images/sse-streaming.gif)
 
 
 # Features

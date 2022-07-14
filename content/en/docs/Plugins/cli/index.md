@@ -15,9 +15,7 @@ you can start it by `mm` on terminal.
 
 # Screenshot
 
-{{< imgproc cli Resize "x500" >}}
-Example of a cli session
-{{< /imgproc >}}
+![Example of a cli session](/images/cli.gif)
 
 # Features
 

@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Milkman – Milkman Blog</title>
-    <link>https://warmuuh.github.io/milkman-web/blog/</link>
+    <link>https://milkman.dev/blog/</link>
     <description>Recent content in Milkman Blog on Milkman</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="https://warmuuh.github.io/milkman-web/blog/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://milkman.dev/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>Blog: oAuth support arrived</title>
-      <link>https://warmuuh.github.io/milkman-web/blog/2021/04/27/oauth-support-arrived/</link>
+      <link>https://milkman.dev/blog/2021/04/27/oauth-support-arrived/</link>
       <pubDate>Tue, 27 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://warmuuh.github.io/milkman-web/blog/2021/04/27/oauth-support-arrived/</guid>
+      <guid>https://milkman.dev/blog/2021/04/27/oauth-support-arrived/</guid>
       <description>
         
         
@@ -38,10 +38,10 @@
     
     <item>
       <title>Blog: Finishing Open-Source Projects</title>
-      <link>https://warmuuh.github.io/milkman-web/blog/2019/10/15/finishing-open-source-projects/</link>
+      <link>https://milkman.dev/blog/2019/10/15/finishing-open-source-projects/</link>
       <pubDate>Tue, 15 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://warmuuh.github.io/milkman-web/blog/2019/10/15/finishing-open-source-projects/</guid>
+      <guid>https://milkman.dev/blog/2019/10/15/finishing-open-source-projects/</guid>
       <description>
         
         
@@ -88,10 +88,10 @@
     
     <item>
       <title>Blog: Fast Startup in Milkman using AppCds</title>
-      <link>https://warmuuh.github.io/milkman-web/blog/2019/07/26/fast-startup-in-milkman-using-appcds/</link>
+      <link>https://milkman.dev/blog/2019/07/26/fast-startup-in-milkman-using-appcds/</link>
       <pubDate>Fri, 26 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://warmuuh.github.io/milkman-web/blog/2019/07/26/fast-startup-in-milkman-using-appcds/</guid>
+      <guid>https://milkman.dev/blog/2019/07/26/fast-startup-in-milkman-using-appcds/</guid>
       <description>
         
         
