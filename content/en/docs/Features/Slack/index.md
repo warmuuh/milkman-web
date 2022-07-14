@@ -37,7 +37,7 @@ Preview of a request in slack
 
 and users can choose how to view the request:
 
-{{< imgproc render Resize "x500" >}}
+{{< imgproc slack-render Resize "x500" >}}
 Quick-export of a request directly in slack.
 {{< /imgproc >}}
 
