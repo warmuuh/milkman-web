@@ -1,9 +1,9 @@
 <!doctype html>
 <html itemscope itemtype="http://schema.org/WebPage" lang="en" class="no-js">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 
 
 <link rel="shortcut icon" href="/favicons/favicon.ico" >
@@ -20,7 +20,7 @@
 <title>Poweruser Tips For Milkman | Milkman</title>
 <meta name="description" content="Use the full power of Milkman with these tips and tricks
 ">
-<meta property="og:url" content="http://localhost:1313/blog/2024/06/07/poweruser-tips-for-milkman/">
+<meta property="og:url" content="https://milkman.dev/blog/2024/06/07/poweruser-tips-for-milkman/">
   <meta property="og:site_name" content="Milkman">
   <meta property="og:title" content="Poweruser Tips For Milkman">
   <meta property="og:description" content="Use the full power of Milkman with these tips and tricks">
@@ -28,13 +28,13 @@
   <meta property="og:type" content="article">
     <meta property="article:section" content="blog">
     <meta property="article:published_time" content="2024-06-07T00:00:00+00:00">
-    <meta property="article:modified_time" content="2024-06-07T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-06-07T14:17:21+02:00">
 
   <meta itemprop="name" content="Poweruser Tips For Milkman">
   <meta itemprop="description" content="Use the full power of Milkman with these tips and tricks">
   <meta itemprop="datePublished" content="2024-06-07T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2024-06-07T00:00:00+00:00">
-  <meta itemprop="wordCount" content="468">
+  <meta itemprop="dateModified" content="2024-06-07T14:17:21+02:00">
+  <meta itemprop="wordCount" content="1078">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Poweruser Tips For Milkman">
   <meta name="twitter:description" content="Use the full power of Milkman with these tips and tricks">
@@ -42,8 +42,8 @@
 
 
 
-
-<link href="/scss/main.css" rel="stylesheet">
+<link rel="preload" href="/scss/main.min.5118d334f4d49e78b43432d75232dda13144ff70fc9d784048f9c31c8751ea0f.css" as="style">
+<link href="/scss/main.min.5118d334f4d49e78b43432d75232dda13144ff70fc9d784048f9c31c8751ea0f.css" rel="stylesheet" integrity="">
 
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -178,8 +178,18 @@
   </ul>
 
   <ul>
-    <li><a href="#printing-jwt-to-console">Printing JWT to Console</a></li>
-    <li><a href="#custom-authentication">Custom Authentication</a></li>
+    <li><a href="#example">Example:</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#using-chaijs">Using Chai.js</a></li>
+    <li><a href="#using-external-files">Using external files</a></li>
+    <li><a href="#printing-to-console">Printing to Console</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#wget">WGet</a></li>
+    <li><a href="#spring-rest-template">Spring Rest Template</a></li>
   </ul>
 </nav>
       </div>
@@ -237,14 +247,115 @@
 </span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># {{host}} and {{port}} are placeholders that are replaced by the jdbc-sshj driver</span><span style="color:#f8f8f8;text-decoration:underline">
 </span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">jdbc:sshj-native://&lt;user&gt;@&lt;jump-host&gt;?remote=&lt;aws-endpoint&gt;:5432;;;jdbc:postgresql://{{host}}:{{port}}/&lt;database&gt;?user=&lt;user&gt;&amp;password=&lt;password&gt;</span><span style="color:#f8f8f8;text-decoration:underline">
 </span></span></span></code></pre></div><h1 id="client-certificates--mtls">Client Certificates / mTLS</h1>
+<p>With rising security requirements, more and more services require client certificates for authentication. Milkman can handle this by adding the client certificate to the request. To do this, you need to add the client certificate to the list of known certificates in Milkman preferences. After that, you can select the certificate in the request settings (cog-wheel next to the http request method).</p>
 <h1 id="tests-as-request-sequence">Tests as Request-Sequence</h1>
-<h1 id="scripting-tipstricks">Scripting Tips&amp;Tricks</h1>
-<h2 id="printing-jwt-to-console">Printing JWT to Console</h2>
-<h2 id="custom-authentication">Custom Authentication</h2>
-<h1 id="external-files">External Files</h1>
-<h1 id="libraries">Libraries</h1>
+<p><code>Test</code> requests can be used to create a sequence of requests that are executed in order. This can be used to handle a more complex scenario with multiple dependent requests. To use data of one request in the next one, you can use <code>scripting</code> component.</p>
+<p>These requests are running in isolation, so any change to environment variables (if not specified differently in the properties of the Test) are not propagated to the current active environment.</p>
+<h2 id="example">Example:</h2>
+<p>Request 1: e.g. a request that creates a user and returns it in response body</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">user</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">mm</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">response</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">body</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">body</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">mm</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">setEnvironmentVariable</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;user&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">user</span><span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;user: &#34;</span> <span style="color:#ce5c00;font-weight:bold">+</span> <span style="color:#000">user</span><span style="color:#000;font-weight:bold">)</span>
+</span></span></code></pre></div><p>Request 2: use the user to login and get a token, using the user from the previous request</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">//request body
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">grant_type</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#000">password</span>
+</span></span><span style="display:flex;"><span><span style="color:#ce5c00;font-weight:bold">&amp;</span><span style="color:#000">client_id</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#000;font-weight:bold">...</span>
+</span></span><span style="display:flex;"><span><span style="color:#ce5c00;font-weight:bold">&amp;</span><span style="color:#000">client_secret</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#000;font-weight:bold">...</span>
+</span></span><span style="display:flex;"><span><span style="color:#ce5c00;font-weight:bold">&amp;</span><span style="color:#000">scope</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#000">openid</span>
+</span></span><span style="display:flex;"><span><span style="color:#ce5c00;font-weight:bold">&amp;</span><span style="color:#000">username</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#000;font-weight:bold">{{</span><span style="color:#000">js</span><span style="color:#ce5c00;font-weight:bold">:</span><span style="color:#000">escape</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;{{user}}&#34;</span><span style="color:#000;font-weight:bold">)}}</span>
+</span></span><span style="display:flex;"><span><span style="color:#ce5c00;font-weight:bold">&amp;</span><span style="color:#000">password</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#000">password</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// script to extract the token:
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">body</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">JSON</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">parse</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">mm</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">response</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">body</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">body</span><span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">milkman</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">setEnvironmentVariable</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;user-token&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">body</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">access_token</span><span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">milkman</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">setEnvironmentVariable</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;user-rt&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">body</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">refresh_token</span><span style="color:#000;font-weight:bold">)</span>
+</span></span></code></pre></div><h1 id="scripting-tipstricks">Scripting Tips&amp;Tricks</h1>
+<p>Because you can load external javascript files that can then be used in the scripting part, the scripting component is way more powerful than without using that capability.</p>
+<h2 id="using-chaijs">Using Chai.js</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// preload script: https://cdnjs.cloudflare.com/ajax/libs/chai/4.3.4/chai.min.js
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// then you can use chai.js in your scripts:
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>
+</span></span><span style="display:flex;"><span><span style="color:#000">chai</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">should</span><span style="color:#000;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">body</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">JSON</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">parse</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">milkman</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">response</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">body</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">body</span><span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">body</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">id</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">should</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">equal</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">mm</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">getEnvironmentVariable</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;userId&#34;</span><span style="color:#000;font-weight:bold">));</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">headers</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">milkman</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">response</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">headers</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">entries</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">tokenHeader</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">null</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">for</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">i</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">;</span> <span style="color:#000">i</span> <span style="color:#ce5c00;font-weight:bold">&lt;</span> <span style="color:#000">headers</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">length</span><span style="color:#000;font-weight:bold">;</span> <span style="color:#000">i</span><span style="color:#ce5c00;font-weight:bold">++</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">if</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#000">headers</span><span style="color:#000;font-weight:bold">[</span><span style="color:#000">i</span><span style="color:#000;font-weight:bold">].</span><span style="color:#000">name</span> <span style="color:#ce5c00;font-weight:bold">===</span> <span style="color:#4e9a06">&#39;x-token&#39;</span><span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#000">tokenHeader</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">headers</span><span style="color:#000;font-weight:bold">[</span><span style="color:#000">i</span><span style="color:#000;font-weight:bold">];</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000">should</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">not</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">equal</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">tokenHeader</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#204a87;font-weight:bold">null</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">tokenHeader</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">value</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">should</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">match</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">/^0.*$/</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#8f5902;font-style:italic">//is it according to new format?
+</span></span></span></code></pre></div><h2 id="using-external-files">Using external files</h2>
+<p>Sometimes, you might want to use content from external files in your requests, such as a csv-file loaded from external. Out-of-the-box, Milkman does not support this, but you can use the following workaround:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">//in an external preload script, e.g. &#34;~/.milkman-scripts/loadFile.js&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">loadFile</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">path</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span> <span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">pathObj</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">java</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">nio</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">file</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">Paths</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">get</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">path</span><span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span> <span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">bytesObj</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">java</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">nio</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">file</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">Files</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">readAllBytes</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">pathObj</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span> <span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">bytes</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">Java</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">from</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">bytesObj</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#8f5902;font-style:italic">// converting to JavaScript
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span> <span style="color:#204a87;font-weight:bold">return</span> <span style="color:#204a87">String</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">fromCharCode</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">apply</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">null</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">bytes</span><span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">//then using that as preload script in milkman: file:///Users/.../.milkman-scripts/loadfile.js
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">//and for example in the request body, use it like this:
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#4e9a06">&#34;csvFile&#34;</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;{{js:base64(loadFile(&#39;/path/to/test.csv&#39;))}}&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div><h2 id="printing-to-console">Printing to Console</h2>
+<p>Sometimes, scripting can be used to add debugging information to your requests, for example, you can print the information of a JWT token to console:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// using pre-load script: https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// using custom pre-load script:
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">parseJwt</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#000">token</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">try</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">words</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">CryptoJS</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">enc</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">Base64</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">parse</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">token</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">split</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;.&#39;</span><span style="color:#000;font-weight:bold">)[</span><span style="color:#0000cf;font-weight:bold">1</span><span style="color:#000;font-weight:bold">]);</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">textString</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">CryptoJS</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">enc</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">Utf8</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">stringify</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">words</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#204a87;font-weight:bold">return</span> <span style="color:#000">JSON</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">parse</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">textString</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">}</span> <span style="color:#204a87;font-weight:bold">catch</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#000">e</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#204a87;font-weight:bold">return</span> <span style="color:#204a87;font-weight:bold">null</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">};</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// in scripting of the request:
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">body</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">JSON</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">parse</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">mm</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">response</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">body</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">body</span><span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">JSON</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">stringify</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">parseJwt</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">body</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">access_token</span><span style="color:#000;font-weight:bold">),</span> <span style="color:#204a87;font-weight:bold">null</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">2</span><span style="color:#000;font-weight:bold">))</span>
+</span></span></code></pre></div><h1 id="libraries">Libraries</h1>
+<p>In lot of companies, many services exist and sometimes, a directory with all service specifications exist. Milkman can make use of these directories (currently, only apis.guru format is supported, open tickets to request more formats) to import service definitions. This allows you to import your company&rsquo;s services and use them in your requests with just a few clicks.</p>
 <h1 id="custom-templates">Custom Templates</h1>
+<p>If you want to export requests in a specific format, you can create custom templates. These templates are written in <a href="https://mustache.github.io/">mustache</a> with whitespace control extensions. Some examples of http exports:</p>
+<h2 id="wget">WGet</h2>
+<p>Useful because some alpine docker images dont have curl installed but busybox wget</p>
+<pre tabindex="0"><code class="language-mustache" data-lang="mustache">wget -O- {{#headers.entries-}}{{#enabled-}}
+--header=&#34;{{&amp;name}}: {{&amp;value}}&#34;
+{{_/enabled}}{{/headers.entries_}}
+{{&amp;url}}
+</code></pre><h2 id="spring-rest-template">Spring Rest Template</h2>
+<p>If you program and need to implement the request in java / spring</p>
+<pre tabindex="0"><code class="language-mustache" data-lang="mustache">RestTemplate restTemplate = new RestTemplate();
 
+Headers headers = new Headers();
+{{#headers.entries}}{{#enabled-}}
+headers.add(&#34;{{&amp;name}}&#34;, &#34;{{&amp;value}}&#34;);
+{{/enabled}}{{/headers.entries-}}
+{{#body.body-}}
+String body = &#34;{{&amp;.}}&#34;;
+{{-/body.body}}
+HttpEntity&lt;String&gt; request = new HttpEntity&lt;&gt;(
+{{-#body.body-}}
+body,
+{{-/body.body-}}
+headers);
+ResponseEntity&lt;String&gt; response = restTemplate
+  .exchange(&#34;{{url}}&#34;, HttpMethod.{{httpMethod}}, request, String.class);
+
+String responseBody = response.getBody();
+</code></pre>
 	<ul class="list-unstyled d-flex justify-content-between align-items-center mb-0 pt-5">
   <li>
     <a href="/blog/2019/10/15/finishing-open-source-projects/" aria-label="Previous - Finishing Open-Source Projects" class="btn btn-primary"><span class="me-1">←</span>Previous</a>
@@ -254,7 +365,10 @@
   </li>
 </ul>
 
-	</div>
+	<div class="td-page-meta__lastmod">
+  Last modified June 7, 2024: <a href="https://github.com/warmuuh/milkman-web/commit/ed3384861c6aeb81c195548cfa0ad8da631c98f3">update (ed33848)</a>
+</div>
+</div>
 
 
           </main>
@@ -319,8 +433,8 @@
 </footer>
 
     </div>
-    <script src="/js/main.js"></script>
-<script defer src="/js/click-to-copy.js" crossorigin="anonymous"></script>
+    <script src="/js/main.min.b528b50b179e1b4e41d24d149a3dc5bdaed08dacdc0d6299684bbb0d3ae9a6b9.js" integrity="sha256-tSi1CxeeG05B0k0Umj3Fva7QjazcDWKZaEu7DTrpprk=" crossorigin="anonymous"></script>
+<script defer src="/js/click-to-copy.min.73478a7d4807698aed7e355eb23f9890ca18fea3158604c8471746d046702bad.js" integrity="sha256-c0eKfUgHaYrtfjVesj&#43;YkMoY/qMVhgTIRxdG0EZwK60=" crossorigin="anonymous"></script>
 <script src='/js/tabpane-persist.js'></script>
 
   </body>

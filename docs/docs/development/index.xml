@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Milkman Plugin Development on Milkman</title>
-    <link>http://localhost:1313/docs/development/</link>
+    <link>https://milkman.dev/docs/development/</link>
     <description>Recent content in Milkman Plugin Development on Milkman</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="http://localhost:1313/docs/development/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://milkman.dev/docs/development/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Internal Model</title>
-      <link>http://localhost:1313/docs/development/model/</link>
+      <link>https://milkman.dev/docs/development/model/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/development/model/</guid>
+      <guid>https://milkman.dev/docs/development/model/</guid>
       <description>Plugins in milkman can extend various functionality. For this, an explanation of how a request is structured is necessary first.&#xA;Getting Started A sample plugin was created that shows how to add an Aspect Tab to a Request.&#xA;if you want to setup a new project, an exemplary pom can be found here.&#xA;Data Model The core of milkman is very abstract and is only intended to organize workspaces, which contain environments and collections of requests.</description>
     </item>
     <item>
       <title>Development Setup</title>
-      <link>http://localhost:1313/docs/development/setup/</link>
+      <link>https://milkman.dev/docs/development/setup/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/development/setup/</guid>
+      <guid>https://milkman.dev/docs/development/setup/</guid>
       <description>for creating a new plugin, you can use following pom:&#xA;&amp;lt;project xmlns=&amp;#34;http://maven.apache.org/POM/4.0.0&amp;#34; xmlns:xsi=&amp;#34;http://www.w3.org/2001/XMLSchema-instance&amp;#34; xsi:schemaLocation=&amp;#34;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&amp;#34;&amp;gt; &amp;lt;modelVersion&amp;gt;4.0.0&amp;lt;/modelVersion&amp;gt; &amp;lt;groupId&amp;gt;...&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;...&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;...&amp;lt;/version&amp;gt; &amp;lt;dependencies&amp;gt; &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;com.github.warmuuh.milkman&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;milkman&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;...&amp;lt;/version&amp;gt; &amp;lt;scope&amp;gt;provided&amp;lt;/scope&amp;gt; &amp;lt;/dependency&amp;gt; &amp;lt;!-- and for refering to plugins of milkman: --&amp;gt; &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;com.github.warmuuh.milkman&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;milkman-rest&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;...&amp;lt;/version&amp;gt; &amp;lt;scope&amp;gt;provided&amp;lt;/scope&amp;gt; &amp;lt;/dependency&amp;gt; &amp;lt;/dependencies&amp;gt; &amp;lt;build&amp;gt; &amp;lt;plugins&amp;gt; &amp;lt;!-- for packaging all your dependencies into one jar, excluding provided ones --&amp;gt; &amp;lt;plugin&amp;gt; &amp;lt;groupId&amp;gt;org.apache.maven.plugins&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;maven-assembly-plugin&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;2.6&amp;lt;/version&amp;gt; &amp;lt;configuration&amp;gt; &amp;lt;descriptorRefs&amp;gt; &amp;lt;descriptorRef&amp;gt;jar-with-dependencies&amp;lt;/descriptorRef&amp;gt; &amp;lt;/descriptorRefs&amp;gt; &amp;lt;appendAssemblyId&amp;gt;false&amp;lt;/appendAssemblyId&amp;gt; &amp;lt;/configuration&amp;gt; &amp;lt;executions&amp;gt; &amp;lt;execution&amp;gt; &amp;lt;id&amp;gt;assemble-all&amp;lt;/id&amp;gt; &amp;lt;phase&amp;gt;package&amp;lt;/phase&amp;gt; &amp;lt;goals&amp;gt; &amp;lt;goal&amp;gt;single&amp;lt;/goal&amp;gt; &amp;lt;/goals&amp;gt; &amp;lt;/execution&amp;gt; &amp;lt;/executions&amp;gt; &amp;lt;/plugin&amp;gt; &amp;lt;/plugins&amp;gt; &amp;lt;/build&amp;gt; &amp;lt;repositories&amp;gt; &amp;lt;repository&amp;gt; &amp;lt;id&amp;gt;jitpack.</description>
     </item>
   </channel>

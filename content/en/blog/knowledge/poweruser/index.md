@@ -70,10 +70,152 @@ jdbc:sshj-native://<user>@<jump-host>?remote=<aws-endpoint>:5432;;;jdbc:postgres
 ```
 
 # Client Certificates / mTLS
+
+With rising security requirements, more and more services require client certificates for authentication. Milkman can handle this by adding the client certificate to the request. To do this, you need to add the client certificate to the list of known certificates in Milkman preferences. After that, you can select the certificate in the request settings (cog-wheel next to the http request method).
+
 # Tests as Request-Sequence
+`Test` requests can be used to create a sequence of requests that are executed in order. This can be used to handle a more complex scenario with multiple dependent requests. To use data of one request in the next one, you can use `scripting` component.
+
+These requests are running in isolation, so any change to environment variables (if not specified differently in the properties of the Test) are not propagated to the current active environment.
+
+## Example:
+
+Request 1: e.g. a request that creates a user and returns it in response body
+```javascript
+var user = mm.response.body.body;
+mm.setEnvironmentVariable("user", user)
+console.log("user: " + user)
+```
+
+Request 2: use the user to login and get a token, using the user from the previous request
+
+```javascript
+//request body
+grant_type=password
+&client_id=...
+&client_secret=...
+&scope=openid
+&username={{js:escape("{{user}}")}}
+&password=password
+
+// script to extract the token:
+var body = JSON.parse(mm.response.body.body)
+milkman.setEnvironmentVariable("user-token", body.access_token)
+milkman.setEnvironmentVariable("user-rt", body.refresh_token)
+```
+
 # Scripting Tips&Tricks
-## Printing JWT to Console
-## Custom Authentication
-# External Files
+
+Because you can load external javascript files that can then be used in the scripting part, the scripting component is way more powerful than without using that capability.
+
+## Using Chai.js
+
+```javascript
+// preload script: https://cdnjs.cloudflare.com/ajax/libs/chai/4.3.4/chai.min.js
+// then you can use chai.js in your scripts:
+
+chai.should();
+var body = JSON.parse(milkman.response.body.body)
+body.id.should.equal(mm.getEnvironmentVariable("userId"));
+
+
+var headers = milkman.response.headers.entries;
+var tokenHeader = null;
+for (var i = 0; i < headers.length; i++) {
+    if (headers[i].name === 'x-token')
+      tokenHeader = headers[i];
+}
+
+
+should.not.equal(tokenHeader, null);
+tokenHeader.value.should.match(/^0.*$/) //is it according to new format?
+```
+
+## Using external files
+
+Sometimes, you might want to use content from external files in your requests, such as a csv-file loaded from external. Out-of-the-box, Milkman does not support this, but you can use the following workaround:
+
+```javascript
+//in an external preload script, e.g. "~/.milkman-scripts/loadFile.js"
+function loadFile(path) {
+ var pathObj = java.nio.file.Paths.get(path)
+ var bytesObj = java.nio.file.Files.readAllBytes(pathObj);
+ var bytes = Java.from(bytesObj) // converting to JavaScript
+ return String.fromCharCode.apply(null, bytes)
+}
+//then using that as preload script in milkman: file:///Users/.../.milkman-scripts/loadfile.js
+
+//and for example in the request body, use it like this:
+{
+  "csvFile": "{{js:base64(loadFile('/path/to/test.csv'))}}"
+}
+```
+
+## Printing to Console
+Sometimes, scripting can be used to add debugging information to your requests, for example, you can print the information of a JWT token to console:
+
+```javascript
+// using pre-load script: https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js
+
+// using custom pre-load script:
+
+function parseJwt (token) {
+    try {
+		var words = CryptoJS.enc.Base64.parse(token.split('.')[1]);
+		var textString = CryptoJS.enc.Utf8.stringify(words);
+      return JSON.parse(textString);
+    } catch (e) {
+      return null;
+    }
+};
+
+// in scripting of the request:
+
+var body = JSON.parse(mm.response.body.body)
+console.log(JSON.stringify(parseJwt(body.access_token), null, 2))
+```
+
+
 # Libraries
+
+In lot of companies, many services exist and sometimes, a directory with all service specifications exist. Milkman can make use of these directories (currently, only apis.guru format is supported, open tickets to request more formats) to import service definitions. This allows you to import your company's services and use them in your requests with just a few clicks.
+
 # Custom Templates
+
+If you want to export requests in a specific format, you can create custom templates. These templates are written in [mustache](https://mustache.github.io/) with whitespace control extensions. Some examples of http exports:
+
+## WGet
+
+Useful because some alpine docker images dont have curl installed but busybox wget
+
+```mustache
+wget -O- {{#headers.entries-}}{{#enabled-}}
+--header="{{&name}}: {{&value}}"
+{{_/enabled}}{{/headers.entries_}}
+{{&url}}
+```
+
+## Spring Rest Template
+
+If you program and need to implement the request in java / spring
+
+```mustache
+RestTemplate restTemplate = new RestTemplate();
+
+Headers headers = new Headers();
+{{#headers.entries}}{{#enabled-}}
+headers.add("{{&name}}", "{{&value}}");
+{{/enabled}}{{/headers.entries-}}
+{{#body.body-}}
+String body = "{{&.}}";
+{{-/body.body}}
+HttpEntity<String> request = new HttpEntity<>(
+{{-#body.body-}}
+body,
+{{-/body.body-}}
+headers);
+ResponseEntity<String> response = restTemplate
+  .exchange("{{url}}", HttpMethod.{{httpMethod}}, request, String.class);
+
+String responseBody = response.getBody();
+```

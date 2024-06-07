@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>News About Milkman on Milkman</title>
-    <link>http://localhost:1313/blog/news/</link>
+    <link>https://milkman.dev/blog/news/</link>
     <description>Recent content in News About Milkman on Milkman</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="http://localhost:1313/blog/news/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://milkman.dev/blog/news/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>oAuth support arrived</title>
-      <link>http://localhost:1313/blog/2021/04/27/oauth-support-arrived/</link>
+      <link>https://milkman.dev/blog/2021/04/27/oauth-support-arrived/</link>
       <pubDate>Tue, 27 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2021/04/27/oauth-support-arrived/</guid>
+      <guid>https://milkman.dev/blog/2021/04/27/oauth-support-arrived/</guid>
       <description>oAuth support shipped Milkman now supports oAuth2 keys and more general provides a (naturally extensible) way to organise secret credentials.&#xA;Keys Putting credentials into environment variables works but had its downsides. When syncing your workspace you might not want to store secrets in e.g. github. Therefore the concept of keys for introduced.&#xA;Those keys live next to an environment and are not synched or exported, so they won&amp;rsquo;t leave your milkman.</description>
     </item>
   </channel>

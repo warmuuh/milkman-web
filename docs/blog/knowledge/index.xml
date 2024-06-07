@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Knowledge Articles on Milkman</title>
-    <link>http://localhost:1313/blog/knowledge/</link>
+    <link>https://milkman.dev/blog/knowledge/</link>
     <description>Recent content in Knowledge Articles on Milkman</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="http://localhost:1313/blog/knowledge/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://milkman.dev/blog/knowledge/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Poweruser Tips For Milkman</title>
-      <link>http://localhost:1313/blog/2024/06/07/poweruser-tips-for-milkman/</link>
+      <link>https://milkman.dev/blog/2024/06/07/poweruser-tips-for-milkman/</link>
       <pubDate>Fri, 07 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2024/06/07/poweruser-tips-for-milkman/</guid>
-      <description>{{ .TableOfContents }}&#xA;AWS AWS RDS AWS DynamoDB AWS SSO SSL Jump Hosts Client Certificates / mTLS Tests as Request-Sequence Scripting Tips&amp;amp;Tricks Printing JWT to Console Custom Authentication External Files Libraries Custom Templates </description>
+      <guid>https://milkman.dev/blog/2024/06/07/poweruser-tips-for-milkman/</guid>
+      <description>This post should be a compilation of more complicated use-cases that fully uses the possibilities provided by Milkman. It should be a collection of tips and tricks that are not immediately obvious, but can be very useful in certain situations.&#xA;AWS As Milkman can interact with Sql and NoSql databases, it can also interact with AWS services. This is done by using the AWS SDK for Java. To use the SDK, you need to add the SDK to your project.</description>
     </item>
     <item>
       <title>Finishing Open-Source Projects</title>
-      <link>http://localhost:1313/blog/2019/10/15/finishing-open-source-projects/</link>
+      <link>https://milkman.dev/blog/2019/10/15/finishing-open-source-projects/</link>
       <pubDate>Tue, 15 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2019/10/15/finishing-open-source-projects/</guid>
+      <guid>https://milkman.dev/blog/2019/10/15/finishing-open-source-projects/</guid>
       <description>Have you ever started an open-source project, dived right into the code, discovered new API features that you loved, fiddled around with the build process, and then take a little break and never come back to it?&#xA;If that sounds familiar, this article is for you.&#xA;In April, I set out to write Milkman, an extensible postman replacement that allows me to finally have the features always missing in Postman. In general, Postman and Milkman are applications that help test web APIs by sending/organizing requests.</description>
     </item>
     <item>
       <title>Fast Startup in Milkman using AppCds</title>
-      <link>http://localhost:1313/blog/2019/07/26/fast-startup-in-milkman-using-appcds/</link>
+      <link>https://milkman.dev/blog/2019/07/26/fast-startup-in-milkman-using-appcds/</link>
       <pubDate>Fri, 26 Jul 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2019/07/26/fast-startup-in-milkman-using-appcds/</guid>
+      <guid>https://milkman.dev/blog/2019/07/26/fast-startup-in-milkman-using-appcds/</guid>
       <description>td;dr; Milkman dynamically (re-)generated AppCds cache to improve startup time of a JavaFx application.This blog post goes into how to apply AppCds on a desktop application with real-world requirements like shipping, updates and plugins.&#xA;Milkman Currently, I am developing Milkman, an alternative to Postman that is extensible and faster (as it is not using electron, but sigh the more lightweight JavaFx stack.&#xA;One goal of this application is to be a &amp;ldquo;jump-in and do something, then leave&amp;rdquo; type of application.</description>
     </item>
   </channel>
