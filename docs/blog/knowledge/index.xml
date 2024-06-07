@@ -1,107 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Milkman – Knowledge Articles</title>
-    <link>https://milkman.dev/blog/knowledge/</link>
+    <title>Knowledge Articles on Milkman</title>
+    <link>http://localhost:1313/blog/knowledge/</link>
     <description>Recent content in Knowledge Articles on Milkman</description>
-    <generator>Hugo -- gohugo.io</generator>
-    
-	  <atom:link href="https://milkman.dev/blog/knowledge/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-      
-        
-      
-    
-    
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/blog/knowledge/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Blog: Finishing Open-Source Projects</title>
-      <link>https://milkman.dev/blog/2019/10/15/finishing-open-source-projects/</link>
+      <title>Poweruser Tips For Milkman</title>
+      <link>http://localhost:1313/blog/2024/06/07/poweruser-tips-for-milkman/</link>
+      <pubDate>Fri, 07 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2024/06/07/poweruser-tips-for-milkman/</guid>
+      <description>{{ .TableOfContents }}&#xA;AWS AWS RDS AWS DynamoDB AWS SSO SSL Jump Hosts Client Certificates / mTLS Tests as Request-Sequence Scripting Tips&amp;amp;Tricks Printing JWT to Console Custom Authentication External Files Libraries Custom Templates </description>
+    </item>
+    <item>
+      <title>Finishing Open-Source Projects</title>
+      <link>http://localhost:1313/blog/2019/10/15/finishing-open-source-projects/</link>
       <pubDate>Tue, 15 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://milkman.dev/blog/2019/10/15/finishing-open-source-projects/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Have you ever started an open-source project, dived right into the code, discovered new API features that you loved, fiddled around with the build process, and then take a little break and never come back to it?&lt;/p&gt;
-&lt;p&gt;If that sounds familiar, this article is for you.&lt;/p&gt;
-&lt;p&gt;In April, I set out to write Milkman, an extensible postman replacement that allows me to finally have the features always missing in Postman. In general, Postman and Milkman are applications that help test web APIs by sending/organizing requests. Milkman is a JavaFX application without many dependencies, having a smaller footprint, for example, than electron apps, and is optimized for fast start-up times. The codebase now is about 12.5K code lines big, and most of it was written in a time span of ~ 20 days in April, normally working around 4–5 hours per day. Since then, I&amp;rsquo;ve spent about one day a week, 2–4 hours, fixing reported issues and/or adding new features.&lt;/p&gt;
-&lt;p&gt;Now, writing a large application like this without falling into the usual traps of losing motivation requires some best practices that I would like to discuss today. I am not writing about coding style, architectures that scale, or how to allow your initial prototype to grow — these are topics for another day.&lt;/p&gt;
-&lt;p&gt;The biggest problem with open-source projects is always motivation — how to keep up the motivation and how to not lose interest and then stop? All of the practices mentioned below will help you maintain motivation and produce a mature (and hopefully open-source) project.&lt;/p&gt;
-&lt;h1 id=&#34;productivity&#34;&gt;Productivity&lt;/h1&gt;
-&lt;p&gt;Being productive helps you spend time on what you actually want to work on, as well as spend time on what you find fun instead of producing churn. It also helps you to create a lot of features within a small amount of time.&lt;/p&gt;
-&lt;h1 id=&#34;a-commit-a-dayweek&#34;&gt;A Commit a Day/Week&lt;/h1&gt;
-&lt;p&gt;This is along the lines of &amp;ldquo;Don’t Break The Chain&amp;rdquo; and might be a well-known motivational technique. As I had some spare time in April, I could spend each day working on Milkman. Later on, I could only spend one day a week developing, but I could still achieve a lot in that time.&lt;/p&gt;
-&lt;p&gt;It was important to me to not skip a day, and even if it was only 30–60 minutes, simply adding some sentences to the readme was better than nothing. Sometimes, I was not in the mood to work much, but as soon as I started, I wanted to finish that one feature, and by the end, I would spend 2–3 hours instead.&lt;/p&gt;
-&lt;h1 id=&#34;planning-that-one-day&#34;&gt;Planning That One Day&lt;/h1&gt;
-&lt;p&gt;As I only have that one day a week, I want to spend it as efficiently as possible. Therefore, I am planning the things I want to do on that day earlier, maybe taking some notes on the train ride. That way, when I fire up my IDE on that day, I am already ready to go and don’t have to think about what to do.&lt;/p&gt;
-&lt;p&gt;Also, I always plan my days by features. I wanted to finish this or that feature on that day. This also means that I had to estimate how long a feature would take and sometimes split it into smaller ones.&lt;/p&gt;
-&lt;p&gt;The third thing I planned for those days was the prioritization of the list of features that I wanted to implement. Each day, there was a must-have feature set and a nice-to-have feature set. After finishing the must-haves, I would normally work ~3 hours anyway. I could then decide to go on with the nice-to-have features or just stop there without any bad feelings. Most often, I picked one or two nice-to-haves as well.&lt;/p&gt;
-&lt;h1 id=&#34;easy-release-process&#34;&gt;Easy Release Process&lt;/h1&gt;
-&lt;p&gt;I wanted to be able to spit out new releases/features in the blink of an eye. I could spend some time streamlining the build process so that it is was not in my way. If I always spent time doing tedious steps to release Milkman, this would be a barrier to even get started adding a new feature. Right now, I only have to type ‘mvn deploy’ and the whole application gets packaged (containing a bundled JRE, an executable for Windows, etc.), and uploaded to the GitHub release page automatically. I can go away and get a coffee meanwhile.&lt;/p&gt;
-&lt;p&gt;Also, I set up a CI that provides access to nightly builds so people can even get development versions of the product.&lt;/p&gt;
-&lt;p&gt;Although it is just one command, it still takes time, and one day, I may be able to further optimize it and put all handling of this into GitHub Actions so that I can trigger it once and continue working on something else.&lt;/p&gt;
-&lt;h1 id=&#34;minimal-tests&#34;&gt;Minimal Tests&lt;/h1&gt;
-&lt;p&gt;This one might be a bit controversial, and I would never advise it (I always write a lot of tests normally), but I have to be honest — this was one of the drivers for being productive. I did not test any obvious functionality. It is a desktop application, and if something does not work, I will see it while using it. I did set up some tests, but they mainly test some of the more complicated stuff (postman collection import or garbage collector quirks in JavaFx).&lt;/p&gt;
-&lt;p&gt;This one might bite me later though. If I want to change things, I might accidentally break something without realizing it. I am still not sure if the trade-off is worth it; let’s see what the future brings. Up until now, I did not run into many issues because of this.&lt;/p&gt;
-&lt;h1 id=&#34;focus&#34;&gt;Focus&lt;/h1&gt;
-&lt;p&gt;Keeping my focus on the goal I wanted to achieve helped me stay effective and develop only what helps solving the problem. Because of the nature of applications, there is a lot of work to be done to finally see some minimum viable product (MVP). Iterating on this is then easier and you can see your progress. To optimize that, the MVP should be as small as possible, so you can see results very early on and get motivated by the outcome and iterations (return of invest, so to say).&lt;/p&gt;
-&lt;h1 id=&#34;clear-thread&#34;&gt;Clear Thread&lt;/h1&gt;
-&lt;p&gt;When building the MVP for Milkman, I was solely concentrating on the clear thread. No design, no optimization, nothing that diverted me from contributing to the happy case use case of my application. The result was even less than an MVP but still a working application with persistence, a “usable” UI and something that executed requests.&lt;/p&gt;
-&lt;h1 id=&#34;no-sidetracking&#34;&gt;No Sidetracking&lt;/h1&gt;
-&lt;p&gt;One thing that was really important was to always reflect on the work that I was currently working on. Is it contributing to the feature that I am currently working on? Yes? Good. No? Either stop it or at least timebox it (to 30 minutes/1 hour. This needs discipline) and drop it rigorously if it did not work out. I also needed to accept loose ends and non-perfect code. I needed to implement some hacks here and there to get things done. At some point later, when those hacks proved to be an obstacle, they got removed. I could obviously spend all day refactoring the whole codebase, but this does not contribute to my current goal.&lt;/p&gt;
-&lt;h1 id=&#34;no-experiments&#34;&gt;No Experiments&lt;/h1&gt;
-&lt;p&gt;Normally, I start a hobby project with the goal of solving a problem but also learning something new (otherwise, it is called ‘work’ :D). Now, for this project, I avoided any experiment. I wanted to learn Kotlin or Go, maybe look into graph databases or marry Spring and JavaFx for a nicer development experience. No. The whole codebase of Milkman is boring plain old Java, nothing special. But that is what I am most productive in. I did not want to spend time finding solutions to problems introduced by my lack of knowledge about a different language or tool.&lt;/p&gt;
-&lt;h1 id=&#34;scope&#34;&gt;Scope&lt;/h1&gt;
-&lt;p&gt;Writing a replacement for Postman gives me a pretty good plan of what features I wanted to have but also what features I don’t want to implement. This helped me with defining the next features that I wanted to work on and leave out unnecessary stuff.&lt;/p&gt;
-&lt;p&gt;Additionally, I defined a set of general requirements before starting development, such as extensibility or fast startup time. All the features/code written was evaluated if it fits those requirements. I did this, again, to always produce stuff that contributes to some of the goals of Milkman.&lt;/p&gt;
-&lt;h1 id=&#34;no-bugs&#34;&gt;No Bugs&lt;/h1&gt;
-&lt;p&gt;This does not mean to write code without bugs (especially, if there are not many tests), but I don’t accept discovered bugs to linger in my code (maybe with “FIXME” close by or a GitHub issue). If I would, they would pile up and rot my development experience. Nobody likes fixing bugs, but that’s why they are always in the must-have feature set planned for a day (see “Planning That One Day”).&lt;/p&gt;
-&lt;h1 id=&#34;sharing-on-social-media&#34;&gt;Sharing on Social Media&lt;/h1&gt;
-&lt;p&gt;Finally, I would like to shortly talk about social media. Getting feedback is great, so you might want to use Twitter or even Twitch for live-coding to get feedback and also a pat on the back for your hard work, which is always a great feeling (GitHub stars, anyone? :D).&lt;/p&gt;
-&lt;p&gt;I chose not to because I think that this might lead to the wrong kind of motivation. I develop Milkman to solve my own needs. I use it day-by-day and fix whatever issue I discover. Having people talk about it is a nice side-effect and I love for people to use Milkman, but that is not the reason for me to go on. It has to be a product that YOU use, but I guess, that is clear anyway.&lt;/p&gt;
-
-      </description>
+      <guid>http://localhost:1313/blog/2019/10/15/finishing-open-source-projects/</guid>
+      <description>Have you ever started an open-source project, dived right into the code, discovered new API features that you loved, fiddled around with the build process, and then take a little break and never come back to it?&#xA;If that sounds familiar, this article is for you.&#xA;In April, I set out to write Milkman, an extensible postman replacement that allows me to finally have the features always missing in Postman. In general, Postman and Milkman are applications that help test web APIs by sending/organizing requests.</description>
     </item>
-    
     <item>
-      <title>Blog: Fast Startup in Milkman using AppCds</title>
-      <link>https://milkman.dev/blog/2019/07/26/fast-startup-in-milkman-using-appcds/</link>
+      <title>Fast Startup in Milkman using AppCds</title>
+      <link>http://localhost:1313/blog/2019/07/26/fast-startup-in-milkman-using-appcds/</link>
       <pubDate>Fri, 26 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://milkman.dev/blog/2019/07/26/fast-startup-in-milkman-using-appcds/</guid>
-      <description>
-        
-        
-        &lt;h2 id=&#34;tddr&#34;&gt;td;dr;&lt;/h2&gt;
-&lt;p&gt;Milkman dynamically (re-)generated AppCds cache to improve startup time of a JavaFx application.This blog post goes into how to apply AppCds on a desktop application with real-world requirements like shipping, updates and plugins.&lt;/p&gt;
-&lt;h1 id=&#34;milkman&#34;&gt;Milkman&lt;/h1&gt;
-&lt;p&gt;Currently, I am developing Milkman, an alternative to Postman that is extensible and faster (as it is not using electron, but &lt;em&gt;sigh&lt;/em&gt; the more lightweight JavaFx stack.&lt;/p&gt;
-&lt;p&gt;One goal of this application is to be a &amp;ldquo;jump-in and do something, then leave&amp;rdquo; type of application. I don&amp;rsquo;t want to wait 10 seconds until it is ready to be used before doing a small request and closing it again.&lt;/p&gt;
-&lt;p&gt;Although Milkman starts already quite fast (compared to e.g. electron apps), it can be optimized further. One option is to use GraalVm to compile to native. Although this would be possible (due to usage of a compile-time dependency injection framework, hardwire), the project is not yet in a stage where it can be setup easily, not to mention windows support. Also JavaFx is on its way to supporting GraalVm.&lt;/p&gt;
-&lt;h1 id=&#34;application-class-data-sharing-appcds&#34;&gt;Application Class Data Sharing (AppCds)&lt;/h1&gt;
-&lt;p&gt;Another option, that might be lesser known, is to use Class Data Sharing (CDS) or more specifically AppCds (which extends CDS on application classes).  AppCds basically caches all information about loaded classes in a file that can be mapped to memory instead of rescanning the whole classpath on every start.
-This was a feature in OracleJdk but is available in OpenJdk as well starting with jdk 10. As Milkman comes with a custom JRE, I can rely on having the right JDK for profiting from AppCds.&lt;/p&gt;
-&lt;p&gt;There is a pretty good article about AppCds at codeFx. They do mention that it is hard to apply AppCds on JavaFx applications as javafx is not packaged anymore with the JDKs. For that reason, I moved to use Liberica as a JDK, which is basically openJdk + JavaFx (and some other features, I guess). The mentioned blog already contains pretty good details on how to initialize AppCds, so I wont repeat those details here. The final result will be, in the case of Milkman, a ~80Mb file. The startup on my machine gets roughly 0.8 seconds faster (I did no real benchmark), which is quite an improvement.&lt;/p&gt;
-&lt;h1 id=&#34;dynamic-appcds&#34;&gt;Dynamic AppCds&lt;/h1&gt;
-&lt;p&gt;This blog should be about how to apply AppCds in a final product where you can&amp;rsquo;t ask users to run a specific sequence of commands or run a script. Also the nature of Milkman (no installs but overwriting application for updating it, drag&amp;amp;drop plugins) leads to changes in both the classpath and the actuall classes (due to updates), which invalidates any generated AppCds cache.
-Also I cannot precompile the AppCds cache and ship it, as this will nearly double the size of the shipped artifact.&lt;/p&gt;
-&lt;p&gt;Having this situation leads us to a list of requirements:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;The AppCds cache should be dynamically compiled on the user-machine.&lt;/li&gt;
-&lt;li&gt;If something is wrong with the AppCds cache, just go on as usual, dont fail application startup&lt;/li&gt;
-&lt;li&gt;If anything invalidates the cache, it should be automatically recreated.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;1-dynamic-creation-of-appcds-cache&#34;&gt;1. Dynamic Creation of AppCds Cache&lt;/h2&gt;
-&lt;p&gt;For creating AppCds Cache, you need to have a list of classes that should be part of the AppCds cache. As this wont change too much, it can already be precompiled and put into the shipped artifact. It might not contain classes used in &amp;ldquo;unknown&amp;rdquo; plugins, so this might be something to compile dynamically as well.
-The appCds cache can be generated by executing the according java-command, which is done in Milkman on a separate thread during the startup, if necessary.&lt;/p&gt;
-&lt;h2 id=&#34;2-transparent-appcds-cache&#34;&gt;2. Transparent AppCds cache&lt;/h2&gt;
-&lt;p&gt;If something is off with the AppCds cache, -Xshare:auto flag will lead to the cache being ignored and the application being started in a normal way.&lt;/p&gt;
-&lt;h2 id=&#34;3-regenerating-an-invalid-appcds-cache&#34;&gt;3. Regenerating an invalid AppCds cache&lt;/h2&gt;
-&lt;p&gt;Now, this is the hard part. How to identify if the current application got loaded via AppCds or if the appCds is actually invalid and was not used during startup. I could only find one reliable way to see, if a Cache got used: try using it again in a sub-process, but with -Xshare:on, which leads to the application being terminated on startup, if the AppCds cache could not be used. Besides other things (like comparing, if the classpath that was used for creating the cache changed), this is exactly what is used in Milkman (see code).&lt;/p&gt;
-&lt;p&gt;If it shows that the cache is actually invalid, the file has to be replaced. This sounds easier than it is, as the file might be locked (in case where classpath changed, the file is not locked, but in case of class-changes, it is). Renaming still works (on Windows), so it will be renamed and deleted on next run.&lt;/p&gt;
-
-      </description>
+      <guid>http://localhost:1313/blog/2019/07/26/fast-startup-in-milkman-using-appcds/</guid>
+      <description>td;dr; Milkman dynamically (re-)generated AppCds cache to improve startup time of a JavaFx application.This blog post goes into how to apply AppCds on a desktop application with real-world requirements like shipping, updates and plugins.&#xA;Milkman Currently, I am developing Milkman, an alternative to Postman that is extensible and faster (as it is not using electron, but sigh the more lightweight JavaFx stack.&#xA;One goal of this application is to be a &amp;ldquo;jump-in and do something, then leave&amp;rdquo; type of application.</description>
     </item>
-    
   </channel>
 </rss>

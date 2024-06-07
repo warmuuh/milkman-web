@@ -3,7 +3,7 @@ title = "Milkman"
 linkTitle = "Milkman"
 +++
 
-{{< blocks/cover title="Milkman: A Request/Response Workbench" image_anchor="top" height="full" color="orange" >}}
+{{< blocks/cover title="Milkman: A Request/Response Workbench" image_anchor="top" height="full" color="primary" >}}
 <div class="mx-auto">
 	<a class="btn btn-lg btn-primary mr-3 mb-4" href="{{< relref "/docs" >}}">
 		Learn More <i class="fas fa-arrow-alt-circle-right ml-2"></i>
@@ -21,37 +21,27 @@ linkTitle = "Milkman"
 Milkman is heavily inspired by Postman. But I got sick of all those electron-based applications that need ages and loads of memory to start up. Therefore i created a JavaFx-based workbench for crafting requests / responses. It is not limited to e.g. http (or more specifically rest) requests. Due to nearly everything being a plugin, other things are possible, like database-requests or GRPC, GraphQl, etc...
 {{% /blocks/lead %}}
 
-{{< blocks/section  color="white" >}}
-
-<h1 class="container">Screenshots</h1>
-
-
-<div class="flex flex-nowrap">
-	<div class="basis-1/4">
-		{{< imgproc screenshot.png Resize "600x" >}}
+{{< blocks/section  color="white" type="row">}}
+{{< imgproc screenshot.png Resize "600x" >}}
 		Screenshot of Milkman light theme
 		{{< /imgproc >}}
-	</div>
-	<div class="basis-1/4">
 		{{< imgproc screenshot Resize "600x" >}}
 		Screenshot of Milkman dark theme
 		{{< /imgproc >}}
-	</div>
-</div>
 
 
 {{< /blocks/section >}}
 
-{{< blocks/section color="dark" >}}
+{{< blocks/section color="dark" type="row">}}
 {{% blocks/feature icon="fa-gift" title="New features regularly " %}}
-There are more and more plugins/features coming. 
+There are more and more plugins/features coming.
 
 Please follow this space for updates!
 {{% /blocks/feature %}}
 
 
 {{% blocks/feature icon="fab fa-github" title="Contributions welcome!" url="https://github.com/warmuuh/milkman" %}}
-If you have any ideas about how to improve Milkman, you are welcome to open a [Pull Request](https://github.com/warmuuh/milkman/pulls), 
+If you have any ideas about how to improve Milkman, you are welcome to open a [Pull Request](https://github.com/warmuuh/milkman/pulls),
 an [Issue](https://github.com/warmuuh/milkman/issues) or just ask in [Discussions](https://github.com/warmuuh/milkman/discussions)
 {{% /blocks/feature %}}
 

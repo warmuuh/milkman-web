@@ -32,7 +32,7 @@ Description of some more advanced Features of Milkman
   * <kbd>CTRL</kbd>+<kbd>E</kbd> - Edit current Environment
   * <kbd>CTRL</kbd>+<kbd>Space</kbd> - Quick-Edit of Variables
   * <kbd>ESC</kbd> - Cancel running Request
-  
+
 
 # Copy&Paste in Tables
 
@@ -62,3 +62,39 @@ Description of some more advanced Features of Milkman
 you can register libraries to easily look-up and import services from a central registry, such as [APIs.guru](http://apis.guru).
 
 ![Example of setting up and using Libraries](/images/milkman-library.gif)
+
+
+
+## Code Templates
+
+* you can define custom templates for every type of request yourself. Do you often need to write Spring Webclient code?
+setup some custom template for it. (you can do so in the `options` dialog)
+* Some predefined templates are available already. (see [here](/milkman-rest/src/main/resources/META-INF))
+* Syntax is similar to [mustache](https://github.com/samskivert/jmustache) but enhanced with whitespace control. example:
+
+```
+curl -X {{httpMethod}}
+
+{{_#headers.entries-}}
+-H "{{name}}: {{value}}"
+{{-/headers.entries_}}
+
+{{url}}
+```
+
+* Whitespace control:
+    * `{{-` removes all whitespaces (including linebreaks) *before* the tag
+    * `{{_` removes all whitespaces (including linebreaks) *before* the tag and replaces it with one space
+    * `-}}` removes all whitespaces (including linebreaks) *after* the tag
+    * `_}}` removes all whitespaces (including linebreaks) *after* the tag  and replaces it with one space
+
+
+## Insomnia Import
+
+* exported Collections (see [Insomnia Documentation](https://docs.insomnia.rest/insomnia/import-export-data#export-data)) can be imported into Milkman.
+* currently, Http, Websocket, event-stream, Grpc and Gql requests are supported
+* environments are also imported
+* :exclamation: There are some conceptual differences between insomnia and milkman though:
+    * Insomnia root-level requests are imported into a collection with the name of the workspace
+    * Insomnia environments overload each other based on a hierarchy. this is flattened on import.
+    * Grpc requests refere to a shared file in the workspace. This is flattened in milkman (i.e. file-content is copied to each request refering to it)

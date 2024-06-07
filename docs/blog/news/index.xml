@@ -1,40 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Milkman – News About Milkman</title>
-    <link>https://milkman.dev/blog/news/</link>
+    <title>News About Milkman on Milkman</title>
+    <link>http://localhost:1313/blog/news/</link>
     <description>Recent content in News About Milkman on Milkman</description>
-    <generator>Hugo -- gohugo.io</generator>
-    
-	  <atom:link href="https://milkman.dev/blog/news/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-      
-        
-      
-    
-    
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/blog/news/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Blog: oAuth support arrived</title>
-      <link>https://milkman.dev/blog/2021/04/27/oauth-support-arrived/</link>
+      <title>oAuth support arrived</title>
+      <link>http://localhost:1313/blog/2021/04/27/oauth-support-arrived/</link>
       <pubDate>Tue, 27 Apr 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://milkman.dev/blog/2021/04/27/oauth-support-arrived/</guid>
-      <description>
-        
-        
-        &lt;h1 id=&#34;oauth-support-shipped&#34;&gt;oAuth support shipped&lt;/h1&gt;
-&lt;p&gt;Milkman now supports oAuth2 keys and more general provides a (naturally extensible) way to organise secret credentials.&lt;/p&gt;
-&lt;h1 id=&#34;keys&#34;&gt;Keys&lt;/h1&gt;
-&lt;p&gt;Putting credentials into environment variables works but had its downsides. When syncing your workspace you might not want to store secrets in e.g. github. Therefore the concept of keys for introduced.&lt;/p&gt;
-&lt;p&gt;Those keys live next to an environment and are not synched or exported, so they won&amp;rsquo;t leave your milkman.&lt;/p&gt;
-&lt;p&gt;Keys are basically objects that have a string value, but it is up to the plug-in to come up with that value. A simple example is a base64 value of a given string.&lt;/p&gt;
-&lt;h1 id=&#34;oauth-support&#34;&gt;oAuth support&lt;/h1&gt;
-&lt;p&gt;Another example is oAuth2 support. The actual value of the key will be retrieved and cached from an authorization server. Refresh of a token will happen implicitly, so once you&amp;rsquo;ve setup your oAuth data, you can use that key without thinking about it again.&lt;/p&gt;
-&lt;h1 id=&#34;other-types-of-keys&#34;&gt;other types of keys&lt;/h1&gt;
-&lt;p&gt;I have no plans yet to add support for other kind of keys but some ideas. I could think of supporting general jwt minting or integration with an external credential storage such as vault, let&amp;rsquo;s see&amp;hellip;&lt;/p&gt;
-
-      </description>
+      <guid>http://localhost:1313/blog/2021/04/27/oauth-support-arrived/</guid>
+      <description>oAuth support shipped Milkman now supports oAuth2 keys and more general provides a (naturally extensible) way to organise secret credentials.&#xA;Keys Putting credentials into environment variables works but had its downsides. When syncing your workspace you might not want to store secrets in e.g. github. Therefore the concept of keys for introduced.&#xA;Those keys live next to an environment and are not synched or exported, so they won&amp;rsquo;t leave your milkman.</description>
     </item>
-    
   </channel>
 </rss>

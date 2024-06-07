@@ -1,11 +1,10 @@
 <!doctype html>
-<html lang="en" class="no-js">
-  <head>
+<html itemscope itemtype="http://schema.org/WebPage" lang="en" class="no-js">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.100.2" />
-<link rel="canonical" type="text/html" href="https://milkman.dev/blog/">
-<link rel="alternate" type="application/rss&#43;xml" href="https://milkman.dev/blog/index.xml">
+<link rel="canonical" type="text/html" href="http://localhost:1313/blog/">
+<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/blog/index.xml">
 <meta name="robots" content="noindex, nofollow">
 
 
@@ -21,28 +20,34 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>Milkman Blog | Milkman</title>
-<meta name="description" content="This is the blog section. It has two categories: News and Releases.
-Files in these directories will be listed in reverse chronological order.
-">
-<meta property="og:title" content="Milkman Blog" />
-<meta property="og:description" content="A Request/Response Workbench" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://milkman.dev/blog/" /><meta property="og:site_name" content="Milkman" />
+<meta name="description" content="A Request/Response Workbench">
+<meta property="og:url" content="http://localhost:1313/blog/">
+  <meta property="og:site_name" content="Milkman">
+  <meta property="og:title" content="Milkman Blog">
+  <meta property="og:description" content="This is the blog section. It has two categories: News and Releases.
+Files in these directories will be listed in reverse chronological order.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="website">
 
-<meta itemprop="name" content="Milkman Blog">
-<meta itemprop="description" content="A Request/Response Workbench"><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Milkman Blog"/>
-<meta name="twitter:description" content="A Request/Response Workbench"/>
+  <meta itemprop="name" content="Milkman Blog">
+  <meta itemprop="description" content="This is the blog section. It has two categories: News and Releases.
+Files in these directories will be listed in reverse chronological order.">
+  <meta itemprop="dateModified" content="2022-07-04T16:35:10+02:00">
+  <meta itemprop="wordCount" content="23">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Milkman Blog">
+  <meta name="twitter:description" content="This is the blog section. It has two categories: News and Releases.
+Files in these directories will be listed in reverse chronological order.">
 
 
 
 
-<link rel="preload" href="/scss/main.min.209ee91954d0f2f182770e6c71011a5580360636bcf2a9bcf7f1c3da478784ff.css" as="style">
-<link href="/scss/main.min.209ee91954d0f2f182770e6c71011a5580360636bcf2a9bcf7f1c3da478784ff.css" rel="stylesheet" integrity="">
+
+<link href="/scss/main.css" rel="stylesheet">
 
 <script
-  src="https://code.jquery.com/jquery-3.6.0.min.js"
-  integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK"
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
   crossorigin="anonymous"></script>
 
   </head>
@@ -97,8 +102,10 @@ Files in these directories will be listed in reverse chronological order.
 			
 		</ul>
 	</div>
-	<div class="navbar-nav d-none d-lg-block"><input type="search" class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete="off">
-</div>
+	<div class="navbar-nav d-none d-lg-block"><div class="td-search">
+  <div class="td-search__icon"></div>
+  <input type="search" class="td-search__input form-control td-search-input" placeholder="Search this site…" aria-label="Search this site…" autocomplete="off">
+</div></div>
 	<a href="https://github.com/warmuuh/milkman">
 		<img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/warmuuh/milkman?style=social">
 	</a>
@@ -112,7 +119,7 @@ Files in these directories will be listed in reverse chronological order.
           </div>
           <div class="d-none d-xl-block col-xl-2 td-toc d-print-none">
           </div>
-          <main class="col-12 col-md-9 col-xl-8 pl-md-5 pr-md-4" role="main">
+          <main class="col-12 col-md-9 col-xl-8 ps-md-5 pe-md-4" role="main">
             
 
 
@@ -217,6 +224,16 @@ This is the multi-page printable view of this section.
     
 	
 
+    <li><a href="#pg-f4f8e459424b35a79cff92ac94091d6b">Poweruser Tips For Milkman</a></li>
+
+
+
+    
+  
+    
+    
+	
+
     <li><a href="#pg-74a20f9e3de9ee7fad057bc563fbaf91">Finishing Open-Source Projects</a></li>
 
 
@@ -305,7 +322,7 @@ This is the multi-page printable view of this section.
 	<div class="td-byline mb-4">
 		
         
-		<time datetime="2021-04-27" class="text-muted">Tuesday, April 27, 2021</time>
+		<time datetime="2021-04-27" class="text-body-secondary">Tuesday, April 27, 2021</time>
         
 	</div>
 	<h1 id="oauth-support-shipped">oAuth support shipped</h1>
@@ -411,12 +428,81 @@ This is the multi-page printable view of this section.
   
 
 <div class="td-content" style="">
+    <h1 id="pg-f4f8e459424b35a79cff92ac94091d6b">Poweruser Tips For Milkman</h1>
+	<div class="lead">Use the full power of Milkman with these tips and tricks</div>
+	<div class="td-byline mb-4">
+		
+        
+		<time datetime="2024-06-07" class="text-body-secondary">Friday, June 07, 2024</time>
+        
+	</div>
+	<p>This post should be a compilation of more complicated use-cases that fully uses the possibilities provided by Milkman. It should be a collection of tips and tricks that are not immediately obvious, but can be very useful in certain situations.</p>
+<h1 id="aws">AWS</h1>
+<p>As Milkman can interact with Sql and NoSql databases, it can also interact with AWS services. This is done by using the AWS SDK for Java. To use the SDK, you need to add the SDK to your project. See following sections for examples.</p>
+<h2 id="aws-rds">AWS RDS</h2>
+<p>AWS RDS is just a SQL database in the cloud. To connect to it, you need to add the AWS SDK to your installation. As Milkman is using JDBC for sql connections, you can use <a href="https://github.com/aws/aws-advanced-jdbc-wrapper">AWS Advanced JDBC Wrapper</a> to your <code>/plugin</code> directory, additionally to your usual JDBC driver (like postgres or mysql jdbc conncetor) and use it like this:</p>
+<pre tabindex="0"><code>jdbc:aws-wrapper:postgresql://database-pg-name.cluster-XYZ.us-east-2.rds.amazonaws.com:5432/connectionSample
+</code></pre><p>Another option to connect to (access-restricted) RDS instances is to use a SSH tunnel. See <a href="/blog/2024/06/07/poweruser-tips-for-milkman/#ssl-jump-hosts">SSL Jump Hosts</a> for more information.</p>
+<p>See <a href="/blog/2024/06/07/poweruser-tips-for-milkman/#aws-sso">AWS SSO</a> for how to authenticate with AWS via SSO.</p>
+<h2 id="aws-dynamodb">AWS DynamoDB</h2>
+<p>AWS DynamoDB is a NoSQL database in the cloud. To connect to it, you need to add the AWS SDK to your installation. As Milkman is using <a href="https://jnosql.org/">JNoSql</a> for NoSQL connections, you can use the <a href="https://github.com/warmuuh/jnosql-dynamodb-document">jnosql-dynamodb-document Driver</a> to your <code>/plugin</code> directory and use it like this:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">#Parameters</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">jnosql.document.provider</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">com.github.warmuuh.jnosql.dynamodb.DynamoDBDocumentConfiguration</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">jnosql.dynamodb.region</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">eu-central-1</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">jnosql.dynamodb.profile</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">my_profile</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">jnosql.dynamodb.prefix</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">some-prefix-</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">jnosql.dynamodb.selectmode</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">scan</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><p>See <a href="/blog/2024/06/07/poweruser-tips-for-milkman/#aws-sso">AWS SSO</a> for how to authenticate with AWS via SSO.</p>
+<h2 id="aws-sso">AWS SSO</h2>
+<p>To support authentification via AWS SSO, simply drop the <a href="https://mvnrepository.com/artifact/software.amazon.awssdk/sso">SSO Artifact</a> into your <code>/plugin</code> directory. Then you can use the following code to authenticate:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># in terminal:</span>
+</span></span><span style="display:flex;"><span>aws sso login --profile my_profile
+</span></span></code></pre></div><p>All aws-related functionality in milkman will pick up the active login and use it for opening connections.</p>
+<h1 id="jump-hosts-via-socks-proxy">Jump Hosts via Socks Proxy</h1>
+<p>For connecting to databases that are not directly accessible from your machine, you can use a SSH tunnel. Usually, you need to manually open a tunnel via <code>ssh</code> and use the tunnel as a proxy (socks-proxy) for your connection. Milkman can do this in a best-effort way, as some drivers are natively supporting this. It is currently supported for:</p>
+<ul>
+<li>Jdbc Connections: appending <code>socksProxyPort</code>, <code>socksProxyHost</code> and <code>socksProxyRemoteDns</code> to the connection string</li>
+<li>Cassandra</li>
+<li>Others: system properties <code>socksProxyPort</code> and <code>socksProxyPort</code> are set. this is respected by some drivers and http clients</li>
+</ul>
+<h1 id="jump-hosts-in-jdbc-connections">Jump Hosts in JDBC Connections</h1>
+<p>If you use jdbc, an easier method is to <a href="https://github.com/bokysan/jdbc-sshj">jdbc-sshj</a> which opens a tunnel when needed. The JDBC-string then looks a bit more complicated:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># connecting to an aws rds instance via a jump host</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># {{host}} and {{port}} are placeholders that are replaced by the jdbc-sshj driver</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">jdbc:sshj-native://&lt;user&gt;@&lt;jump-host&gt;?remote=&lt;aws-endpoint&gt;:5432;;;jdbc:postgresql://{{host}}:{{port}}/&lt;database&gt;?user=&lt;user&gt;&amp;password=&lt;password&gt;</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><h1 id="client-certificates--mtls">Client Certificates / mTLS</h1>
+<h1 id="tests-as-request-sequence">Tests as Request-Sequence</h1>
+<h1 id="scripting-tipstricks">Scripting Tips&amp;Tricks</h1>
+<h2 id="printing-jwt-to-console">Printing JWT to Console</h2>
+<h2 id="custom-authentication">Custom Authentication</h2>
+<h1 id="external-files">External Files</h1>
+<h1 id="libraries">Libraries</h1>
+<h1 id="custom-templates">Custom Templates</h1>
+
+</div>
+
+
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+
+  
+
+<div class="td-content" style="page-break-before: always">
     <h1 id="pg-74a20f9e3de9ee7fad057bc563fbaf91">Finishing Open-Source Projects</h1>
 	<div class="lead">Take one last stride to cross the finish line and wrap up your OS project!</div>
 	<div class="td-byline mb-4">
 		
         
-		<time datetime="2019-10-15" class="text-muted">Tuesday, October 15, 2019</time>
+		<time datetime="2019-10-15" class="text-body-secondary">Tuesday, October 15, 2019</time>
         
 	</div>
 	<p>Have you ever started an open-source project, dived right into the code, discovered new API features that you loved, fiddled around with the build process, and then take a little break and never come back to it?</p>
@@ -480,7 +566,7 @@ This is the multi-page printable view of this section.
 	<div class="td-byline mb-4">
 		
         
-		<time datetime="2019-07-26" class="text-muted">Friday, July 26, 2019</time>
+		<time datetime="2019-07-26" class="text-body-secondary">Friday, July 26, 2019</time>
         
 	</div>
 	<h2 id="tddr">td;dr;</h2>
@@ -530,115 +616,68 @@ The appCds cache can be generated by executing the according java-command, which
           </main>
         </div>
       </div>
-      
-<footer class="bg-dark py-5 row d-print-none">
-  <div class="container-fluid mx-sm-5">
-    <div class="row">
-      <div class="col-6 col-sm-4 text-xs-center order-sm-2">
-        
-        
-        
-<ul class="list-inline mb-0">
+      <footer class="td-footer row d-print-none">
+  <div class="container-fluid">
+    <div class="row mx-md-2">
+      <div class="td-footer__left col-6 col-sm-4 order-sm-1">
+        <ul class="td-footer__links-list">
   
-  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="User Discussion Board" aria-label="User Discussion Board">
-    <a class="text-white" target="_blank" rel="noopener" href="https://github.com/warmuuh/milkman/discussions" aria-label="User Discussion Board">
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="User Discussion Board" aria-label="User Discussion Board">
+    <a target="_blank" rel="noopener" href="https://github.com/warmuuh/milkman/discussions" aria-label="User Discussion Board">
       <i class="fa fa-comment"></i>
     </a>
   </li>
   
-  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Twitter" aria-label="Twitter">
-    <a class="text-white" target="_blank" rel="noopener" href="https://twitter.com/MilkmanApp" aria-label="Twitter">
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="Twitter" aria-label="Twitter">
+    <a target="_blank" rel="noopener" href="https://twitter.com/MilkmanApp" aria-label="Twitter">
       <i class="fab fa-twitter"></i>
     </a>
   </li>
   
-  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Report an Issue" aria-label="Report an Issue">
-    <a class="text-white" target="_blank" rel="noopener" href="https://github.com/warmuuh/milkman/issues" aria-label="Report an Issue">
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="Report an Issue" aria-label="Report an Issue">
+    <a target="_blank" rel="noopener" href="https://github.com/warmuuh/milkman/issues" aria-label="Report an Issue">
       <i class="fab fa-envelope"></i>
     </a>
   </li>
   
 </ul>
 
-        
-        
-      </div>
-      <div class="col-6 col-sm-4 text-right text-xs-center order-sm-3">
-        
-        
-        
-<ul class="list-inline mb-0">
+      </div><div class="td-footer__right col-6 col-sm-4 order-sm-3">
+        <ul class="td-footer__links-list">
   
-  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="GitHub" aria-label="GitHub">
-    <a class="text-white" target="_blank" rel="noopener" href="https://github.com/warmuuh/milkman" aria-label="GitHub">
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="GitHub" aria-label="GitHub">
+    <a target="_blank" rel="noopener" href="https://github.com/warmuuh/milkman" aria-label="GitHub">
       <i class="fab fa-github"></i>
     </a>
   </li>
   
-  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Gitter" aria-label="Gitter">
-    <a class="text-white" target="_blank" rel="noopener" href="https://gitter.im/milkman-project/community" aria-label="Gitter">
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="Gitter" aria-label="Gitter">
+    <a target="_blank" rel="noopener" href="https://gitter.im/milkman-project/community" aria-label="Gitter">
       <i class="fab fa-gitter"></i>
     </a>
   </li>
   
-  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Issue list" aria-label="Issue list">
-    <a class="text-white" target="_blank" rel="noopener" href="https://github.com/warmuuh/milkman/issues" aria-label="Issue list">
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="Issue list" aria-label="Issue list">
+    <a target="_blank" rel="noopener" href="https://github.com/warmuuh/milkman/issues" aria-label="Issue list">
       <i class="fa fa-envelope"></i>
     </a>
   </li>
   
 </ul>
 
-        
-        
-      </div>
-      <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
-        <small class="text-white">&copy; 2022 Milkman All Rights Reserved</small>
-        <small class="ml-1"><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a></small>
-	
-		
-	
+      </div><div class="td-footer__center col-12 col-sm-4 py-2 order-sm-2">
+        <span class="td-footer__copyright">&copy;
+    2024
+    <span class="td-footer__authors">Milkman</span></span><span class="td-footer__all_rights_reserved">All Rights Reserved</span><span class="ms-2"><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a></span>
       </div>
     </div>
   </div>
 </footer>
 
-
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
-    integrity="sha512-UR25UO94eTnCVwjbXozyeVd6ZqpaAE9naiEUBK/A+QDbfSTQFhPGj5lOR6d8tsgbBk84Ggb5A3EkjsOgPRPcKA=="
-    crossorigin="anonymous"></script>
-
-
-
-
-
+    <script src="/js/main.js"></script>
+<script defer src="/js/click-to-copy.js" crossorigin="anonymous"></script>
 <script src='/js/tabpane-persist.js'></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script src="/js/main.min.b3e7a0207c15a8c2f59ead86ad6c4f2d1c54585ad56c29fb17304ec3e11a7269.js" integrity="sha256-s&#43;egIHwVqML1nq2GrWxPLRxUWFrVbCn7FzBOw&#43;Eacmk=" crossorigin="anonymous"></script>
-
-
-
 
   </body>
 </html>

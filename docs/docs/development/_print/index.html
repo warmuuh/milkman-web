@@ -1,11 +1,10 @@
 <!doctype html>
-<html lang="en" class="no-js">
-  <head>
+<html itemscope itemtype="http://schema.org/WebPage" lang="en" class="no-js">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.100.2" />
-<link rel="canonical" type="text/html" href="https://milkman.dev/docs/development/">
-<link rel="alternate" type="application/rss&#43;xml" href="https://milkman.dev/docs/development/index.xml">
+<link rel="canonical" type="text/html" href="http://localhost:1313/docs/development/">
+<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/docs/development/index.xml">
 <meta name="robots" content="noindex, nofollow">
 
 
@@ -21,33 +20,31 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>Milkman Plugin Development | Milkman</title>
-<meta name="description" content="
+<meta name="description" content="A Request/Response Workbench">
+<meta property="og:url" content="http://localhost:1313/docs/development/">
+  <meta property="og:site_name" content="Milkman">
+  <meta property="og:title" content="Milkman Plugin Development">
+  <meta property="og:description" content="This section shows some information on how to develop your own plugins for milkman">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="website">
 
-
-This section shows some information on how to develop your own plugins for milkman
-
-
-
-">
-<meta property="og:title" content="Milkman Plugin Development" />
-<meta property="og:description" content="A Request/Response Workbench" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://milkman.dev/docs/development/" /><meta property="og:site_name" content="Milkman" />
-
-<meta itemprop="name" content="Milkman Plugin Development">
-<meta itemprop="description" content="A Request/Response Workbench"><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Milkman Plugin Development"/>
-<meta name="twitter:description" content="A Request/Response Workbench"/>
-
+  <meta itemprop="name" content="Milkman Plugin Development">
+  <meta itemprop="description" content="This section shows some information on how to develop your own plugins for milkman">
+  <meta itemprop="dateModified" content="2022-07-14T15:52:26+02:00">
+  <meta itemprop="wordCount" content="14">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Milkman Plugin Development">
+  <meta name="twitter:description" content="This section shows some information on how to develop your own plugins for milkman">
 
 
 
-<link rel="preload" href="/scss/main.min.209ee91954d0f2f182770e6c71011a5580360636bcf2a9bcf7f1c3da478784ff.css" as="style">
-<link href="/scss/main.min.209ee91954d0f2f182770e6c71011a5580360636bcf2a9bcf7f1c3da478784ff.css" rel="stylesheet" integrity="">
+
+
+<link href="/scss/main.css" rel="stylesheet">
 
 <script
-  src="https://code.jquery.com/jquery-3.6.0.min.js"
-  integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK"
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
   crossorigin="anonymous"></script>
 
   </head>
@@ -102,8 +99,10 @@ This section shows some information on how to develop your own plugins for milkm
 			
 		</ul>
 	</div>
-	<div class="navbar-nav d-none d-lg-block"><input type="search" class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete="off">
-</div>
+	<div class="navbar-nav d-none d-lg-block"><div class="td-search">
+  <div class="td-search__icon"></div>
+  <input type="search" class="td-search__input form-control td-search-input" placeholder="Search this site…" aria-label="Search this site…" autocomplete="off">
+</div></div>
 	<a href="https://github.com/warmuuh/milkman">
 		<img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/warmuuh/milkman?style=social">
 	</a>
@@ -113,7 +112,7 @@ This section shows some information on how to develop your own plugins for milkm
     <div class="container-fluid td-outer">
       <div class="td-main">
         <div class="row flex-xl-nowrap">
-          <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
+          <main class="col-12 col-md-9 col-xl-8 ps-md-5" role="main">
             
 
 
@@ -199,9 +198,9 @@ This is the multi-page printable view of this section.
 	<p>Plugins in milkman can extend various functionality. For this, an explanation of how a request is structured is necessary first.</p>
 <h1 id="getting-started">Getting Started</h1>
 <p>A <a href="https://github.com/warmuuh/milkman/tree/master/milkman-note">sample plugin</a> was created that shows how to add an Aspect Tab to a Request.</p>
-<p>if you want to setup a new project, an exemplary pom can be found <a href="/docs/development/setup">here</a>.</p>
+<p>if you want to setup a new project, an exemplary pom can be found <a href="/docs/development/setup/">here</a>.</p>
 <h1 id="data-model">Data Model</h1>
-<p><img src="http://www.gravizo.com/svg?@startuml;object%20Workspace;object%20Environment;Environment%20:%20isGlobal;Workspace%20o--%20%22*%22%20Environment;object%20Collection;Workspace%20o--%20%22*%22%20Collection;object%20Request;Collection%20o--%20%22*%22%20Request;%20Request%20--%3E%20HtmlRequest%20;%20Request%20--%3E%20SqlRequest%20;Request%20o-%20%22*%22%20RequestAspect;RequestAspect%20--%3E%20HttpHeaderRequestAspect;RequestAspect%20--%3E%20HttpBodyRequestAspect;@enduml" alt="img"></p>
+<p><img alt="img" src="http://www.gravizo.com/svg?@startuml;object%20Workspace;object%20Environment;Environment%20:%20isGlobal;Workspace%20o--%20%22*%22%20Environment;object%20Collection;Workspace%20o--%20%22*%22%20Collection;object%20Request;Collection%20o--%20%22*%22%20Request;%20Request%20--%3E%20HtmlRequest%20;%20Request%20--%3E%20SqlRequest%20;Request%20o-%20%22*%22%20RequestAspect;RequestAspect%20--%3E%20HttpHeaderRequestAspect;RequestAspect%20--%3E%20HttpBodyRequestAspect;@enduml"></p>
 <p>The core of milkman is very abstract and is only intended to organize workspaces, which contain environments and collections of requests.
 A request is of a specific type and might contain some basic data. In the case of an HttpRequest, this might be the URL and the Method.</p>
 <p>A request can also contain several <code>RequestAspects</code> which describe the request object further. In our example, this might be headers or the body of a request, but can also contain totally unrelated and auxiliary attributes.</p>
@@ -334,115 +333,68 @@ You can use <code>setUserData</code> in some cases to have a strong reference of
           </main>
         </div>
       </div>
-      
-<footer class="bg-dark py-5 row d-print-none">
-  <div class="container-fluid mx-sm-5">
-    <div class="row">
-      <div class="col-6 col-sm-4 text-xs-center order-sm-2">
-        
-        
-        
-<ul class="list-inline mb-0">
+      <footer class="td-footer row d-print-none">
+  <div class="container-fluid">
+    <div class="row mx-md-2">
+      <div class="td-footer__left col-6 col-sm-4 order-sm-1">
+        <ul class="td-footer__links-list">
   
-  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="User Discussion Board" aria-label="User Discussion Board">
-    <a class="text-white" target="_blank" rel="noopener" href="https://github.com/warmuuh/milkman/discussions" aria-label="User Discussion Board">
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="User Discussion Board" aria-label="User Discussion Board">
+    <a target="_blank" rel="noopener" href="https://github.com/warmuuh/milkman/discussions" aria-label="User Discussion Board">
       <i class="fa fa-comment"></i>
     </a>
   </li>
   
-  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Twitter" aria-label="Twitter">
-    <a class="text-white" target="_blank" rel="noopener" href="https://twitter.com/MilkmanApp" aria-label="Twitter">
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="Twitter" aria-label="Twitter">
+    <a target="_blank" rel="noopener" href="https://twitter.com/MilkmanApp" aria-label="Twitter">
       <i class="fab fa-twitter"></i>
     </a>
   </li>
   
-  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Report an Issue" aria-label="Report an Issue">
-    <a class="text-white" target="_blank" rel="noopener" href="https://github.com/warmuuh/milkman/issues" aria-label="Report an Issue">
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="Report an Issue" aria-label="Report an Issue">
+    <a target="_blank" rel="noopener" href="https://github.com/warmuuh/milkman/issues" aria-label="Report an Issue">
       <i class="fab fa-envelope"></i>
     </a>
   </li>
   
 </ul>
 
-        
-        
-      </div>
-      <div class="col-6 col-sm-4 text-right text-xs-center order-sm-3">
-        
-        
-        
-<ul class="list-inline mb-0">
+      </div><div class="td-footer__right col-6 col-sm-4 order-sm-3">
+        <ul class="td-footer__links-list">
   
-  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="GitHub" aria-label="GitHub">
-    <a class="text-white" target="_blank" rel="noopener" href="https://github.com/warmuuh/milkman" aria-label="GitHub">
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="GitHub" aria-label="GitHub">
+    <a target="_blank" rel="noopener" href="https://github.com/warmuuh/milkman" aria-label="GitHub">
       <i class="fab fa-github"></i>
     </a>
   </li>
   
-  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Gitter" aria-label="Gitter">
-    <a class="text-white" target="_blank" rel="noopener" href="https://gitter.im/milkman-project/community" aria-label="Gitter">
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="Gitter" aria-label="Gitter">
+    <a target="_blank" rel="noopener" href="https://gitter.im/milkman-project/community" aria-label="Gitter">
       <i class="fab fa-gitter"></i>
     </a>
   </li>
   
-  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Issue list" aria-label="Issue list">
-    <a class="text-white" target="_blank" rel="noopener" href="https://github.com/warmuuh/milkman/issues" aria-label="Issue list">
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="Issue list" aria-label="Issue list">
+    <a target="_blank" rel="noopener" href="https://github.com/warmuuh/milkman/issues" aria-label="Issue list">
       <i class="fa fa-envelope"></i>
     </a>
   </li>
   
 </ul>
 
-        
-        
-      </div>
-      <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
-        <small class="text-white">&copy; 2022 Milkman All Rights Reserved</small>
-        <small class="ml-1"><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a></small>
-	
-		
-	
+      </div><div class="td-footer__center col-12 col-sm-4 py-2 order-sm-2">
+        <span class="td-footer__copyright">&copy;
+    2024
+    <span class="td-footer__authors">Milkman</span></span><span class="td-footer__all_rights_reserved">All Rights Reserved</span><span class="ms-2"><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a></span>
       </div>
     </div>
   </div>
 </footer>
 
-
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
-    integrity="sha512-UR25UO94eTnCVwjbXozyeVd6ZqpaAE9naiEUBK/A+QDbfSTQFhPGj5lOR6d8tsgbBk84Ggb5A3EkjsOgPRPcKA=="
-    crossorigin="anonymous"></script>
-
-
-
-
-
+    <script src="/js/main.js"></script>
+<script defer src="/js/click-to-copy.js" crossorigin="anonymous"></script>
 <script src='/js/tabpane-persist.js'></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script src="/js/main.min.b3e7a0207c15a8c2f59ead86ad6c4f2d1c54585ad56c29fb17304ec3e11a7269.js" integrity="sha256-s&#43;egIHwVqML1nq2GrWxPLRxUWFrVbCn7FzBOw&#43;Eacmk=" crossorigin="anonymous"></script>
-
-
-
 
   </body>
 </html>

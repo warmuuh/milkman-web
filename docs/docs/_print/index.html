@@ -1,11 +1,10 @@
 <!doctype html>
-<html lang="en" class="no-js">
-  <head>
+<html itemscope itemtype="http://schema.org/WebPage" lang="en" class="no-js">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.100.2" />
-<link rel="canonical" type="text/html" href="https://milkman.dev/docs/">
-<link rel="alternate" type="application/rss&#43;xml" href="https://milkman.dev/docs/index.xml">
+<link rel="canonical" type="text/html" href="http://localhost:1313/docs/">
+<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/docs/index.xml">
 <meta name="robots" content="noindex, nofollow">
 
 
@@ -21,33 +20,31 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>Documentation | Milkman</title>
-<meta name="description" content="
+<meta name="description" content="A Request/Response Workbench">
+<meta property="og:url" content="http://localhost:1313/docs/">
+  <meta property="og:site_name" content="Milkman">
+  <meta property="og:title" content="Documentation">
+  <meta property="og:description" content="Milkman - An Extensible Request/Response Workbench Milkman is heavily inspired by Postman. But I got sick of all those electron-based applications that need ages and loads of memory to start up. Therefore i created a JavaFx-based workbench for crafting requests / responses. It is not limited to e.g. http (or more specifically rest) requests. Due to nearly everything being a plugin, other things are possible, like database-requests or GRPC, GraphQl, etc…">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="website">
 
-
-Milkman - An Extensible Request/Response Workbench
-
-
-
-Milkman is heavily inspired by Postman. But I got sick of all those electron-based …">
-<meta property="og:title" content="Documentation" />
-<meta property="og:description" content="A Request/Response Workbench" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://milkman.dev/docs/" /><meta property="og:site_name" content="Milkman" />
-
-<meta itemprop="name" content="Documentation">
-<meta itemprop="description" content="A Request/Response Workbench"><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Documentation"/>
-<meta name="twitter:description" content="A Request/Response Workbench"/>
-
+  <meta itemprop="name" content="Documentation">
+  <meta itemprop="description" content="Milkman - An Extensible Request/Response Workbench Milkman is heavily inspired by Postman. But I got sick of all those electron-based applications that need ages and loads of memory to start up. Therefore i created a JavaFx-based workbench for crafting requests / responses. It is not limited to e.g. http (or more specifically rest) requests. Due to nearly everything being a plugin, other things are possible, like database-requests or GRPC, GraphQl, etc…">
+  <meta itemprop="dateModified" content="2022-07-14T15:52:26+02:00">
+  <meta itemprop="wordCount" content="817">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Documentation">
+  <meta name="twitter:description" content="Milkman - An Extensible Request/Response Workbench Milkman is heavily inspired by Postman. But I got sick of all those electron-based applications that need ages and loads of memory to start up. Therefore i created a JavaFx-based workbench for crafting requests / responses. It is not limited to e.g. http (or more specifically rest) requests. Due to nearly everything being a plugin, other things are possible, like database-requests or GRPC, GraphQl, etc…">
 
 
 
-<link rel="preload" href="/scss/main.min.209ee91954d0f2f182770e6c71011a5580360636bcf2a9bcf7f1c3da478784ff.css" as="style">
-<link href="/scss/main.min.209ee91954d0f2f182770e6c71011a5580360636bcf2a9bcf7f1c3da478784ff.css" rel="stylesheet" integrity="">
+
+
+<link href="/scss/main.css" rel="stylesheet">
 
 <script
-  src="https://code.jquery.com/jquery-3.6.0.min.js"
-  integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK"
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
   crossorigin="anonymous"></script>
 
   </head>
@@ -102,8 +99,10 @@ Milkman is heavily inspired by Postman. But I got sick of all those electron-bas
 			
 		</ul>
 	</div>
-	<div class="navbar-nav d-none d-lg-block"><input type="search" class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete="off">
-</div>
+	<div class="navbar-nav d-none d-lg-block"><div class="td-search">
+  <div class="td-search__icon"></div>
+  <input type="search" class="td-search__input form-control td-search-input" placeholder="Search this site…" aria-label="Search this site…" autocomplete="off">
+</div></div>
 	<a href="https://github.com/warmuuh/milkman">
 		<img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/warmuuh/milkman?style=social">
 	</a>
@@ -113,7 +112,7 @@ Milkman is heavily inspired by Postman. But I got sick of all those electron-bas
     <div class="container-fluid td-outer">
       <div class="td-main">
         <div class="row flex-xl-nowrap">
-          <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
+          <main class="col-12 col-md-9 col-xl-8 ps-md-5" role="main">
             
 
 
@@ -281,7 +280,7 @@ This is the multi-page printable view of this section.
     
     
 	
-<li>3.8: <a href="#pg-f8f8c6f326a56bece56336925972d390">Milkman Note Plugin</a></li>
+<li>3.8: <a href="#pg-cf73aabc8a0fd2186183859b255cd65e">Milkman Nosql Plugin</a></li>
 
 
     
@@ -289,7 +288,7 @@ This is the multi-page printable view of this section.
     
     
 	
-<li>3.9: <a href="#pg-b0a335e1b83210ea97150e571371e3d4">Milkman Privatebin Plugin</a></li>
+<li>3.9: <a href="#pg-f8f8c6f326a56bece56336925972d390">Milkman Note Plugin</a></li>
 
 
     
@@ -297,7 +296,7 @@ This is the multi-page printable view of this section.
     
     
 	
-<li>3.10: <a href="#pg-8500c85a0288957ceedc8a0b18d62db2">Milkman Scripting Plugin</a></li>
+<li>3.10: <a href="#pg-b0a335e1b83210ea97150e571371e3d4">Milkman Privatebin Plugin</a></li>
 
 
     
@@ -305,7 +304,7 @@ This is the multi-page printable view of this section.
     
     
 	
-<li>3.11: <a href="#pg-1e700cc6e9924e9cf77f20f27eaa3c25">Milkman Socket.IO Plugin</a></li>
+<li>3.11: <a href="#pg-8500c85a0288957ceedc8a0b18d62db2">Milkman Scripting Plugin</a></li>
 
 
     
@@ -313,7 +312,7 @@ This is the multi-page printable view of this section.
     
     
 	
-<li>3.12: <a href="#pg-6d4ca7370ae45034599b2d79667c8a5d">Milkman Jdbc Plugin</a></li>
+<li>3.12: <a href="#pg-1e700cc6e9924e9cf77f20f27eaa3c25">Milkman Socket.IO Plugin</a></li>
 
 
     
@@ -321,7 +320,7 @@ This is the multi-page printable view of this section.
     
     
 	
-<li>3.13: <a href="#pg-d3199f338a0e48fb3da7038a2334588c">Milkman Git Sync Plugin</a></li>
+<li>3.13: <a href="#pg-6d4ca7370ae45034599b2d79667c8a5d">Milkman Jdbc Plugin</a></li>
 
 
     
@@ -329,7 +328,7 @@ This is the multi-page printable view of this section.
     
     
 	
-<li>3.14: <a href="#pg-0d02c2ad4781d245a95f69943489451b">Milkman Test Plugin</a></li>
+<li>3.14: <a href="#pg-d3199f338a0e48fb3da7038a2334588c">Milkman Git Sync Plugin</a></li>
 
 
     
@@ -337,7 +336,15 @@ This is the multi-page printable view of this section.
     
     
 	
-<li>3.15: <a href="#pg-e77cafbf0ce3e4303fbd603db960ff2a">Milkman Websocket Plugin</a></li>
+<li>3.15: <a href="#pg-0d02c2ad4781d245a95f69943489451b">Milkman Test Plugin</a></li>
+
+
+    
+  
+    
+    
+	
+<li>3.16: <a href="#pg-e77cafbf0ce3e4303fbd603db960ff2a">Milkman Websocket Plugin</a></li>
 
 
     
@@ -351,9 +358,9 @@ This is the multi-page printable view of this section.
 
 
 <div class="content">
-      <p><a href="https://github.com/warmuuh/milkman/releases/tag/nightly"><img src="https://github.com/warmuuh/milkman/workflows/Nightly/badge.svg?branch=master" alt="Nightly"></a>
-<a href="https://liberapay.com/warmuuh/donate"><img src="https://liberapay.com/assets/widgets/donate.svg" alt="Donate"></a>
-<a href="https://gitter.im/milkman-project/community"><img src="https://img.shields.io/gitter/room/nwjs/nw.js.svg" alt="Gitter"></a></p>
+      <p><a href="https://github.com/warmuuh/milkman/releases/tag/nightly"><img alt="Nightly" src="https://github.com/warmuuh/milkman/workflows/Nightly/badge.svg?branch=master"></a>
+<a href="https://liberapay.com/warmuuh/donate"><img alt="Donate" src="https://liberapay.com/assets/widgets/donate.svg"></a>
+<a href="https://gitter.im/milkman-project/community"><img alt="Gitter" src="https://img.shields.io/gitter/room/nwjs/nw.js.svg"></a></p>
 <h1 id="milkman---an-extensible-requestresponse-workbench">Milkman - An Extensible Request/Response Workbench</h1>
 
 
@@ -393,78 +400,68 @@ everything being a plugin, other things are possible, like database-requests or 
 <li><strong>Grpc Plugin:</strong> support of Grpc Services, Server Reflection and Streaming</li>
 <li><strong>Test Runner:</strong> run several requests as separate test-scenario</li>
 <li><strong>JavaFX Application:</strong> as in: <em>fast</em> (compared to electron at least :D) and skinn-able (you can extend milkman with your own themes using simple CSS).</li>
-<li><strong>Commandline Interface:</strong> there is a <a href="plugins/cli">command line interface</a> for Milkman which allows to edit/execute requests on your command line.</li>
-<li><strong>Slack Command:</strong> you can use <code>/milkman &lt;privatebin-url&gt;</code> in slack to share requests in a better way. <a href="features/slack">More Info</a>.</li>
-<li><a href="features/">Some more details</a> of the core application features, such as hotkeys etc.</li>
+<li><strong>Commandline Interface:</strong> there is a <a href="/docs/plugins/cli/">command line interface</a> for Milkman which allows to edit/execute requests on your command line.</li>
+<li><strong>Slack Command:</strong> you can use <code>/milkman &lt;privatebin-url&gt;</code> in slack to share requests in a better way. <a href="/docs/features/slack/">More Info</a>.</li>
+<li><a href="/docs/features/">Some more details</a> of the core application features, such as hotkeys etc.</li>
 </ul>
 <h1 id="existing-plugins">Existing Plugins:</h1>
 <p><em>Note: see respective plugin folder for more details</em></p>
-<h3 id="http-request-pluginpluginsrest-included-in-main-distribution"><a href="plugins/rest">Http Request Plugin</a>: (included in main distribution)</h3>
+<h3 id="http-request-pluginpluginsrest-included-in-main-distribution"><a href="/docs/plugins/rest/">Http Request Plugin</a>: (included in main distribution)</h3>
 <p>The Http request plugin packaged with the release contains all means to do http request as well as import collections, environments or dumps from postman.
 To migrate from postman, just <a href="https://learning.getpostman.com/docs/postman/collections/data_formats/#data-dumps">export a dump-file from postman</a> and import it by pasting its content into the <code>Postman (v2.1) Dump</code>-Importer.
 The Http Request Plugin also comes with Proxy-support. Some proxies require credentials and support for supplying <code>BASIC</code> proxy credentials is built into the plugin. See Options-page to activate that as it is off by default.
 Additionally, the plugin supports chunked responses, enabling testing of Server-sent events (<a href="https://en.wikipedia.org/wiki/Server-sent_events">SSE</a>).</p>
-<h3 id="graphql-pluginpluginsgraphql"><a href="plugins/graphql">Graphql Plugin</a></h3>
+<h3 id="graphql-pluginpluginsgraphql"><a href="/docs/plugins/graphql/">Graphql Plugin</a></h3>
 <p>Simple Graphql Plugin to craft  <a href="https://graphql.org/">GraphQL</a> requests. No Auto-complete or schema valiadtion included.</p>
-<h3 id="grpc-pluginpluginsgrpc"><a href="plugins/grpc">Grpc Plugin</a></h3>
+<h3 id="grpc-pluginpluginsgrpc"><a href="/docs/plugins/grpc/">Grpc Plugin</a></h3>
 <p>Grpc plugin with <a href="https://github.com/grpc/grpc/blob/master/doc/server-reflection.md">server-reflection</a> support and streaming-support. Can also query via proto-defintion.</p>
-<h3 id="jdbc-pluginpluginsjdbc"><a href="plugins/jdbc">JDBC Plugin</a></h3>
+<h3 id="jdbc-pluginpluginsjdbc"><a href="/docs/plugins/jdbc/">JDBC Plugin</a></h3>
 <p>This plugin introduces SQL capability to milkman. You can query SQL databases via milkman as well, using JDBC drivers.</p>
-<h3 id="cassandra-pluginpluginscassandra"><a href="plugins/cassandra">Cassandra Plugin</a>:</h3>
+<h3 id="cassandra-pluginpluginscassandra"><a href="/docs/plugins/cassandra/">Cassandra Plugin</a>:</h3>
 <p>Allows to execute CQL queries for given cassandra databases.</p>
-<h3 id="git-team-synchronization-pluginpluginssync-git"><a href="plugins/sync-git">Git Team Synchronization Plugin</a></h3>
+<h3 id="git-team-synchronization-pluginpluginssync-git"><a href="/docs/plugins/sync-git/">Git Team Synchronization Plugin</a></h3>
 <p>This plugin allows to synchronize workspaces via Git (using Differential Synchronization). Teams can use this plugin to have a shared workspace that synchronizes between members.</p>
-<h3 id="explore-pluginpluginsexplore"><a href="plugins/explore">Explore Plugin</a>:</h3>
+<h3 id="explore-pluginpluginsexplore"><a href="/docs/plugins/explore/">Explore Plugin</a>:</h3>
 <p>This plugin extends Rest-responses by adding an <code>Explore</code>-Tab where you can use <a href="http://jmespath.org/">JMesPath</a> queries against a JSON response.</p>
-<h3 id="scripting-pluginpluginsscripting"><a href="plugins/scripting">Scripting Plugin</a>:</h3>
+<h3 id="scripting-pluginpluginsscripting"><a href="/docs/plugins/scripting/">Scripting Plugin</a>:</h3>
 <p>Extends requests by executing a script after request execution. This allows to e.g. set environment variables based on results of json.</p>
-<h3 id="privatebin-sharing-pluginpluginsprivatebin"><a href="plugins/privatebin">PrivateBin Sharing Plugin</a></h3>
+<h3 id="privatebin-sharing-pluginpluginsprivatebin"><a href="/docs/plugins/privatebin/">PrivateBin Sharing Plugin</a></h3>
 <p>Adds capability to share requests via <a href="http://PrivateBin.net">PrivateBin</a>, including <code>Burn After Reading</code> feature</p>
-<h3 id="note-pluginpluginsnote"><a href="plugins/note">Note Plugin</a>:</h3>
+<h3 id="note-pluginpluginsnote"><a href="/docs/plugins/note/">Note Plugin</a>:</h3>
 <p>This is a sample plugin that allows to add arbitrary description to every request. Serves as a starting point for learning to extend milkman.</p>
-<h3 id="test-pluginpluginstest"><a href="plugins/test">Test Plugin</a></h3>
+<h3 id="test-pluginpluginstest"><a href="/docs/plugins/test/">Test Plugin</a></h3>
 <p>A testrunner plugin that allows to run multiple requests in sequence and verify the results</p>
 <h3 id="auth-pluginpluginsauth"><a href="plugins/auth">Auth Plugin</a></h3>
 <p>An OAuth Plugin for managing oauth credentials and transparent refreshing of tokens</p>
-<h3 id="websocket-pluginpluginsws"><a href="plugins/ws">Websocket Plugin</a></h3>
+<h3 id="websocket-pluginpluginsws"><a href="/docs/plugins/ws/">Websocket Plugin</a></h3>
 <p>A websocket plugin for interacting with websocket endpoints</p>
-<h3 id="socketio-pluginpluginssio"><a href="plugins/sio">Socket.IO Plugin</a></h3>
+<h3 id="socketio-pluginpluginssio"><a href="/docs/plugins/sio/">Socket.IO Plugin</a></h3>
 <p>A Socket.IO plugin for interacting with Socket.IO endpoints</p>
 <h1 id="showcase">Showcase</h1>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 610px">
+<img class="card-img-top" src="/docs/screenshot_hu6a9b2edaaf3f43fe37319e2f309dd8c8_176126_600x0_resize_catmullrom_3.png" width="600" height="480">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
 
 
-
-
-
-
-
-<div class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 610px">
-	<img class="card-img-top" src="/docs/screenshot_hu6a9b2edaaf3f43fe37319e2f309dd8c8_176126_600x0_resize_catmullrom_3.png" width="600" height="480">
-	
-	<div class="card-body px-0 pt-2 pb-0">
-		<p class="card-text">
 Screenshot of Milkman light theme
+
 </p>
-	</div>
-	
-</div>
+</figcaption>
+</figure>
+
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 610px">
+<img class="card-img-top" src="/docs/screenshot-dark_hu77fedbbe634db2a06fd8d539f5a1917d_185745_600x0_resize_catmullrom_3.png" width="600" height="336">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
 
 
-
-
-
-
-
-<div class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 610px">
-	<img class="card-img-top" src="/docs/screenshot-dark_hu77fedbbe634db2a06fd8d539f5a1917d_185745_600x0_resize_catmullrom_3.png" width="600" height="336">
-	
-	<div class="card-body px-0 pt-2 pb-0">
-		<p class="card-text">
 Screenshot of Milkman Dark theme with horizontal layout
+
 </p>
-	</div>
-	
-</div>
+</figcaption>
+</figure>
+
 <h1 id="plugins">Plugins</h1>
 <p>No client fits all, so you are <strong>encouraged</strong> to write your own plugins to e.g. add headers that are necessary for your internal service structures or add importers for internal service registries.</p>
 <p>A <a href="https://github.com/warmuuh/milkman/tree/master/milkman-note">sample plugin</a> was provided that extends all requests with a <code>Note</code> tab so you can add some description to any kind of requests.</p>
@@ -530,9 +527,9 @@ Screenshot of Milkman Dark theme with horizontal layout
 	<p>Plugins in milkman can extend various functionality. For this, an explanation of how a request is structured is necessary first.</p>
 <h1 id="getting-started">Getting Started</h1>
 <p>A <a href="https://github.com/warmuuh/milkman/tree/master/milkman-note">sample plugin</a> was created that shows how to add an Aspect Tab to a Request.</p>
-<p>if you want to setup a new project, an exemplary pom can be found <a href="/docs/development/setup">here</a>.</p>
+<p>if you want to setup a new project, an exemplary pom can be found <a href="/docs/development/setup/">here</a>.</p>
 <h1 id="data-model">Data Model</h1>
-<p><img src="http://www.gravizo.com/svg?@startuml;object%20Workspace;object%20Environment;Environment%20:%20isGlobal;Workspace%20o--%20%22*%22%20Environment;object%20Collection;Workspace%20o--%20%22*%22%20Collection;object%20Request;Collection%20o--%20%22*%22%20Request;%20Request%20--%3E%20HtmlRequest%20;%20Request%20--%3E%20SqlRequest%20;Request%20o-%20%22*%22%20RequestAspect;RequestAspect%20--%3E%20HttpHeaderRequestAspect;RequestAspect%20--%3E%20HttpBodyRequestAspect;@enduml" alt="img"></p>
+<p><img alt="img" src="http://www.gravizo.com/svg?@startuml;object%20Workspace;object%20Environment;Environment%20:%20isGlobal;Workspace%20o--%20%22*%22%20Environment;object%20Collection;Workspace%20o--%20%22*%22%20Collection;object%20Request;Collection%20o--%20%22*%22%20Request;%20Request%20--%3E%20HtmlRequest%20;%20Request%20--%3E%20SqlRequest%20;Request%20o-%20%22*%22%20RequestAspect;RequestAspect%20--%3E%20HttpHeaderRequestAspect;RequestAspect%20--%3E%20HttpBodyRequestAspect;@enduml"></p>
 <p>The core of milkman is very abstract and is only intended to organize workspaces, which contain environments and collections of requests.
 A request is of a specific type and might contain some basic data. In the case of an HttpRequest, this might be the URL and the Method.</p>
 <p>A request can also contain several <code>RequestAspects</code> which describe the request object further. In our example, this might be headers or the body of a request, but can also contain totally unrelated and auxiliary attributes.</p>
@@ -686,7 +683,7 @@ You can use <code>setUserData</code> in some cases to have a strong reference of
 <li>Clicking on the line-symbol expands the node</li>
 <li>Right-Clicking on the line-symbol expands the whole subtree</li>
 </ul>
-<p><img src="/images/folding.gif" alt="Example of code folding"></p>
+<p><img alt="Example of code folding" src="/images/folding.gif"></p>
 <h1 id="hotkeys">Hotkeys</h1>
 <ul>
 <li><kbd>CTRL</kbd>+<kbd>ENTER</kbd> - Execute Request</li>
@@ -703,14 +700,14 @@ You can use <code>setUserData</code> in some cases to have a strong reference of
 <li>You can <kbd>CTRL</kbd>+<kbd>C</kbd> selected rows to copy its value</li>
 <li>You can <kbd>CTRL</kbd>+<kbd>V</kbd> multiple rows into a table</li>
 </ul>
-<p><img src="/images/copypaste.gif" alt="Example of Copy&amp;Paste for tables"></p>
+<p><img alt="Example of Copy&amp;Paste for tables" src="/images/copypaste.gif"></p>
 <h1 id="quick-edit-for-variables">Quick Edit for Variables</h1>
 <ul>
 <li>You can highlight variables.</li>
 <li>Clicking on it opens popup for modification/creation</li>
 <li><kbd>ESC</kbd> hides highlighting</li>
 </ul>
-<p><img src="/images/highlight-vars.gif" alt="Example of Quick-edit for variables"></p>
+<p><img alt="Example of Quick-edit for variables" src="/images/highlight-vars.gif"></p>
 <h1 id="keys">Keys</h1>
 <ul>
 <li>secret keys that should not be exported or synced can be setup using the key-symbol</li>
@@ -719,7 +716,44 @@ You can use <code>setUserData</code> in some cases to have a strong reference of
 </ul>
 <h1 id="libraries">Libraries</h1>
 <p>you can register libraries to easily look-up and import services from a central registry, such as <a href="http://apis.guru">APIs.guru</a>.</p>
-<p><img src="/images/milkman-library.gif" alt="Example of setting up and using Libraries"></p>
+<p><img alt="Example of setting up and using Libraries" src="/images/milkman-library.gif"></p>
+<h2 id="code-templates">Code Templates</h2>
+<ul>
+<li>you can define custom templates for every type of request yourself. Do you often need to write Spring Webclient code?
+setup some custom template for it. (you can do so in the <code>options</code> dialog)</li>
+<li>Some predefined templates are available already. (see <a href="/milkman-rest/src/main/resources/META-INF">here</a>)</li>
+<li>Syntax is similar to <a href="https://github.com/samskivert/jmustache">mustache</a> but enhanced with whitespace control. example:</li>
+</ul>
+<pre tabindex="0"><code>curl -X {{httpMethod}}
+
+{{_#headers.entries-}}
+-H &#34;{{name}}: {{value}}&#34;
+{{-/headers.entries_}}
+
+{{url}}
+</code></pre><ul>
+<li>Whitespace control:
+<ul>
+<li><code>{{-</code> removes all whitespaces (including linebreaks) <em>before</em> the tag</li>
+<li><code>{{_</code> removes all whitespaces (including linebreaks) <em>before</em> the tag and replaces it with one space</li>
+<li><code>-}}</code> removes all whitespaces (including linebreaks) <em>after</em> the tag</li>
+<li><code>_}}</code> removes all whitespaces (including linebreaks) <em>after</em> the tag  and replaces it with one space</li>
+</ul>
+</li>
+</ul>
+<h2 id="insomnia-import">Insomnia Import</h2>
+<ul>
+<li>exported Collections (see <a href="https://docs.insomnia.rest/insomnia/import-export-data#export-data">Insomnia Documentation</a>) can be imported into Milkman.</li>
+<li>currently, Http, Websocket, event-stream, Grpc and Gql requests are supported</li>
+<li>environments are also imported</li>
+<li>:exclamation: There are some conceptual differences between insomnia and milkman though:
+<ul>
+<li>Insomnia root-level requests are imported into a collection with the name of the workspace</li>
+<li>Insomnia environments overload each other based on a hierarchy. this is flattened on import.</li>
+<li>Grpc requests refere to a shared file in the workspace. This is flattened in milkman (i.e. file-content is copied to each request refering to it)</li>
+</ul>
+</li>
+</ul>
 
 </div>
 
@@ -753,66 +787,51 @@ You can use <code>setUserData</code> in some cases to have a strong reference of
 </div>
 
 <p>You can either host it yourself or use the heroku-hosted instance:</p>
-<p><a href="https://milkman-slack.herokuapp.com/slack/oauth/start"><img src="https://platform.slack-edge.com/img/add_to_slack.png" alt="Add to Slack"></a></p>
+<p><a href="https://milkman-slack.herokuapp.com/slack/oauth/start"><img alt="Add to Slack" src="https://platform.slack-edge.com/img/add_to_slack.png"></a></p>
 <h1 id="usage">Usage</h1>
 <p>Once added to your workspace, you can share a private-bin export url via:</p>
 <pre tabindex="0"><code>/milkman &lt;privatebin-url&gt;
 </code></pre><h1 id="features">Features</h1>
 <p>It will nicely render the shared request and offers several ways for viewers to use the request,
 such as viewing the request as <code>curl</code>-command or <code>http</code>-request.</p>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 796px">
+<img class="card-img-top" src="/docs/features/slack/slack-preview_hu5ede36050eb0d03a7d628cafa7f99f22_21477_0x500_resize_catmullrom_3.png" width="786" height="500">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
 
 
-
-
-
-
-
-<div class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 796px">
-	<img class="card-img-top" src="/docs/features/slack/slack-preview_hu5ede36050eb0d03a7d628cafa7f99f22_21477_0x500_resize_catmullrom_3.png" width="786" height="500">
-	
-	<div class="card-body px-0 pt-2 pb-0">
-		<p class="card-text">
 Preview of a request in slack
+
 </p>
-	</div>
-	
-</div>
+</figcaption>
+</figure>
+
 <p>and users can choose how to view the request:</p>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 726px">
+<img class="card-img-top" src="/docs/features/slack/slack-render_hu6b5da86e033355dab188a0029ef56130_23646_0x500_resize_catmullrom_3.png" width="716" height="500">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
 
 
-
-
-
-
-
-<div class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 726px">
-	<img class="card-img-top" src="/docs/features/slack/slack-render_hu6b5da86e033355dab188a0029ef56130_23646_0x500_resize_catmullrom_3.png" width="716" height="500">
-	
-	<div class="card-body px-0 pt-2 pb-0">
-		<p class="card-text">
 Quick-export of a request directly in slack.
+
 </p>
-	</div>
-	
-</div>
+</figcaption>
+</figure>
+
 <p>it also supports all other request types, such as gRPC:</p>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 745px">
+<img class="card-img-top" src="/docs/features/slack/slack-grpc-render_hu6fcbffdfa0cacf371b2e40ec2ca65e0b_17226_0x500_resize_catmullrom_3.png" width="735" height="500">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
 
 
-
-
-
-
-
-<div class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 745px">
-	<img class="card-img-top" src="/docs/features/slack/slack-grpc-render_hu6fcbffdfa0cacf371b2e40ec2ca65e0b_17226_0x500_resize_catmullrom_3.png" width="735" height="500">
-	
-	<div class="card-body px-0 pt-2 pb-0">
-		<p class="card-text">
 Example of a Grpc request in slack
+
 </p>
-	</div>
-	
-</div>
+</figcaption>
+</figure>
+
 <h1 id="planned">Planned</h1>
 <p>More features are planned, such as:</p>
 <ul>
@@ -890,23 +909,18 @@ Example of a Grpc request in slack
 </li>
 </ul>
 <h1 id="screenshot">Screenshot</h1>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 745px">
+<img class="card-img-top" src="/docs/plugins/authentication/auth-plugin_huaf15ef93e851e6b6993fae87ec21a4b2_123906_0x500_resize_catmullrom_3.png" width="735" height="500">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
 
 
-
-
-
-
-
-<div class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 745px">
-	<img class="card-img-top" src="/docs/plugins/authentication/auth-plugin_huaf15ef93e851e6b6993fae87ec21a4b2_123906_0x500_resize_catmullrom_3.png" width="735" height="500">
-	
-	<div class="card-body px-0 pt-2 pb-0">
-		<p class="card-text">
 Editing a secret oAuth Key (Password Grant).
+
 </p>
-	</div>
-	
-</div>
+</figcaption>
+</figure>
+
 <h1 id="remarks">Remarks</h1>
 <ul>
 <li>does not yet support specifying a redirect-url for authorization-code as there is currently no browser included.</li>
@@ -966,23 +980,18 @@ Editing a secret oAuth Key (Password Grant).
 </tbody>
 </table>
 <h1 id="screenshot">Screenshot</h1>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 742px">
+<img class="card-img-top" src="/docs/plugins/cassandra/cassandra-plugin_hu4dce0327d14f8e3bf13be443fc74a069_31733_0x500_resize_catmullrom_3.png" width="732" height="500">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
 
 
-
-
-
-
-
-<div class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 742px">
-	<img class="card-img-top" src="/docs/plugins/cassandra/cassandra-plugin_hu4dce0327d14f8e3bf13be443fc74a069_31733_0x500_resize_catmullrom_3.png" width="732" height="500">
-	
-	<div class="card-body px-0 pt-2 pb-0">
-		<p class="card-text">
 Editing a secret oAuth Key (Password Grant).
+
 </p>
-	</div>
-	
-</div>
+</figcaption>
+</figure>
+
 <h1 id="features">Features</h1>
 <ul>
 <li>Execution of Requests against cassandra databases</li>
@@ -1013,7 +1022,7 @@ you can start it by <code>mm</code> on terminal.</p>
 </div>
 
 <h1 id="screenshot">Screenshot</h1>
-<p><img src="/images/cli.gif" alt="Example of a cli session"></p>
+<p><img alt="Example of a cli session" src="/images/cli.gif"></p>
 <h1 id="features">Features</h1>
 <ul>
 <li>Editing Request-Aspects via <code>nano</code></li>
@@ -1099,23 +1108,18 @@ you can start it by <code>mm</code> on terminal.</p>
 <li>requires milkman-rest plugin</li>
 </ul>
 <h1 id="screenshot">Screenshot</h1>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 632px">
+<img class="card-img-top" src="/docs/plugins/explore/explore-plugin_hu5b3b6980835d8c89cd1459011d9601b2_47969_0x500_resize_catmullrom_3.PNG" width="622" height="500">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
 
 
-
-
-
-
-
-<div class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 632px">
-	<img class="card-img-top" src="/docs/plugins/explore/explore-plugin_hu5b3b6980835d8c89cd1459011d9601b2_47969_0x500_resize_catmullrom_3.PNG" width="622" height="500">
-	
-	<div class="card-body px-0 pt-2 pb-0">
-		<p class="card-text">
 Example of the explore plugin
+
 </p>
-	</div>
-	
-</div>
+</figcaption>
+</figure>
+
 
 </div>
 
@@ -1146,23 +1150,18 @@ Example of the explore plugin
 <li>Requires milkman-rest plugin</li>
 </ul>
 <h1 id="screenshot">Screenshot</h1>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 631px">
+<img class="card-img-top" src="/docs/plugins/graphql/graphql-plugin_hu903df97447a8b44bfe4e0c7af9a33faf_36096_0x500_resize_catmullrom_3.PNG" width="621" height="500">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
 
 
-
-
-
-
-
-<div class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 631px">
-	<img class="card-img-top" src="/docs/plugins/graphql/graphql-plugin_hu903df97447a8b44bfe4e0c7af9a33faf_36096_0x500_resize_catmullrom_3.PNG" width="621" height="500">
-	
-	<div class="card-body px-0 pt-2 pb-0">
-		<p class="card-text">
 Example of the GraphQl plugin
+
 </p>
-	</div>
-	
-</div>
+</figcaption>
+</figure>
+
 
 </div>
 
@@ -1195,25 +1194,20 @@ Example of the GraphQl plugin
 <li>Support Server/client/both streams</li>
 </ul>
 <h2 id="screenshot">Screenshot</h2>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 625px">
+<img class="card-img-top" src="/docs/plugins/grpc/grpc-plugin_hu45e09af9e736d61f4359593fa0973f56_37593_0x500_resize_catmullrom_3.png" width="615" height="500">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
 
 
-
-
-
-
-
-<div class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 625px">
-	<img class="card-img-top" src="/docs/plugins/grpc/grpc-plugin_hu45e09af9e736d61f4359593fa0973f56_37593_0x500_resize_catmullrom_3.png" width="615" height="500">
-	
-	<div class="card-body px-0 pt-2 pb-0">
-		<p class="card-text">
 Example of the Grpc plugin
+
 </p>
-	</div>
-	
-</div>
+</figcaption>
+</figure>
+
 <h3 id="example-of-server-streaming">Example of Server streaming</h3>
-<p><img src="/images/grpc-streaming.gif" alt="Example of Grpc Streaming"></p>
+<p><img alt="Example of Grpc Streaming" src="/images/grpc-streaming.gif"></p>
 <h3 id="client-streaming">Client Streaming</h3>
 <p>To send multiple messages, just add multiple json objects to the payload, divided by two new lines.</p>
 
@@ -1241,25 +1235,20 @@ Example of the Grpc plugin
 </div>
 
 <h1 id="screenshot">Screenshot</h1>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 635px">
+<img class="card-img-top" src="/docs/plugins/rest/screenshot_hu6a9b2edaaf3f43fe37319e2f309dd8c8_176126_0x500_resize_catmullrom_3.png" width="625" height="500">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
 
 
-
-
-
-
-
-<div class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 635px">
-	<img class="card-img-top" src="/docs/plugins/rest/screenshot_hu6a9b2edaaf3f43fe37319e2f309dd8c8_176126_0x500_resize_catmullrom_3.png" width="625" height="500">
-	
-	<div class="card-body px-0 pt-2 pb-0">
-		<p class="card-text">
 Example of the Rest plugin
+
 </p>
-	</div>
-	
-</div>
+</figcaption>
+</figure>
+
 <h3 id="example-of-server-sent-events-streaming">Example of Server Sent Events Streaming</h3>
-<p><img src="/images/sse-streaming.gif" alt="Example of Server-sent event streaming in the Rest plugin"></p>
+<p><img alt="Example of Server-sent event streaming in the Rest plugin" src="/images/sse-streaming.gif"></p>
 <h1 id="features">Features</h1>
 <ul>
 <li>Postman-like UI</li>
@@ -1286,8 +1275,57 @@ Example of the Rest plugin
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-f8f8c6f326a56bece56336925972d390">3.8 - Milkman Note Plugin</h1>
-    <div class="lead">Introduces Sql Requests to Milkman using JDBC.</div>
+	<h1 id="pg-cf73aabc8a0fd2186183859b255cd65e">3.8 - Milkman Nosql Plugin</h1>
+    <div class="lead">Introduces NoSql Requests to Milkman using JNoSql.</div>
+	
+
+<div class="pageinfo pageinfo-primary">
+<p>Introduces Nosql Requests to Milkman using <a href="http://www.jnosql.org/">JNoSql</a>.</p>
+
+</div>
+
+<h1 id="installation">Installation</h1>
+<p>After placing the jar into <code>\plugin</code> folder, you also have to place the <a href="https://github.com/eclipse/jnosql-databases">driver-jars</a> you want to use in that folder as well.</p>
+<h1 id="screenshot">Screenshot</h1>
+<p>TBD</p>
+<h1 id="features">Features</h1>
+<ul>
+<li>Integration of jnosql <a href="https://github.com/eclipse/jnosql/blob/main/COMMUNICATION.adoc#querying-by-text-with-the-communication-api">query language</a></li>
+<li>support for key-value databases (e.g. dynamodb, redis, memcache,&hellip;)</li>
+<li>support for document databases (e.g. couchbase, )</li>
+<li>support for column databases (e.g. cassandra, )</li>
+<li>(planned) support for graph databases (via Apache tinkerpop, <a href="https://tinkerpop.apache.org/providers.html">supporting</a> databases like neo4j)</li>
+<li>(planned) exploration of table structures / existing tables.</li>
+</ul>
+<h1 id="setup-examples">Setup examples</h1>
+<h2 id="dynamodb">DynamoDb</h2>
+<p>you need to add these artifacts into the plugin folder (refering to my <a href="https://github.com/warmuuh/jnosql-dynamodb-document">dynamodb jnosql driver</a>)</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000">com.github.warmuuh:jnosql-dynamodb-document:1.0.1-SNAPSHOT</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># if you use `aws sso login`</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">software.amazon.awssdk:sso:2.20.98</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><p>for a nosql request, you need to configure these parameters:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-properties" data-lang="properties"><span style="display:flex;"><span><span style="color:#c4a000">jnosql.document.provider</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#4e9a06">com.github.warmuuh.jnosql.dynamodb.DynamoDBDocumentConfiguration</span>
+</span></span><span style="display:flex;"><span><span style="color:#c4a000">jnosql.dynamodb.region</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#4e9a06">eu-central-1</span>
+</span></span><span style="display:flex;"><span><span style="color:#c4a000">jnosql.dynamodb.profile</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#4e9a06">my_profile</span>
+</span></span></code></pre></div>
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-f8f8c6f326a56bece56336925972d390">3.9 - Milkman Note Plugin</h1>
+    <div class="lead">Adds notes to each request</div>
 	
 
 <div class="pageinfo pageinfo-primary">
@@ -1297,23 +1335,18 @@ Example of the Rest plugin
 
 <p>This plugin serves demonstrational purposes and should show how milkman can be extended.</p>
 <h1 id="screenshot">Screenshot</h1>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 632px">
+<img class="card-img-top" src="/docs/plugins/note/notes-plugin_hu75756891b8bffa5637f3887d7b20e41e_53104_0x500_resize_catmullrom_3.PNG" width="622" height="500">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
 
 
-
-
-
-
-
-<div class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 632px">
-	<img class="card-img-top" src="/docs/plugins/note/notes-plugin_hu75756891b8bffa5637f3887d7b20e41e_53104_0x500_resize_catmullrom_3.PNG" width="622" height="500">
-	
-	<div class="card-body px-0 pt-2 pb-0">
-		<p class="card-text">
 Example of the Notes plugin
+
 </p>
-	</div>
-	
-</div>
+</figcaption>
+</figure>
+
 
 </div>
 
@@ -1329,7 +1362,7 @@ Example of the Notes plugin
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-b0a335e1b83210ea97150e571371e3d4">3.9 - Milkman Privatebin Plugin</h1>
+	<h1 id="pg-b0a335e1b83210ea97150e571371e3d4">3.10 - Milkman Privatebin Plugin</h1>
     <div class="lead">Allows to share requests etc via Privatebin.</div>
 	
 
@@ -1339,23 +1372,18 @@ Example of the Notes plugin
 </div>
 
 <h1 id="screenshot">Screenshot</h1>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 635px">
+<img class="card-img-top" src="/docs/plugins/privatebin/privatebin-plugin_hue644940c91fb460f22e5d147c8abc843_57063_0x500_resize_catmullrom_3.png" width="625" height="500">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
 
 
-
-
-
-
-
-<div class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 635px">
-	<img class="card-img-top" src="/docs/plugins/privatebin/privatebin-plugin_hue644940c91fb460f22e5d147c8abc843_57063_0x500_resize_catmullrom_3.png" width="625" height="500">
-	
-	<div class="card-body px-0 pt-2 pb-0">
-		<p class="card-text">
 Example of the Privatebin plugin
+
 </p>
-	</div>
-	
-</div>
+</figcaption>
+</figure>
+
 <h1 id="features">Features</h1>
 <ul>
 <li>Customizable Privatebin installation</li>
@@ -1378,7 +1406,7 @@ Example of the Privatebin plugin
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-8500c85a0288957ceedc8a0b18d62db2">3.10 - Milkman Scripting Plugin</h1>
+	<h1 id="pg-8500c85a0288957ceedc8a0b18d62db2">3.11 - Milkman Scripting Plugin</h1>
     <div class="lead">Ads Pre- and Post-scripts to requests</div>
 	
 
@@ -1410,41 +1438,31 @@ Example of the Privatebin plugin
 </span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">body</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">JSON</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">parse</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">mm</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">response</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">body</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">body</span><span style="color:#000;font-weight:bold">)</span>
 </span></span><span style="display:flex;"><span><span style="color:#000">body</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">should</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">have</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">lengthOf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#0000cf;font-weight:bold">200</span><span style="color:#000;font-weight:bold">);</span>
 </span></span></code></pre></div><h1 id="screenshot">Screenshot</h1>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 632px">
+<img class="card-img-top" src="/docs/plugins/scripting/scripting-plugin_hua01ab798115a47b76d15ef171848e522_54635_0x500_resize_catmullrom_3.png" width="622" height="500">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
 
 
-
-
-
-
-
-<div class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 632px">
-	<img class="card-img-top" src="/docs/plugins/scripting/scripting-plugin_hua01ab798115a47b76d15ef171848e522_54635_0x500_resize_catmullrom_3.png" width="622" height="500">
-	
-	<div class="card-body px-0 pt-2 pb-0">
-		<p class="card-text">
 Example of the Scripting plugin
+
 </p>
-	</div>
-	
-</div>
+</figcaption>
+</figure>
+
 <p>Preferences:</p>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 648px">
+<img class="card-img-top" src="/docs/plugins/scripting/scripting-preferences_hu62aedcc6f4332e4475ccba633cd634b3_42529_0x500_resize_catmullrom_3.png" width="638" height="500">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
 
 
-
-
-
-
-
-<div class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 648px">
-	<img class="card-img-top" src="/docs/plugins/scripting/scripting-preferences_hu62aedcc6f4332e4475ccba633cd634b3_42529_0x500_resize_catmullrom_3.png" width="638" height="500">
-	
-	<div class="card-body px-0 pt-2 pb-0">
-		<p class="card-text">
 Example of the Scripting plugin
+
 </p>
-	</div>
-	
-</div>
+</figcaption>
+</figure>
+
 <h1 id="api">API</h1>
 <p><code>milkman</code> (aliased to <code>mm</code>) is the only object available. It provides following properties:</p>
 <ul>
@@ -1473,7 +1491,7 @@ Example of the Scripting plugin
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-1e700cc6e9924e9cf77f20f27eaa3c25">3.11 - Milkman Socket.IO Plugin</h1>
+	<h1 id="pg-1e700cc6e9924e9cf77f20f27eaa3c25">3.12 - Milkman Socket.IO Plugin</h1>
     <div class="lead">Support for Socket.IO transport</div>
 	
 
@@ -1487,23 +1505,18 @@ Example of the Scripting plugin
 <li>supports Socket.IO</li>
 </ul>
 <h2 id="screenshot">Screenshot</h2>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 814px">
+<img class="card-img-top" src="/docs/plugins/sio/sio-plugin_hu5997b338d6f00fdefffc17cda60c30bc_83944_0x500_resize_catmullrom_3.png" width="804" height="500">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
 
 
-
-
-
-
-
-<div class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 814px">
-	<img class="card-img-top" src="/docs/plugins/sio/sio-plugin_hu5997b338d6f00fdefffc17cda60c30bc_83944_0x500_resize_catmullrom_3.png" width="804" height="500">
-	
-	<div class="card-body px-0 pt-2 pb-0">
-		<p class="card-text">
 Example of the Socket.IO plugin
+
 </p>
-	</div>
-	
-</div>
+</figcaption>
+</figure>
+
 <h2 id="note">Note</h2>
 <ul>
 <li>requires milkman-rest plugin</li>
@@ -1523,7 +1536,7 @@ Example of the Socket.IO plugin
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-6d4ca7370ae45034599b2d79667c8a5d">3.12 - Milkman Jdbc Plugin</h1>
+	<h1 id="pg-6d4ca7370ae45034599b2d79667c8a5d">3.13 - Milkman Jdbc Plugin</h1>
     <div class="lead">Introduces Sql Requests to Milkman using JDBC.</div>
 	
 
@@ -1535,23 +1548,18 @@ Example of the Socket.IO plugin
 <h1 id="installation">Installation</h1>
 <p>After placing the jar into <code>\plugin</code> folder, you also have to place the driver-jars you want to use in that folder as well.</p>
 <h1 id="screenshot">Screenshot</h1>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 632px">
+<img class="card-img-top" src="/docs/plugins/jdbc/sql-plugin_hua924d6d88c013246513da3d5a38e7409_26385_0x500_resize_catmullrom_3.png" width="622" height="500">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
 
 
-
-
-
-
-
-<div class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 632px">
-	<img class="card-img-top" src="/docs/plugins/jdbc/sql-plugin_hua924d6d88c013246513da3d5a38e7409_26385_0x500_resize_catmullrom_3.png" width="622" height="500">
-	
-	<div class="card-body px-0 pt-2 pb-0">
-		<p class="card-text">
 Example of the Sql plugin
+
 </p>
-	</div>
-	
-</div>
+</figcaption>
+</figure>
+
 <h1 id="features">Features</h1>
 <ul>
 <li>Execution of Requests against Jdbc compatible Databases.</li>
@@ -1572,7 +1580,7 @@ Example of the Sql plugin
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-d3199f338a0e48fb3da7038a2334588c">3.13 - Milkman Git Sync Plugin</h1>
+	<h1 id="pg-d3199f338a0e48fb3da7038a2334588c">3.14 - Milkman Git Sync Plugin</h1>
     <div class="lead">Team Synchronization via Git</div>
 	
 
@@ -1583,23 +1591,18 @@ Example of the Sql plugin
 
 <p>This plugin allows to setup a git repository to where a workspace can be synchronized. Synchronization works by computing the diffs and applying them in a fuzzy manner to the latest version (simple algorithm of Differential Synchronization).</p>
 <h1 id="screenshot">Screenshot</h1>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 635px">
+<img class="card-img-top" src="/docs/plugins/sync-git/git-sync-plugin_hu3d5f51be99be522a1893a899e8b1023f_65291_0x500_resize_catmullrom_3.png" width="625" height="500">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
 
 
-
-
-
-
-
-<div class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 635px">
-	<img class="card-img-top" src="/docs/plugins/sync-git/git-sync-plugin_hu3d5f51be99be522a1893a899e8b1023f_65291_0x500_resize_catmullrom_3.png" width="625" height="500">
-	
-	<div class="card-body px-0 pt-2 pb-0">
-		<p class="card-text">
 Example of the Scripting plugin
+
 </p>
-	</div>
-	
-</div>
+</figcaption>
+</figure>
+
 <h1 id="features">Features</h1>
 <ul>
 <li>synchronizes (on-demand for now) workspaces with a remote git repository</li>
@@ -1623,7 +1626,7 @@ Example of the Scripting plugin
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-0d02c2ad4781d245a95f69943489451b">3.14 - Milkman Test Plugin</h1>
+	<h1 id="pg-0d02c2ad4781d245a95f69943489451b">3.15 - Milkman Test Plugin</h1>
     <div class="lead">Testing of Requests</div>
 	
 
@@ -1635,7 +1638,7 @@ Example of the Scripting plugin
 <h2 id="usage">Usage</h2>
 <p>Just Drag-and-drop requests you want to execute into the test-tab and you are ready to go.</p>
 <h2 id="demo">Demo</h2>
-<p><img src="/images/test-plugin-demo.gif" alt="Example of the Testrunner plugin"></p>
+<p><img alt="Example of the Testrunner plugin" src="/images/test-plugin-demo.gif"></p>
 <h2 id="environment">Environment</h2>
 <p>On execution, a separate environment only for this test-run will be created, so
 everything written to the current environment. For differentiation in scripts, a <code>__TEST__ = true</code> variable is also
@@ -1663,7 +1666,7 @@ added to the current environment.</p>
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-e77cafbf0ce3e4303fbd603db960ff2a">3.15 - Milkman Websocket Plugin</h1>
+	<h1 id="pg-e77cafbf0ce3e4303fbd603db960ff2a">3.16 - Milkman Websocket Plugin</h1>
     <div class="lead">Support for websocket transport</div>
 	
 
@@ -1678,7 +1681,7 @@ added to the current environment.</p>
 <li>can interactively send messages</li>
 </ul>
 <h2 id="screenshot">Screenshot</h2>
-<p><img src="/images/milkman-ws-demo.gif" alt="Example of the Websocket Streaming"></p>
+<p><img alt="Example of the Websocket Streaming" src="/images/milkman-ws-demo.gif"></p>
 <h2 id="note">Note</h2>
 <ul>
 <li>requires milkman-rest plugin</li>
@@ -1701,115 +1704,68 @@ added to the current environment.</p>
           </main>
         </div>
       </div>
-      
-<footer class="bg-dark py-5 row d-print-none">
-  <div class="container-fluid mx-sm-5">
-    <div class="row">
-      <div class="col-6 col-sm-4 text-xs-center order-sm-2">
-        
-        
-        
-<ul class="list-inline mb-0">
+      <footer class="td-footer row d-print-none">
+  <div class="container-fluid">
+    <div class="row mx-md-2">
+      <div class="td-footer__left col-6 col-sm-4 order-sm-1">
+        <ul class="td-footer__links-list">
   
-  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="User Discussion Board" aria-label="User Discussion Board">
-    <a class="text-white" target="_blank" rel="noopener" href="https://github.com/warmuuh/milkman/discussions" aria-label="User Discussion Board">
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="User Discussion Board" aria-label="User Discussion Board">
+    <a target="_blank" rel="noopener" href="https://github.com/warmuuh/milkman/discussions" aria-label="User Discussion Board">
       <i class="fa fa-comment"></i>
     </a>
   </li>
   
-  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Twitter" aria-label="Twitter">
-    <a class="text-white" target="_blank" rel="noopener" href="https://twitter.com/MilkmanApp" aria-label="Twitter">
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="Twitter" aria-label="Twitter">
+    <a target="_blank" rel="noopener" href="https://twitter.com/MilkmanApp" aria-label="Twitter">
       <i class="fab fa-twitter"></i>
     </a>
   </li>
   
-  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Report an Issue" aria-label="Report an Issue">
-    <a class="text-white" target="_blank" rel="noopener" href="https://github.com/warmuuh/milkman/issues" aria-label="Report an Issue">
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="Report an Issue" aria-label="Report an Issue">
+    <a target="_blank" rel="noopener" href="https://github.com/warmuuh/milkman/issues" aria-label="Report an Issue">
       <i class="fab fa-envelope"></i>
     </a>
   </li>
   
 </ul>
 
-        
-        
-      </div>
-      <div class="col-6 col-sm-4 text-right text-xs-center order-sm-3">
-        
-        
-        
-<ul class="list-inline mb-0">
+      </div><div class="td-footer__right col-6 col-sm-4 order-sm-3">
+        <ul class="td-footer__links-list">
   
-  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="GitHub" aria-label="GitHub">
-    <a class="text-white" target="_blank" rel="noopener" href="https://github.com/warmuuh/milkman" aria-label="GitHub">
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="GitHub" aria-label="GitHub">
+    <a target="_blank" rel="noopener" href="https://github.com/warmuuh/milkman" aria-label="GitHub">
       <i class="fab fa-github"></i>
     </a>
   </li>
   
-  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Gitter" aria-label="Gitter">
-    <a class="text-white" target="_blank" rel="noopener" href="https://gitter.im/milkman-project/community" aria-label="Gitter">
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="Gitter" aria-label="Gitter">
+    <a target="_blank" rel="noopener" href="https://gitter.im/milkman-project/community" aria-label="Gitter">
       <i class="fab fa-gitter"></i>
     </a>
   </li>
   
-  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Issue list" aria-label="Issue list">
-    <a class="text-white" target="_blank" rel="noopener" href="https://github.com/warmuuh/milkman/issues" aria-label="Issue list">
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="Issue list" aria-label="Issue list">
+    <a target="_blank" rel="noopener" href="https://github.com/warmuuh/milkman/issues" aria-label="Issue list">
       <i class="fa fa-envelope"></i>
     </a>
   </li>
   
 </ul>
 
-        
-        
-      </div>
-      <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
-        <small class="text-white">&copy; 2022 Milkman All Rights Reserved</small>
-        <small class="ml-1"><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a></small>
-	
-		
-	
+      </div><div class="td-footer__center col-12 col-sm-4 py-2 order-sm-2">
+        <span class="td-footer__copyright">&copy;
+    2024
+    <span class="td-footer__authors">Milkman</span></span><span class="td-footer__all_rights_reserved">All Rights Reserved</span><span class="ms-2"><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a></span>
       </div>
     </div>
   </div>
 </footer>
 
-
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
-    integrity="sha512-UR25UO94eTnCVwjbXozyeVd6ZqpaAE9naiEUBK/A+QDbfSTQFhPGj5lOR6d8tsgbBk84Ggb5A3EkjsOgPRPcKA=="
-    crossorigin="anonymous"></script>
-
-
-
-
-
+    <script src="/js/main.js"></script>
+<script defer src="/js/click-to-copy.js" crossorigin="anonymous"></script>
 <script src='/js/tabpane-persist.js'></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script src="/js/main.min.b3e7a0207c15a8c2f59ead86ad6c4f2d1c54585ad56c29fb17304ec3e11a7269.js" integrity="sha256-s&#43;egIHwVqML1nq2GrWxPLRxUWFrVbCn7FzBOw&#43;Eacmk=" crossorigin="anonymous"></script>
-
-
-
 
   </body>
 </html>

@@ -2,7 +2,7 @@
 ---
 title: "Milkman Note Plugin"
 linkTitle: "Notes"
-description: "Introduces Sql Requests to Milkman using JDBC."
+description: "Adds notes to each request"
 resources:
 - src: "**.{png,gif}"
   title: "Image #:counter"
