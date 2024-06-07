@@ -437,14 +437,14 @@ This is the multi-page printable view of this section.
         
 	</div>
 	<p>This post should be a compilation of more complicated use-cases that fully uses the possibilities provided by Milkman. It should be a collection of tips and tricks that are not immediately obvious, but can be very useful in certain situations.</p>
-<h1 id="aws">AWS</h1>
+<h2 id="aws">AWS</h2>
 <p>As Milkman can interact with Sql and NoSql databases, it can also interact with AWS services. This is done by using the AWS SDK for Java. To use the SDK, you need to add the SDK to your project. See following sections for examples.</p>
-<h2 id="aws-rds">AWS RDS</h2>
+<h3 id="aws-rds">AWS RDS</h3>
 <p>AWS RDS is just a SQL database in the cloud. To connect to it, you need to add the AWS SDK to your installation. As Milkman is using JDBC for sql connections, you can use <a href="https://github.com/aws/aws-advanced-jdbc-wrapper">AWS Advanced JDBC Wrapper</a> to your <code>/plugin</code> directory, additionally to your usual JDBC driver (like postgres or mysql jdbc conncetor) and use it like this:</p>
 <pre tabindex="0"><code>jdbc:aws-wrapper:postgresql://database-pg-name.cluster-XYZ.us-east-2.rds.amazonaws.com:5432/connectionSample
-</code></pre><p>Another option to connect to (access-restricted) RDS instances is to use a SSH tunnel. See <a href="/blog/2024/06/07/poweruser-tips-for-milkman/#ssl-jump-hosts">SSL Jump Hosts</a> for more information.</p>
+</code></pre><p>Another option to connect to (access-restricted) RDS instances is to use a SSH tunnel. See <a href="/blog/2024/06/07/poweruser-tips-for-milkman/#jump-hosts-in-jdbc-connections">SSL Jump Hosts</a> for more information.</p>
 <p>See <a href="/blog/2024/06/07/poweruser-tips-for-milkman/#aws-sso">AWS SSO</a> for how to authenticate with AWS via SSO.</p>
-<h2 id="aws-dynamodb">AWS DynamoDB</h2>
+<h3 id="aws-dynamodb">AWS DynamoDB</h3>
 <p>AWS DynamoDB is a NoSQL database in the cloud. To connect to it, you need to add the AWS SDK to your installation. As Milkman is using <a href="https://jnosql.org/">JNoSql</a> for NoSQL connections, you can use the <a href="https://github.com/warmuuh/jnosql-dynamodb-document">jnosql-dynamodb-document Driver</a> to your <code>/plugin</code> directory and use it like this:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">#Parameters</span><span style="color:#f8f8f8;text-decoration:underline">
 </span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">jnosql.document.provider</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">com.github.warmuuh.jnosql.dynamodb.DynamoDBDocumentConfiguration</span><span style="color:#f8f8f8;text-decoration:underline">
@@ -453,29 +453,29 @@ This is the multi-page printable view of this section.
 </span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">jnosql.dynamodb.prefix</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">some-prefix-</span><span style="color:#f8f8f8;text-decoration:underline">
 </span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">jnosql.dynamodb.selectmode</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">scan</span><span style="color:#f8f8f8;text-decoration:underline">
 </span></span></span></code></pre></div><p>See <a href="/blog/2024/06/07/poweruser-tips-for-milkman/#aws-sso">AWS SSO</a> for how to authenticate with AWS via SSO.</p>
-<h2 id="aws-sso">AWS SSO</h2>
+<h3 id="aws-sso">AWS SSO</h3>
 <p>To support authentification via AWS SSO, simply drop the <a href="https://mvnrepository.com/artifact/software.amazon.awssdk/sso">SSO Artifact</a> into your <code>/plugin</code> directory. Then you can use the following code to authenticate:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># in terminal:</span>
 </span></span><span style="display:flex;"><span>aws sso login --profile my_profile
 </span></span></code></pre></div><p>All aws-related functionality in milkman will pick up the active login and use it for opening connections.</p>
-<h1 id="jump-hosts-via-socks-proxy">Jump Hosts via Socks Proxy</h1>
+<h2 id="jump-hosts-via-socks-proxy">Jump Hosts via Socks Proxy</h2>
 <p>For connecting to databases that are not directly accessible from your machine, you can use a SSH tunnel. Usually, you need to manually open a tunnel via <code>ssh</code> and use the tunnel as a proxy (socks-proxy) for your connection. Milkman can do this in a best-effort way, as some drivers are natively supporting this. It is currently supported for:</p>
 <ul>
 <li>Jdbc Connections: appending <code>socksProxyPort</code>, <code>socksProxyHost</code> and <code>socksProxyRemoteDns</code> to the connection string</li>
 <li>Cassandra</li>
 <li>Others: system properties <code>socksProxyPort</code> and <code>socksProxyPort</code> are set. this is respected by some drivers and http clients</li>
 </ul>
-<h1 id="jump-hosts-in-jdbc-connections">Jump Hosts in JDBC Connections</h1>
+<h2 id="jump-hosts-in-jdbc-connections">Jump Hosts in JDBC Connections</h2>
 <p>If you use jdbc, an easier method is to <a href="https://github.com/bokysan/jdbc-sshj">jdbc-sshj</a> which opens a tunnel when needed. The JDBC-string then looks a bit more complicated:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># connecting to an aws rds instance via a jump host</span><span style="color:#f8f8f8;text-decoration:underline">
 </span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># {{host}} and {{port}} are placeholders that are replaced by the jdbc-sshj driver</span><span style="color:#f8f8f8;text-decoration:underline">
 </span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">jdbc:sshj-native://&lt;user&gt;@&lt;jump-host&gt;?remote=&lt;aws-endpoint&gt;:5432;;;jdbc:postgresql://{{host}}:{{port}}/&lt;database&gt;?user=&lt;user&gt;&amp;password=&lt;password&gt;</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span></code></pre></div><h1 id="client-certificates--mtls">Client Certificates / mTLS</h1>
+</span></span></span></code></pre></div><h2 id="client-certificates--mtls">Client Certificates / mTLS</h2>
 <p>With rising security requirements, more and more services require client certificates for authentication. Milkman can handle this by adding the client certificate to the request. To do this, you need to add the client certificate to the list of known certificates in Milkman preferences. After that, you can select the certificate in the request settings (cog-wheel next to the http request method).</p>
-<h1 id="tests-as-request-sequence">Tests as Request-Sequence</h1>
+<h2 id="tests-as-request-sequence">Tests as Request-Sequence</h2>
 <p><code>Test</code> requests can be used to create a sequence of requests that are executed in order. This can be used to handle a more complex scenario with multiple dependent requests. To use data of one request in the next one, you can use <code>scripting</code> component.</p>
 <p>These requests are running in isolation, so any change to environment variables (if not specified differently in the properties of the Test) are not propagated to the current active environment.</p>
-<h2 id="example">Example:</h2>
+<h3 id="example">Example:</h3>
 <p>Request 1: e.g. a request that creates a user and returns it in response body</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">user</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">mm</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">response</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">body</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">body</span><span style="color:#000;font-weight:bold">;</span>
 </span></span><span style="display:flex;"><span><span style="color:#000">mm</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">setEnvironmentVariable</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;user&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">user</span><span style="color:#000;font-weight:bold">)</span>
@@ -493,9 +493,9 @@ This is the multi-page printable view of this section.
 </span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">body</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">JSON</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">parse</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">mm</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">response</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">body</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">body</span><span style="color:#000;font-weight:bold">)</span>
 </span></span><span style="display:flex;"><span><span style="color:#000">milkman</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">setEnvironmentVariable</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;user-token&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">body</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">access_token</span><span style="color:#000;font-weight:bold">)</span>
 </span></span><span style="display:flex;"><span><span style="color:#000">milkman</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">setEnvironmentVariable</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;user-rt&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">body</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">refresh_token</span><span style="color:#000;font-weight:bold">)</span>
-</span></span></code></pre></div><h1 id="scripting-tipstricks">Scripting Tips&amp;Tricks</h1>
+</span></span></code></pre></div><h2 id="scripting-tipstricks">Scripting Tips&amp;Tricks</h2>
 <p>Because you can load external javascript files that can then be used in the scripting part, the scripting component is way more powerful than without using that capability.</p>
-<h2 id="using-chaijs">Using Chai.js</h2>
+<h3 id="using-chaijs">Using Chai.js</h3>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// preload script: https://cdnjs.cloudflare.com/ajax/libs/chai/4.3.4/chai.min.js
 </span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// then you can use chai.js in your scripts:
 </span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>
@@ -514,7 +514,7 @@ This is the multi-page printable view of this section.
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#000">should</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">not</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">equal</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">tokenHeader</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#204a87;font-weight:bold">null</span><span style="color:#000;font-weight:bold">);</span>
 </span></span><span style="display:flex;"><span><span style="color:#000">tokenHeader</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">value</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">should</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">match</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">/^0.*$/</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#8f5902;font-style:italic">//is it according to new format?
-</span></span></span></code></pre></div><h2 id="using-external-files">Using external files</h2>
+</span></span></span></code></pre></div><h3 id="using-external-files">Using external files</h3>
 <p>Sometimes, you might want to use content from external files in your requests, such as a csv-file loaded from external. Out-of-the-box, Milkman does not support this, but you can use the following workaround:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">//in an external preload script, e.g. &#34;~/.milkman-scripts/loadFile.js&#34;
 </span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">loadFile</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">path</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
@@ -529,7 +529,7 @@ This is the multi-page printable view of this section.
 </span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000;font-weight:bold">{</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#4e9a06">&#34;csvFile&#34;</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;{{js:base64(loadFile(&#39;/path/to/test.csv&#39;))}}&#34;</span>
 </span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
-</span></span></code></pre></div><h2 id="printing-to-console">Printing to Console</h2>
+</span></span></code></pre></div><h3 id="printing-to-console">Printing to Console</h3>
 <p>Sometimes, scripting can be used to add debugging information to your requests, for example, you can print the information of a JWT token to console:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// using pre-load script: https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js
 </span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>
@@ -549,17 +549,17 @@ This is the multi-page printable view of this section.
 </span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>
 </span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">body</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">JSON</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">parse</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">mm</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">response</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">body</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">body</span><span style="color:#000;font-weight:bold">)</span>
 </span></span><span style="display:flex;"><span><span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">JSON</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">stringify</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">parseJwt</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">body</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">access_token</span><span style="color:#000;font-weight:bold">),</span> <span style="color:#204a87;font-weight:bold">null</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">2</span><span style="color:#000;font-weight:bold">))</span>
-</span></span></code></pre></div><h1 id="libraries">Libraries</h1>
+</span></span></code></pre></div><h2 id="libraries">Libraries</h2>
 <p>In lot of companies, many services exist and sometimes, a directory with all service specifications exist. Milkman can make use of these directories (currently, only apis.guru format is supported, open tickets to request more formats) to import service definitions. This allows you to import your company&rsquo;s services and use them in your requests with just a few clicks.</p>
-<h1 id="custom-templates">Custom Templates</h1>
+<h2 id="custom-templates">Custom Templates</h2>
 <p>If you want to export requests in a specific format, you can create custom templates. These templates are written in <a href="https://mustache.github.io/">mustache</a> with whitespace control extensions. Some examples of http exports:</p>
-<h2 id="wget">WGet</h2>
+<h3 id="wget">WGet</h3>
 <p>Useful because some alpine docker images dont have curl installed but busybox wget</p>
 <pre tabindex="0"><code class="language-mustache" data-lang="mustache">wget -O- {{#headers.entries-}}{{#enabled-}}
 --header=&#34;{{&amp;name}}: {{&amp;value}}&#34;
 {{_/enabled}}{{/headers.entries_}}
 {{&amp;url}}
-</code></pre><h2 id="spring-rest-template">Spring Rest Template</h2>
+</code></pre><h3 id="spring-rest-template">Spring Rest Template</h3>
 <p>If you program and need to implement the request in java / spring</p>
 <pre tabindex="0"><code class="language-mustache" data-lang="mustache">RestTemplate restTemplate = new RestTemplate();
 
